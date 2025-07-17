@@ -1,0 +1,76 @@
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
+const images = ["/img/gym1.jpg", "/img/gym2.jpg"];
+
+export default function FitnessPage() {
+  return (
+    <main className="w-full pb-20">
+      {/* Hero Section */}
+      <section className="relative w-full bg-gray-900 rounded overflow-hidden mb-16 h-[400px] flex justify-center items-center px-10">
+        <img
+          src="/img/f1.jpg"
+          alt="Fitness Hero"
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+          draggable={false}
+        />
+        <h1 className="relative items-center justify-center text-white text-4xl md:text-5xl font-extrabold">
+          Fitness Center
+        </h1>
+      </section>
+
+      {/* Main Two Column Section */}
+      <section className="flex flex-col md:flex-row items-center gap-10 px-6 max-w-7xl mx-auto">
+        {/* Left Column (Text) */}
+        <div className="md:w-1/2 space-y-6 text-gray-800">
+          <h2 className="text-3xl font-bold">Personal Training & Movement</h2>
+          <p className="leading-relaxed text-gray-700">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, pellentesque eu, pretium quis, sem.
+          </p>
+
+          <div>
+            <h3 className="font-semibold mb-2">Opening Hours</h3>
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <li>Fitness Center: 7:00 am - 9:00 pm</li>
+              <li>Yoga Studio: 10:00 am - 9:00 pm</li>
+            </ul>
+          </div>
+
+          <button className="bg-sky-500 text-white px-6 py-3 rounded hover:bg-sky-600 transition w-max">
+            Request Information
+          </button>
+        </div>
+
+        {/* Right Column (Slider) */}
+        <div className="md:w-1/2 flex justify-center items-center">
+          <div className="w-[65%] h-[530px] rounded overflow-hidden shadow-lg">
+            <Swiper
+              modules={[Autoplay, Pagination]}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 2000, disableOnInteraction: false }}
+              loop={true}
+              className="h-full"
+            >
+              {images.map((img, i) => (
+                <SwiperSlide key={i}>
+                  <img
+                    src={img}
+                    alt={`Fitness Image ${i + 1}`}
+                    className="w-full h-full object-cover"
+                    draggable={false}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

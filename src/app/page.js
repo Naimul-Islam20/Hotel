@@ -7,12 +7,14 @@ import Features from "@/components/Features";
 import RoomSection from "@/components/GalleryTeaser";
 import ScrollingNames from "@/components/scrolName/ScrolName";
 import ImgDan from "@/components/RoomsPreview";
+import HotelTag from '@/components/ourHotel'
 
 export default function Home() {
   return (
     <main>
       <div>
        <Hero/>
+       <HotelTag/>
        <Features/>
        <ScrollingNames/>
       <HotelMessageSlider/>

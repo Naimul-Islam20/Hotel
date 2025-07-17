@@ -59,7 +59,7 @@ export default function HeroSlider() {
   };
 
   return (
-    <div className="relative w-full h-screen hero-section overflow-visible">
+    <div className="relative  w-full h-screen hero-section overflow-visible">
       {/* Image without animation */}
       <img
         src={images[current]}

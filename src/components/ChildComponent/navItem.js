@@ -5,7 +5,7 @@ const navItems = [
     
    },
   {
-    name: "Room",href: "/rout/room/",
+    name: "Rooms",href: "/rout/rooms/roomsPage",
         dropdown: [
     { name: "Main Home", href: "rout/home/main-home" },
     { name: "Deluxe", href: "rout/rooms/deluxe" },
@@ -16,7 +16,13 @@ const navItems = [
    
   },
   {
-    name: "Facilities",href: "/rout/facilities"
+    name: "Facilities",
+       dropdown: [
+    { name: "Fitness", href: "rout/facilities/fitness" },
+    { name: "Pool", href: "rout/facilities/pool" },
+    { name: "Others", href: "rout/facilities" },
+
+  ]
     
 
   },
@@ -40,7 +46,16 @@ const navItems = [
     
 
   },
+   {
+    name: "Local",href: "/rout/local"
+    
 
+  },
+{
+    name: "Narby",href: "/rout/narby"
+    
+
+  },
 ];
 
 export default navItems;
