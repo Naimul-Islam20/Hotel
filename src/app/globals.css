@@ -3,8 +3,121 @@
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 
+/* Swiper default arrow icons hide করার জন্য */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: none !important;
+}
 
 body {
   
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.custom-calendar {
+  width: 100% !important;
+  max-width: 800px;
+  font-size: 1.25rem;
+}
+
+.custom-calendar .react-calendar__tile {
+  padding: 1rem;
+  height: 48px !important;
+  max-width: none;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0; /* no rounded corners */
+}
+
+/* দিনের ঘরগুলো গ্রিড ও গ্যাপ */
+.custom-calendar .react-calendar__month-view__days {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.custom-calendar .react-calendar__month-view__days__day {
+  max-width: none;
+}
+
+/* navigation লুকানো */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Year change button লুকানো */
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+  display: none !important;
+}
+
+/* Label টেক্সট ক্লিক বন্ধ */
+.react-calendar__navigation__label {
+  pointer-events: none;
+}
+
+/* disabled date এর জন্য */
+.react-calendar__tile--disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* available date */
+.available-date {
+  background-color: #a7f3d0 !important; /* Tailwind green-300 */
+  color: #065f46 !important; /* Tailwind green-900 */
+}
+
+/* not available date */
+.not-available-date {
+  background-color: #fecaca !important; /* Tailwind red-300 */
+  color: #991b1b !important; /* Tailwind red-900 */
+}
+.other-month-date {
+  color: #ccc;
+}
+
+
+
+
+
+.react-calendar__tile:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  /* background-color: transparent !important; */
+}
+.custom-calendar .react-calendar__tile {
+  font-weight: 600;
+  height: 48px !important;
+  padding: 1rem;
+  max-width: none;
+  text-align: center;
+  border-radius: 0;
+}
+
+/* অন্য মাসের তারিখের রঙ */
+.other-month-date {
+  color: #ccc !important;
+}
+
+/* Not available date এর জন্য লাল ব্যাকগ্রাউন্ড */
+.not-available-date {
+  background-color: #fecaca !important; /* Tailwind red-300 */
+  color: #991b1b !important; /* Tailwind red-900 */
+}
+
+/* Available date এর জন্য হালকা সবুজ ব্যাকগ্রাউন্ড */
+.available-date {
+  background-color: #a7f3d0 !important; /* Tailwind green-300 */
+  color: #065f46 !important; /* Tailwind green-900 */
+}
+
+/* Disabled date এর opacity ও pointer */
+.react-calendar__tile--disabled {
+  opacity: 0.4 !important;
+  pointer-events: none !important;
+  cursor: not-allowed !important;
 }

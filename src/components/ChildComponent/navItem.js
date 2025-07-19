@@ -7,10 +7,28 @@ const navItems = [
   {
     name: "Rooms",href: "/rout/rooms/roomsPage",
         dropdown: [
-    { name: "Main Home", href: "rout/home/main-home" },
-    { name: "Deluxe", href: "rout/rooms/deluxe" },
-    { name: "Gallary", href: "rout/gallary" },
+    
+    
+      {
+    name: "SINGLE",href: "/rout/rooms/single"
+    
 
+  },
+      {
+    name: "DELUXE",href: "/rout/rooms/deluxe"
+    
+
+  },
+    {
+    name: "FAMILY",href: "/rout/rooms/family"
+    
+
+  },
+    {
+    name: "PREMIUM",href: "/rout/rooms/premium"
+    
+
+  },
   ]
 
    
@@ -36,6 +54,11 @@ const navItems = [
     
 
   },
+   {
+    name: "GALLARY",href: "/rout/gallary"
+    
+
+  },
     {
     name: "Attrection",href: "/rout/attrect"
     
@@ -52,7 +75,7 @@ const navItems = [
 
   },
 {
-    name: "Narby",href: "/rout/narby"
+    name: "SINGLE",href: "/rout/rooms/single"
     
 
   },

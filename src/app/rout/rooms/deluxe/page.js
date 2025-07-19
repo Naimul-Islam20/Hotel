@@ -1,56 +1,132 @@
-"use client";
-import Image from "next/image";
-import { FaBed, FaWifi, FaBath, FaTv, FaSnowflake, FaMugHot } from "react-icons/fa";
-import RoomImageSlider from "./img";
+// RoomDetailsPage.jsx
 
-export default function DeluxeRoomPage() {
+import React from 'react';
+import ImageSliderWithModal from './img';
+import RoomInfo from './roomInfo';
+import RoomServices from './service';
+import AdditionalServices from './additional';
+import ContactActions from './contactAction';
+
+import Calendar from './calendar'
+// ⬇️ এই imports গুলো উপরে রাখতে হবে
+import { FaBath, FaCoffee, FaCar, FaWind, FaMugHot, FaWifi, FaShuttleVan, FaSpa, FaHotTub } from 'react-icons/fa';
+import { MdMicrowave } from 'react-icons/md';
+
+import { FaQuestionCircle } from 'react-icons/fa'; // Optional icon
+import { FaCaretDown, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaGlobe } from 'react-icons/fa';
+
+// import { Accordion } from '@/components/ui/accordion'; // যদি Tailwind UI or Custom component use করো
+
+const DeluxeRoomDetails = () => {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 pb-12">
-      {/* Hero */}
-      <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
-        <Image
-          src="/rooms/deluxe.jpg"
-          alt="Deluxe Room"
-          layout="fill"
-          objectFit="cover"
-          className="brightness-75"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-white text-4xl md:text-5xl font-bold">Deluxe Room</h1>
-        </div>
+    <div className="w-full">
+      {/* 🟦 Hero Section */}
+      <div className="w-full bg-blue-100 py-12 text-center">
+        <h1 className="text-4xl font-bold text-gray-800">Single Room</h1>
+        <p className="mt-2 text-gray-600">Home &gt; Rooms &gt; Single Room</p>
       </div>
 
-      {/* Details */}
-      <div className="max-w-6xl mx-auto mt-10 px-4 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* Left */}
-        <div className="space-y-6">
-          <h2 className="text-2xl font-bold text-gray-800">Room Overview</h2>
-          <p className="text-gray-700">
-            Our Deluxe Room is designed for both comfort and elegance. Perfect for couples or business travelers, this room provides everything you need for a relaxing stay. Featuring a plush king-size bed, private modern bathroom, and contemporary décor — it's your home away from home.
-          </p>
+      {/* 🟨 Main Section */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 py-4">
 
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-            <li className="flex items-center gap-2"><FaBed className="text-blue-600" /> 1 King Size Bed</li>
-            <li className="flex items-center gap-2"><FaBath className="text-blue-600" /> Private Bathroom</li>
-            <li className="flex items-center gap-2"><FaWifi className="text-blue-600" /> Free Wi-Fi</li>
-            <li className="flex items-center gap-2"><FaTv className="text-blue-600" /> 42" Smart TV</li>
-            <li className="flex items-center gap-2"><FaSnowflake className="text-blue-600" /> Air Conditioning</li>
-            <li className="flex items-center gap-2"><FaMugHot className="text-blue-600" /> Complimentary Breakfast</li>
-          </ul>
 
-          <div className="mt-6">
-            <h3 className="text-xl font-semibold mb-2">Price</h3>
-            <p className="text-lg text-gray-900 font-bold">$120 / night</p>
-          </div>
+        {/* 🖼️ First 3 Columns: Image Slider */}
+        <div className="md:col-span-3 mx-5 ">
+          <ImageSliderWithModal />
+          <RoomInfo/>
+          <RoomServices/>
+          <AdditionalServices/>
+          <Calendar/>
 
-          <button className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
-            Book Now
-          </button>
+            <div className="max-w-7xl mx-auto px-4 py-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Room Description</h2>
+            <p className="text-gray-600 leading-relaxed text-justify">
+                Quisque fermentum aliquam consectetur. Ut molestie dictum enim vel placerat. Suspendisse potenti. 
+                Pellentesque sed quam ante. Mauris ut felis sodales, euismod erat et, hendrerit purus. Sed diam orci, 
+                aliquet a condimentum nec, consequat fermentum velit. Duis gravida aliquet fermentum. Pellentesque nec dui 
+                at lorem mollis molestie sed eu orci. Vestibulum et elit dolor. Mauris vulputate felis quis urna consequat, 
+                a tincidunt libero blandit. Morbi eros metus, egestas eget magna ac, dignissim imperdiet est. In eget augue 
+                nunc. In id nisi porta, mollis tellus auctor, rhoncus justo. Praesent imperdiet tincidunt ipsum, vel tincidunt 
+                odio iaculis et. Sed posuere sollicitudin nisi in dignissim.
+            </p>
+            </div>
+
+
         </div>
 
-        {/* Right: Gallery */}
-        <RoomImageSlider/>
+<div className="space-y-4 w-full p-2 bg-gray-100 h-fit sticky top-18">
+  <h2 className="text-xl font-semibold mb-2">Contact Info</h2>
+
+  {/* Location */}
+  <details className="group border border-gray-300 rounded-md overflow-hidden">
+    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-blue-700">
+      <span className="flex items-center gap-2">
+        <FaMapMarkerAlt className="text-base" />
+        <span className="leading-none">Location</span>
+      </span>
+      <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
+    </summary>
+    <div className="px-4 py-3 text-sm text-gray-600">
+      123, Beach Road, Cox’s Bazar, Bangladesh.
+    </div>
+  </details>
+
+  {/* Email */}
+  <details className="group border border-gray-300 rounded-md overflow-hidden">
+    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-blue-700">
+      <span className="flex items-center gap-2">
+        <FaEnvelope className="text-base" />
+        <span className="leading-none">Email</span>
+      </span>
+      <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
+    </summary>
+    <div className="px-4 py-3 text-sm text-gray-600">
+      contact@hotelblue.com
+    </div>
+  </details>
+
+  {/* Phone */}
+  <details className="group border border-gray-300 rounded-md overflow-hidden">
+    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-blue-700">
+      <span className="flex items-center gap-2">
+        <FaPhoneAlt className="text-base" />
+        <span className="leading-none">Phone</span>
+      </span>
+      <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
+    </summary>
+    <div className="px-4 py-3 text-sm text-gray-600">
+      +880 1234-567890
+    </div>
+  </details>
+
+  {/* Website */}
+  <details className="group border border-gray-300 rounded-md overflow-hidden">
+    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-blue-700">
+      <span className="flex items-center gap-2">
+        <FaGlobe className="text-base" />
+        <span className="leading-none">Website</span>
+      </span>
+      <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
+    </summary>
+    <div className="px-4 py-3 text-sm text-gray-600">
+      <a href="https://hotelblue.com" className="text-blue-600 underline" target="_blank" rel="noreferrer">
+        www.hotelblue.com
+      </a>
+    </div>
+  </details>
+
+  {/* Contact Us Button */}
+  <div className="pt-4 text-center">
+    <button className="text-sky-400 underline tracking-widest py-2 font-medium   transition duration-200">
+      Contact Us
+    </button>
+  </div>
+</div>
+
       </div>
+  
     </div>
   );
-}
+};
+
+export default DeluxeRoomDetails;

@@ -1,21 +1,44 @@
 "use client";
+
 import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { localAttractions } from "./src";
 import Narby from "../narby/page";
 import { Link as ScrollLink, Element } from "react-scroll";
 import { useState } from "react";
+import Link from "next/link"; // ✅ Breadcrumb এর জন্য
 
 export default function LocalAttractions() {
   const [activeTab, setActiveTab] = useState("local");
 
   return (
-    <div>
-      <div>
-        <h1 className="text-4xl item-center text-center justify-center pt-4 ">Attraction Chittagong area</h1>
+    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
+      
+      {/* ✅ Hero Section */}
+      <div
+        className="relative h-[300px] flex flex-col items-center justify-center text-white"
+        style={{
+          backgroundImage: "url(/img/contact4.jpg)", // তুমি চাইলে এখানে ভিন্ন ছবি দিতে পারো
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-opacity-50" />
+        <h1 className="relative z-10 text-5xl font-bold text-center">
+          Attraction Chittagong Area
+        </h1>
+        {/* Breadcrumb */}
+        <div className="relative z-10 mt-2">
+          <p className="text-sm text-gray-200">
+            <Link href="/" className="hover:underline text-blue-200">
+              Home
+            </Link>{" "}
+            &gt; <span className="text-white">Attraction</span>
+          </p>
+        </div>
       </div>
-      {/* Filter Buttons */}
 
+      {/* ✅ Filter Buttons */}
       <div className="flex justify-center gap-4 mt-5 border-b border-gray-300">
         <ScrollLink
           to="localSection"
@@ -23,9 +46,11 @@ export default function LocalAttractions() {
           duration={800}
           offset={-60}
           onSetActive={() => setActiveTab("local")}
-          className={`cursor-pointer px-4 py-2  font-medium relative
-            ${activeTab === "local" ? "border-b-2 border-black " : "border-b-2 border-transparent"}
-          `}
+          className={`cursor-pointer px-4 py-2 font-medium relative ${
+            activeTab === "local"
+              ? "border-b-2 border-black"
+              : "border-b-2 border-transparent"
+          }`}
         >
           Local
         </ScrollLink>
@@ -36,25 +61,28 @@ export default function LocalAttractions() {
           duration={800}
           offset={-60}
           onSetActive={() => setActiveTab("nearby")}
-          className={`cursor-pointer px-4 py-2  font-medium relative
-            ${activeTab === "nearby" ? "border-b-2 border-black text-sky-400" : "border-b-2 border-transparent "}
-          `}
+          className={`cursor-pointer px-4 py-2 font-medium relative ${
+            activeTab === "nearby"
+              ? "border-b-2 border-black text-sky-400"
+              : "border-b-2 border-transparent"
+          }`}
         >
           Nearby
         </ScrollLink>
       </div>
 
-      {/* Local Section */}
-      <Element name="localSection" className="max-w-7xl mx-auto bg-white   px-10 py-8">
-        <h1 className="text-2xl   mb-3">
-          LOCAL ATTRACTIONS 
-        </h1>
+      {/* ✅ Local Section */}
+      <Element
+        name="localSection"
+        className="max-w-7xl mx-auto bg-gray-50 dark:bg-gray-800 px-10 py-8"
+      >
+        <h1 className="text-2xl mb-7 font-semibold">LOCAL ATTRACTIONS</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {localAttractions.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white shadow border border-gray-100 overflow-hidden flex flex-col"
+              className="bg-white dark:bg-gray-900 shadow border border-gray-100 dark:border-gray-700 overflow-hidden flex flex-col"
             >
               <Image
                 src="/img/view.jpg"
@@ -73,7 +101,9 @@ export default function LocalAttractions() {
                 </div>
 
                 <div className="flex justify-between items-center mb-3">
-                  <span className="text-gray-600 text-sm">{item.location}</span>
+                  <span className="text-gray-600 text-sm dark:text-gray-300">
+                    {item.location}
+                  </span>
                   <a
                     href={item.googleMapLink}
                     target="_blank"
@@ -81,7 +111,7 @@ export default function LocalAttractions() {
                     className="text-blue-600 hover:text-blue-800"
                     title="Open in Google Maps"
                   >
-                    <FaMapMarkerAlt className="text-lg" /> Location
+                    <FaMapMarkerAlt className="inline mr-1" /> Location
                   </a>
                 </div>
               </div>
@@ -90,7 +120,7 @@ export default function LocalAttractions() {
         </div>
       </Element>
 
-      {/* Nearby Section */}
+      {/* ✅ Nearby Section */}
       <Element name="nearbySection">
         <Narby />
       </Element>

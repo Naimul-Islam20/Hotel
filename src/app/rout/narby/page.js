@@ -61,7 +61,7 @@ export default function NearbyThingsToDo() {
 
   return (
     <div className="max-w-7xl mx-auto bg-gray-50  px-10 py-12">
-      <h2 className="text-2xl  mb-10">Nearby Things </h2>
+      <h2 className="text-2xl  mb-7">NEARBY THINGS </h2>
 
       <Masonry
         breakpointCols={breakpointColumnsObj}

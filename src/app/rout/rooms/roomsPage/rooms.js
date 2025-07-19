@@ -4,7 +4,7 @@ export const rooms = [
   {
     title: "Deluxe Room",
     img: [
-      "/img/image1.jpg",
+      "/img/h21.jpg",
     //   "/img/image1.jpg",
       "/img/image1.jpg",
     ],
@@ -19,8 +19,8 @@ export const rooms = [
   {
     title: "Executive Suite",
     img: [
-      "/img/image1.jpg",
-      "/img/image1.jpg",
+      "/img/h21.jpg",
+      "/img/h21.jpg",
       "/img/image1.jpg",
     ],
     price: "$180/night",
@@ -34,7 +34,7 @@ export const rooms = [
   {
     title: "Family Room",
     img: [
-      "/img/image1.jpg",
+      "/img/h21.jpg",
       "/img/image1.jpg",
       "/img/image1.jpg",
     ],
@@ -49,9 +49,9 @@ export const rooms = [
   {
     title: "Twin Room",
     img: [
-      "/rooms/twin1.jpg",
-      "/rooms/twin2.jpg",
-      "/rooms/twin3.jpg",
+      "/img/h21.jpg",
+      "/img/h21.jpg",
+      "/img/h21.jpg",
     ],
     price: "$110/night",
     features: [
@@ -64,7 +64,7 @@ export const rooms = [
   {
     title: "Single Room",
     img: [
-      "/rooms/single1.jpg",
+     "/img/h21.jpg",
       "/rooms/single2.jpg",
       "/rooms/single3.jpg",
     ],
@@ -79,7 +79,7 @@ export const rooms = [
   {
     title: "Premium Room",
     img: [
-      "/rooms/premium1.jpg",
+      "/img/h21.jpg",
       "/rooms/premium2.jpg",
       "/rooms/premium3.jpg",
     ],

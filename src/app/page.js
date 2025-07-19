@@ -8,6 +8,7 @@ import RoomSection from "@/components/GalleryTeaser";
 import ScrollingNames from "@/components/scrolName/ScrolName";
 import ImgDan from "@/components/RoomsPreview";
 import HotelTag from '@/components/ourHotel'
+import Ex from "@/components/ImgSlide"
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
        <Features/>
        <ScrollingNames/>
       <HotelMessageSlider/>
-      
+      <Ex/>
       <RoomSection/>
       <ImgDan/>
       </div>

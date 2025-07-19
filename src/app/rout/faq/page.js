@@ -1,7 +1,9 @@
 "use client";
 
-import { useRef, useState, useLayoutEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { FaCaretDown } from "react-icons/fa";
+import { useEffect } from "react";
+import Link from "next/link";
+
 
 const faqData = [
   {
@@ -27,78 +29,91 @@ const faqData = [
     question: "Are pets allowed in the hotel?",
     answer: "Sorry, pets are not allowed inside the hotel premises.",
   },
+  {
+    question: "Is breakfast included in the room price?",
+    answer:
+      "Yes, all room bookings include complimentary breakfast served between 7 AM - 10 AM.",
+  },
+  {
+    question: "Do you offer airport shuttle service?",
+    answer: "Yes, we offer airport pickup and drop service at an additional cost.",
+  },
+  {
+    question: "Can I modify my booking later?",
+    answer:
+      "Yes, you can modify your booking by contacting our support team at least 24 hours before check-in.",
+  },
+  {
+    question: "Do you have conference rooms?",
+    answer:
+      "Yes, we offer fully-equipped conference rooms for business meetings and events.",
+  },
+  {
+    question: "Is smoking allowed inside the rooms?",
+    answer:
+      "All our rooms are non-smoking. However, we have designated smoking areas outside.",
+  },
 ];
 
 export default function FAQPage() {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+  // Divide FAQs into two columns
+  const half = Math.ceil(faqData.length / 2);
+  const leftColumn = faqData.slice(0, half);
+  const rightColumn = faqData.slice(half);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50 px-4 py-12">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6 text-center">
-          Frequently Asked Questions
-        </h1>
+   <div className="min-h-[130vh] bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50">
 
-        {/* Accordion */}
-        <div className="space-y-4">
-          {faqData.map((faq, index) => {
-            const isOpen = openIndex === index;
-            const contentRef = useRef(null);
-            const [dropdownHeight, setDropdownHeight] = useState(0);
+      {/* Hero Section */}
+      <div
+  className="relative h-[300px] flex flex-col items-center justify-center text-white"
+  style={{
+    backgroundImage: "url(/img/contact4.jpg)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  <div className="absolute inset-0  bg-opacity-50"></div>
 
-            useLayoutEffect(() => {
-              if (isOpen && contentRef.current) {
-                setDropdownHeight(contentRef.current.scrollHeight);
-              }
-            }, [isOpen]);
+  {/* FAQ Title */}
+  <h1 className="relative z-10 text-5xl font-bold">FAQ</h1>
 
-            return (
-              <div
-                key={index}
-                className="border border-gray-300 rounded-lg bg-white shadow-sm"
-              >
-                <button
-                  onClick={() => toggleFAQ(index)}
-                  className="w-full flex justify-between items-center text-left px-5 py-4 font-medium text-lg focus:outline-none"
+  {/* Breadcrumb inside hero */}
+  <div className="relative z-10 mt-4">
+    <p className="text-sm text-gray-200">
+      <Link href="/" className="hover:underline text-blue-200">
+        Home
+      </Link>{" "}
+      &gt; <span className="text-white">FAQ</span>
+    </p>
+  </div>
+</div>
+
+
+      {/* FAQ Section */}
+      <div className="max-w-6xl mx-auto mt-7 px-4 pt-12 pb-24">
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {[leftColumn, rightColumn].map((column, colIndex) => (
+            <div key={colIndex} className="space-y-5">
+              {column.map((faq, index) => (
+                <details
+                  key={index}
+                  className="group border border-gray-300 rounded-md overflow-hidden bg-white dark:bg-gray-800"
                 >
-                  {faq.question}
-                  <motion.span
-                    initial={false}
-                    animate={{ rotate: isOpen ? 45 : 0 }}
-                    transition={{ duration: 0.2 }}
-                    className="text-xl font-bold"
-                  >
-                    +
-                  </motion.span>
-                </button>
-
-                <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0 }}
-                      animate={{
-                        height: dropdownHeight || "auto",
-                        transition: { duration: 0.5, ease: "easeOut" },
-                      }}
-                      exit={{
-                        height: 0,
-                        transition: { duration: 0.2, ease: "easeIn" },
-                      }}
-                      className="overflow-hidden px-5 text-gray-700"
-                    >
-                      <div ref={contentRef} className="py-4">
-                        {faq.answer}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            );
-          })}
+                  <summary className="cursor-pointer bg-gray-100 dark:bg-gray-700 px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 dark:text-gray-200 group-open:bg-blue-50 group-open:text-blue-700">
+                    {faq.question}
+                    <span className="text-lg transform group-open:rotate-180 transition duration-300">
+                      <FaCaretDown />
+                    </span>
+                  </summary>
+                  <div className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300">
+                    {faq.answer}
+                  </div>
+                </details>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </div>
