@@ -7,6 +7,7 @@ const notAvailableDates = [
   new Date(2025, 6, 3),
   new Date(2025, 6, 4),
   new Date(2025, 7, 7),
+   new Date(2025, 6, 20),
   // অন্য মাসের তারিখ এখানে যোগ করো
 ];
 

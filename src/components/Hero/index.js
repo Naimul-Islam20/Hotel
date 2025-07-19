@@ -115,31 +115,10 @@ export default function HeroSlider() {
       >
         <FaChevronRight className="text-white w-6 h-6" />
       </button>
-      {/* Bottom Overlapping Boxes */}
-<div className="absolute bottom-[-35px] w-full flex justify-between items-center px-6 md:px-20 z-50">
-  {/* Left Box */}
-  <div className="w-[250px] h-[70px] bg-white rounded-xl shadow flex flex-col items-center justify-center px-4">
-    <p className="text-sm text-gray-800 font-semibold">Call Now</p>
-    <p className="text-xs text-gray-500">+880 1234-567890</p>
-  </div>
+      
 
-  {/* Center Box */}
-  <div className="w-[250px] h-[70px] bg-white rounded-xl shadow flex items-center justify-between px-4">
-    <div>
-      <p className="text-sm font-medium text-gray-800">Book Your Stay</p>
-      <p className="text-xs text-gray-500">Luxury Awaits</p>
-    </div>
-    <button className="text-xs bg-black text-white px-3 py-1 rounded-md hover:bg-gray-800 transition">
-      Book
-    </button>
-  </div>
+   
 
-  {/* Right Box */}
-  <div className="w-[250px] h-[70px] bg-white rounded-xl shadow flex flex-col items-center justify-center px-4 text-right">
-    <p className="text-sm text-gray-800 font-semibold">50+ Rooms</p>
-    <p className="text-xs text-gray-500">Rated 4.8 by Guests</p>
-  </div>
-</div>
 
     </div>
   );

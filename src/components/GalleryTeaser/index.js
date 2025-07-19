@@ -54,9 +54,19 @@ export default function RoomSlider() {
 
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto relative">
-      <h2 className="text-4xl font-bold text-center mb-12">
-        Room Types & Accommodations
-      </h2>
+    <h2 className="text-5xl mb-3">
+  Our Best Rooms
+</h2>
+
+<div className="flex justify-between mb-10 gap-4">
+  <h2 className="font-bold text-gray-500 text-left flex-1">
+    Our best rooms available for your vacation
+  </h2>
+  <h2 className="font-bold  text-right flex-1">
+    View all rooms
+  </h2>
+</div>
+
 
       {/* Navigation Buttons */}
       {/* Left Arrow */}
@@ -132,16 +142,14 @@ export default function RoomSlider() {
     <div className="mt-5 flex flex-col flex-grow">
       <div className="flex justify-between items-center">
         <h3 className="text-xl font-semibold">{room.title}</h3>
-        <span className="text-blue-600 font-semibold">{room.price}</span>
+        <span className="text-sky-500 bg-gray-200 h-10 w-25 pt-2 ps-3 rounded-lg font-semibold">{room.price}</span>
       </div>
       <p className="text-gray-600 text-sm mt-2">{room.desc}</p>
       <div className="mt-auto pt-6 flex justify-between">
-        <button className="px-4 py-2 bg-gray-800 text-white text-sm rounded-full hover:bg-gray-700 transition">
+        <button className="px-4 py-2 text-sky-500 underline tracking-widest  transition">
           Details
         </button>
-        <button className="px-4 py-2 bg-blue-600 text-white text-sm rounded-full hover:bg-blue-700 transition">
-          Contact Us
-        </button>
+        
       </div>
     </div>
   </div>

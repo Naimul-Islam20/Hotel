@@ -38,7 +38,7 @@ const RoomDetailsPage = () => {
           <AdditionalServices/>
           <Calendar/>
 
-            <div className="max-w-7xl mx-auto px-4 py-8">
+            <div className="max-w-7xl mx-auto  py-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Room Description</h2>
             <p className="text-gray-600 leading-relaxed text-justify">
                 Quisque fermentum aliquam consectetur. Ut molestie dictum enim vel placerat. Suspendisse potenti. 
