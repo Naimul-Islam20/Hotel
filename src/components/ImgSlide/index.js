@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -9,78 +9,97 @@ import 'swiper/css/navigation';
 const slides = [
   {
     center: '/exc/exc7.jpg',
-    bgColor: '#0d1b2a',
     bgImage: '/exc/exc8.jpg'
   },
   {
     center: '/exc/exc3.jpg',
-    bgColor: '#1b263b',
     bgImage: '/exc/exc4.jpg'
   },
   {
     center: '/exc/exc5.jpg',
-    bgColor: '#343a40',
     bgImage: '/exc/exc6.jpg'
   }
 ];
 
 export default function ExclusiveSlider() {
   const [current, setCurrent] = useState(0);
-  const [fadeBg, setFadeBg] = useState(true);
+  const [prev, setPrev] = useState(0);
+  const [fade, setFade] = useState(false);
+  const swiperRef = useRef(null);
 
   useEffect(() => {
-    setFadeBg(false);
-    const timeout = setTimeout(() => setFadeBg(true), 100);
-    return () => clearTimeout(timeout);
-  }, [current]);
+    if (current !== prev) {
+      setFade(true);
+      const timeout = setTimeout(() => {
+        setFade(false);
+        setPrev(current);
+      }, 700);
+      return () => clearTimeout(timeout);
+    }
+  }, [current, prev]);
 
   return (
-    <div
-      className={`w-full h-[940px] text-white py-10 bg-cover bg-center transition-all duration-700 ${fadeBg ? 'opacity-100' : 'opacity-0'}`}
-      style={{
-        backgroundColor: slides[current].bgColor,
-        backgroundImage: `url(${slides[current].bgImage})`
-      }}
-    >
-      {/* Top section */}
-      <div className="container flex flex-col mt-10 md:flex-row justify-between items-center mx-10">
-        <div className="w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start">
-          <div className="w-full flex justify-center md:justify-start items-center mb-2">
-            <div className="w-10 h-1 bg-white"></div>
-            <span className="ml-3 text-2xl font-bold">Exclusively</span>
+    <div className="w-full h-auto text-white py-10 relative overflow-hidden">
+      {/* Background Layers */}
+      <div
+        className={`absolute top-0 left-0 w-full h-full bg-cover bg-center transition-opacity duration-700`}
+        style={{ backgroundImage: `url(${slides[prev].bgImage})`, opacity: fade ? 1 : 1 }}
+      />
+      <div
+        className={`absolute top-0 left-0 w-full h-full bg-cover bg-center transition-opacity duration-700 pointer-events-none`}
+        style={{ backgroundImage: `url(${slides[current].bgImage})`, opacity: fade ? 1 : 0 }}
+      />
+
+      {/* Top Text Section */}
+      <div className="relative z-10 container mx-auto px-4 flex flex-col md:flex-row justify-between items-center mt-10 gap-6">
+        {/* Left text block */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center">
+          <div className="w-full flex justify-center items-center">
+            <div className="w-10 h-[2px] bg-white"></div>
+            <span className="ml-3 text-2xl md:text-4xl">Exclusively</span>
           </div>
-          <span className="text-2xl font-bold mt-2">for You</span>
+          <span className="text-lg md:text-2xl mt-1">for You</span>
         </div>
-        <p className="text-sm md:text-base max-w-md mt-4 md:mt-0 text-gray-300 text-center md:text-center">
-          Refinement and creativity intertwine with dreamlike destinations and soulful moments on each sojourn with Taj.
-        </p>
+
+        {/* Right text block */}
+        <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+          <p className="text-xs md:text-base max-w-md text-gray-200 text-center md:text-start">
+            Refinement and creativity intertwine with dreamlike destinations and soulful moments on each sojourn with Taj.
+          </p>
+        </div>
       </div>
 
-      {/* Swiper Slide Section */}
-      <div className="container mt-20 relative">
+      {/* Slider Section */}
+      <div className="container mx-auto  px-4 my-15 relative z-10">
         <Swiper
           modules={[Navigation]}
-          navigation
+          navigation={false}
           loop={true}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
           onSlideChange={(swiper) => setCurrent(swiper.realIndex)}
           speed={800}
           effect="slide"
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="flex items-center justify-between w-full h-[630px]">
-                {/* Left Box with Text */}
-                <div className="hidden md:flex w-1/5 h-full border-t border-b border-e border-white items-center justify-center">
-                  <div className="text-center">
-                    <p className="text-xl font-semibold">New</p>
-                    <p className="text-xl font-semibold">Beginnings</p>
+              <div className="flex flex-row items-center justify-between w-full h-auto md:h-[630px] gap-2">
+                {/* Prev Button Section */}
+                <div className="flex w-[15%] h-[493px]  md:h-full border-b-2 border-t-2 border-e-2 border-fade-right items-center justify-center relative">
+                  <div className=" items-center me-10 ">
+                      <button
+                      onClick={() => swiperRef.current?.slidePrev()}
+                      className="w-10 md:w-14 h-10 md:h-14 text-xl md:text-3xl border border-white text-white rounded-full flex items-center justify-center hover:bg-white hover:text-black transition cursor-pointer"
+                    >
+                      ←
+                    </button>
+                  
+                  
                   </div>
                 </div>
 
-                {/* Center Box with Image and Text */}
-                <div className="w-full md:w-1/2 h-full border border-white flex flex-col">
-                  {/* Upper image part */}
-                  <div className="relative h-[70%] w-full">
+                {/* Center Content Section */}
+                <div className="w-[70%] md:w-1/2 h-auto md:h-full flex flex-col">
+                  <div className="relative h-[350px] md:h-[70%] w-full">
                     <Image
                       src={slide.center}
                       alt="Center"
@@ -88,19 +107,24 @@ export default function ExclusiveSlider() {
                       className="object-cover"
                     />
                   </div>
-                  {/* Lower text part */}
-                  <div className="h-[30%] bg-white text-black flex flex-col items-center justify-center px-6 py-4 text-center">
-                    <h3 className="text-2xl mb-2">Lorem</h3>
-                    <p className="text-lg mb-4 text-gray-500 ">This is a sample description text that explains more about the image or the offer.</p>
-                    <button className=" text-sky-400 underline tracking-widest py-2">Explore More</button>
+                  <div className="h-auto md:h-[30%] bg-white text-black flex flex-col items-center justify-center px-2 md:px-4 py-4 text-center">
+                    <h3 className="text-base md:text-2xl mb-2">Lorem</h3>
+                    <p className="text-xs md:text-lg mb-4 text-gray-500">This is a sample description text that explains more about the image or the offer.</p>
+                    <button className="text-sky-400 underline tracking-widest py-2 text-xs md:text-base">Explore More</button>
                   </div>
                 </div>
 
-                {/* Right Box with Text */}
-                <div className="hidden md:flex w-1/5 h-full border-t border-b border-s border-white items-center justify-center">
-                  <div className="text-center">
-                    <p className="text-xl font-semibold">New</p>
-                    <p className="text-xl font-semibold">Beginnings</p>
+                {/* Next Button Section */}
+                <div className="flex w-[15%] h-[493px] md:h-full border-b-2 border-s-2 border-t-2 border-fade-left items-center justify-center relative">
+                  <div className=" items-center ms-10">
+                    
+                  
+                    <button
+                      onClick={() => swiperRef.current?.slideNext()}
+                      className="w-10 md:w-14 h-10 md:h-14 text-xl md:text-3xl border border-white text-white rounded-full flex items-center justify-center hover:bg-white hover:text-black transition cursor-pointer"
+                    >
+                      →
+                    </button>
                   </div>
                 </div>
               </div>

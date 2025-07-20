@@ -19,11 +19,11 @@ import { FaCaretDown, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaGlobe } from 're
 
 const RoomDetailsPage = () => {
   return (
-    <div className="w-full">
+    <div className="w-full border-e">
       {/* 🟦 Hero Section */}
-      <div className="w-full bg-blue-100 py-12 text-center">
-        <h1 className="text-4xl font-bold text-gray-800">Single Room</h1>
-        <p className="mt-2 text-gray-600">Home &gt; Rooms &gt; Single Room</p>
+      <div className="w-full bg-yellow-50 py-12 text-center">
+        <h1 className="text-4xl font-semibold text-gray-800">Premium Room</h1>
+        <p className="mt-4 text-gray-500 text-sm">Home &gt; Rooms &gt; Premium Room</p>
       </div>
 
       {/* 🟨 Main Section */}
@@ -54,7 +54,7 @@ const RoomDetailsPage = () => {
 
         </div>
 
-<div className="space-y-4 w-full p-2 bg-gray-100 h-fit sticky top-18">
+<div className="space-y-4 w-full  p-2 bg-gray-100 h-fit sticky top-18">
   <h2 className="text-xl font-semibold mb-2">Contact Info</h2>
 
   {/* Location */}

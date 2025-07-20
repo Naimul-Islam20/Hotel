@@ -1,6 +1,6 @@
 const LuxuryExperience = () => {
   return (
-    <div className="w-full bg-sky-50 min-h-[92vh]  flex items-center">
+    <div className="w-full bg-white min-h-[92vh]  flex items-center">
       <div className="max-w-7xl mx-auto px-4 w-full">
         <div className="grid grid-cols-5 gap-6 items-center">
           {/* Left Content: 3 columns */}

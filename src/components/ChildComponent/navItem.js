@@ -45,7 +45,7 @@ const navItems = [
 
   },
     {
-    name: "About",href: "/rout/about"
+    name: "About us",href: "/rout/about"
     
 
   },
@@ -59,11 +59,7 @@ const navItems = [
     
 
   },
-    {
-    name: "Attrection",href: "/rout/attrect"
-    
-
-  },
+ 
  {
     name: "FAQ",href: "/rout/faq"
     
@@ -74,11 +70,7 @@ const navItems = [
     
 
   },
-{
-    name: "SINGLE",href: "/rout/rooms/single"
-    
 
-  },
 ];
 
 export default navItems;

@@ -8,7 +8,7 @@ import AdditionalServices from './additional';
 import ContactActions from './contactAction';
 
 import Calendar from './calendar'
-// ⬇️ এই imports গুলো উপরে রাখতে হবে
+
 import { FaBath, FaCoffee, FaCar, FaWind, FaMugHot, FaWifi, FaShuttleVan, FaSpa, FaHotTub } from 'react-icons/fa';
 import { MdMicrowave } from 'react-icons/md';
 
@@ -22,8 +22,8 @@ const RoomDetailsPage = () => {
     <div className="w-full">
       {/* 🟦 Hero Section */}
       <div className="w-full bg-blue-100 py-12 text-center">
-        <h1 className="text-4xl font-bold text-gray-800">Single Room</h1>
-        <p className="mt-2 text-gray-600">Home &gt; Rooms &gt; Single Room</p>
+        <h1 className="text-4xl font-bold text-gray-800">Family Room</h1>
+        <p className="mt-2 text-sm text-gray-600">Home &gt; Rooms &gt; Family Room</p>
       </div>
 
       {/* 🟨 Main Section */}

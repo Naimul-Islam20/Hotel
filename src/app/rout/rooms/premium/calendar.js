@@ -4,10 +4,9 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 
 const notAvailableDates = [
-  new Date(2025, 6, 3),
-  new Date(2025, 6, 4),
-  new Date(2025, 7, 7),
-  // অন্য মাসের তারিখ এখানে যোগ করো
+  new Date("2025-06-03"),
+  new Date("2025-06-04"),
+  new Date("2025-07-24"),
 ];
 
 const RoomAvailability = () => {

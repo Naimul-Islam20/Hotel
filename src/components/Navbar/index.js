@@ -38,7 +38,7 @@ const Navbar = () => {
      <Topbar/>
 
       {/* 🔸 Sticky Navbar */}
-      <div className="sticky top-0 z-50 bg-white shadow-md">
+      <div className="sticky top-0 uppercase font-semibold z-50 bg-white shadow-md">
         <nav className="w-full text-black">
           <div
             className="max-w-7xl mx-auto px-2 py-4 flex items-center justify-between"

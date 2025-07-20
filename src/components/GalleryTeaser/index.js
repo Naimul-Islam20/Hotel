@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,56 +16,68 @@ const rooms = [
     img: "/img/h21.jpg",
     price: "$120/night",
     desc: "Perfect for couples or business travelers.",
+    path: "/rout/rooms/deluxe",
   },
   {
     title: "Executive Suite",
     img: "/img/h21.jpg",
     price: "$180/night",
     desc: "Luxurious suite with space & comfort for VIPs.",
+    path: "/rooms/",
   },
   {
     title: "Family Room",
     img: "/img/h21.jpg",
     price: "$150/night",
     desc: "Spacious room perfect for families.",
+    path: "/rout/rooms/family",
   },
   {
     title: "Twin Room",
     img: "/rooms/twin.jpg",
     price: "$110/night",
     desc: "Great for friends or solo travelers sharing.",
+    path: "/rout/rooms/twin",
   },
   {
     title: "Single Room",
     img: "/img/h21.jpg",
     price: "$90/night",
     desc: "Affordable option for solo travelers.",
+    path: "/rout/rooms/single",
   },
   {
     title: "Premium Room",
     img: "/img/h21.jpg",
     price: "$200/night",
     desc: "Top-tier comfort & exclusive amenities.",
+    path: "/rout/rooms/premium",
   },
 ];
+
 
 export default function RoomSlider() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   return (
-    <section className="py-20 px-4 max-w-7xl mx-auto relative">
+    <div className="w-full bg-sky-50 md:px-0  px-4 ">
+    <section className="pt-18  pb-14  max-w-7xl mx-auto relative">
     <h2 className="text-5xl mb-3">
   Our Best Rooms
 </h2>
 
-<div className="flex justify-between mb-10 gap-4">
+<div className="flex justify-between mb-7 gap-4">
   <h2 className="font-bold text-gray-500 text-left flex-1">
     Our best rooms available for your vacation
   </h2>
-  <h2 className="font-bold  text-right flex-1">
-    View all rooms
-  </h2>
+
+<Link
+  href="/rout/rooms/roomsPage"
+  className="text-gray-700 font-semibold text-right flex-1 text-sm sm:text-base md:text-lg hover:underline  transition "
+>
+  View all rooms →
+</Link>
 </div>
 
 
@@ -125,40 +138,49 @@ export default function RoomSlider() {
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
-        className="pb-12"
+        className="pb-5"
       >
         {rooms.map((room, i) => (
         <SwiperSlide key={i}>
-  <div className="bg-gray-100 rounded-xl shadow-md p-6 flex flex-col h-full w-full  max-w-[400px] mx-auto transition">
-    <div className="overflow-hidden rounded-2xl">
-      <Image
-        src={room.img}
-        alt={room.title}
-        width={600}
-        height={400}
-        className="w-full h-[250px] object-cover transition-transform duration-300 hover:scale-105"
-      />
+  <div className="bg-white mb-1 rounded shadow p-0 flex flex-col  w-full max-w-[400px] h-[500px] mx-auto transition overflow-hidden">
+  {/* Image Container */}
+  <div className="relative w-full h-[390px]">
+    <Image
+      src={room.img}
+      alt={room.title}
+      fill
+      className="object-cover hover:scale-105 transition-transform duration-300"
+    />
+  </div>
+
+  {/* Content */}
+  <div className="px-6 pt-4 mt-0 flex flex-col flex-grow">
+    <div className="flex justify-between items-center">
+      <h3 className="text-xl font-semibold">{room.title}</h3>
+      <span className="text-gray-500 bg-gray-200 h-8 w-25 pt-1 ps-3 rounded-lg font-semibold">
+        {room.price}
+      </span>
     </div>
-    <div className="mt-5 flex flex-col flex-grow">
-      <div className="flex justify-between items-center">
-        <h3 className="text-xl font-semibold">{room.title}</h3>
-        <span className="text-sky-500 bg-gray-200 h-10 w-25 pt-2 ps-3 rounded-lg font-semibold">{room.price}</span>
-      </div>
-      <p className="text-gray-600 text-sm mt-2">{room.desc}</p>
-      <div className="mt-auto pt-6 flex justify-between">
-        <button className="px-4 py-2 text-sky-500 underline tracking-widest  transition">
-          Details
-        </button>
-        
-      </div>
+    <p className="text-gray-600 text-sm mt-2">{room.desc}</p>
+    <div className="mt-auto pt-6 flex justify-between">
+      <Link
+    href={room.path}
+    className="pb-4 text-sky-500 underline tracking-widest transition"
+  >
+    Details
+  </Link>
+
     </div>
   </div>
+</div>
+
 </SwiperSlide>
 
         ))}
       </Swiper>
 
-      <div className="custom-pagination mt-8 text-center" />
+      <div className="custom-pagination mt-6 text-center" />
     </section>
+    </div>
   );
 }

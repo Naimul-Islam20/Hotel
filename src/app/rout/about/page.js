@@ -1,85 +1,37 @@
 // app/about/page.jsx
 import Image from "next/image";
 import AnimatedStats from "./Animated";
+import History from "./history";
+import Link from "next/link";
+import Brand from "./brand";
+import Tree from './tree';
+import Video from "./video"
 
 export default function AboutPage() {
   return (
-    <main className="max-w-7xl mx-auto px-4 py-20">
-      {/* Hero */}
-      <section className="text-center mb-16">
-        <h1 className="text-4xl font-bold mb-4">About Our Hotel</h1>
-        <p className="text-gray-600 max-w-2xl mx-auto text-[17px]">
-          Where comfort meets luxury — experience the best stay with world-class hospitality and timeless elegance.
-        </p>
-      </section>
+    <main className="w-full py-0">
 
-      {/* Image + Story */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <Image
-          src="/hotel/about.jpg"
-          alt="Our Hotel"
-          width={600}
-          height={400}
-          className="rounded-2xl shadow-lg object-cover w-full h-[350px]"
-        />
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
-          <p className="text-gray-700 text-[16px] mb-4 leading-relaxed">
-            Established in 2012, our hotel has been a beacon of hospitality and warmth. We provide world-class service, luxurious rooms, and unforgettable experiences to travelers from all over the world.
-          </p>
-          <p className="text-gray-700 text-[16px] leading-relaxed">
-            Whether you're here for business or leisure, our dedicated team ensures that every moment you spend with us is exceptional.
-          </p>
-        </div>
-      </div>
-
-      {/* Stats */}
-      <section className="mt-20 grid grid-cols-1 sm:grid-cols-3 text-center gap-8">
-        {[
-          { label: "Years of Excellence", value: "10+" },
-          { label: "Happy Guests", value: "50K+" },
-          { label: "Ratings", value: "★ 5.0/5" },
-        ].map((stat, idx) => (
-          <div key={idx} className="bg-gray-100 p-8 rounded-xl shadow-md">
-            <h3 className="text-3xl font-bold text-blue-600">{stat.value}</h3>
-            <p className="text-gray-600 mt-2">{stat.label}</p>
-          </div>
-        ))}
-      </section>
-
-      {/* Mission / Vision */}
-      <section className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="bg-blue-50 p-6 rounded-xl shadow">
-          <h3 className="text-xl font-semibold mb-2">🏆 Our Mission</h3>
-          <p className="text-gray-700 text-[15px]">
-            To create memorable stays by offering exceptional comfort, service, and local experiences to each of our guests.
-          </p>
-        </div>
-
-        <div className="bg-blue-50 p-6 rounded-xl shadow">
-          <h3 className="text-xl font-semibold mb-2">🌍 Our Vision</h3>
-          <p className="text-gray-700 text-[15px]">
-            To become the most trusted and loved hospitality destination for travelers across the globe.
-          </p>
+      {/* ✅ Hero Section */}
+      <section
+        className="w-full h-[230px] md:h-[230px] bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-4 relative"
+        style={{ backgroundImage: "url('/exc/about2.jpg')" }} // 🔁 তোমার background image path
+      >
+        <div className="absolute inset-0 bg-black/40" /> {/* Overlay */}
+        <div className="relative z-10">
+          <h1 className="text-3xl md:text-5xl font-bold uppercase">About Us</h1>
+           <Link href="/" className="hover:underline text-white">Home</Link> &gt; About Us
         </div>
       </section>
+<Brand/>
+<Tree/>
+      {/* 🔽 History Section */}
+      <History />
+      <Video/>
 
-      {/* Video Section */}
-      <section className="mt-20">
-        <h2 className="text-2xl font-bold text-center mb-6">Explore Our Hotel</h2>
-        <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-2xl shadow-xl">
-          <iframe
-            className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/x7xk_wp_wl8" // 🔁 Replace with your real video
-            title="Hotel Promo Video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="mt-20">
+      
+{/* 
+      🔽 Team Section
+      <section className="mt-20 px-4">
         <h2 className="text-2xl font-bold mb-6 text-center">Meet Our Team</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
@@ -115,21 +67,7 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
-      </section>
-            <AnimatedStats/>
-      {/* Contact CTA */}
-      <section className="mt-24 bg-blue-600 text-white rounded-2xl py-10 px-6 text-center shadow-lg">
-        <h2 className="text-2xl font-bold mb-2">Want to Reach Us?</h2>
-        <p className="mb-6 text-sm md:text-base">
-          Our support team is available 24/7 to answer your queries and help plan your perfect stay.
-        </p>
-        <a
-          href="/contact"
-          className="inline-block bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition"
-        >
-          Contact Us
-        </a>
-      </section>
+      </section> */}
     </main>
   );
 }

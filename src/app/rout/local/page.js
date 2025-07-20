@@ -16,9 +16,9 @@ export default function LocalAttractions() {
       
       {/* ✅ Hero Section */}
       <div
-        className="relative h-[300px] flex flex-col items-center justify-center text-white"
+        className="relative h-[260px]   flex flex-col items-center justify-center text-white"
         style={{
-          backgroundImage: "url(/img/contact4.jpg)", // তুমি চাইলে এখানে ভিন্ন ছবি দিতে পারো
+          backgroundImage: "url(/img/hero1.jpg)", // তুমি চাইলে এখানে ভিন্ন ছবি দিতে পারো
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

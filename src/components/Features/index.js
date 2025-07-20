@@ -41,8 +41,8 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 text-center">
+    <section className="py-8 md:py-16 bg-gray-50">
+      <div className="max-w-7xl  mx-auto px-4 md:px-2  text-center">
         <p className="text-sky-500 mb-2">
           Our Services
         </p>

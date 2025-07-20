@@ -9,11 +9,18 @@
   content: none !important;
 }
 
-body {
-  
-  font-family: Arial, Helvetica, sans-serif;
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+:root {
+  --font-gilda: 'Gilda Display', serif;
 }
 
+/* Default font override globally */
+body {
+  font-family: var(--font-gilda);
+}
 
 .custom-calendar {
   width: 100% !important;
@@ -120,4 +127,21 @@ body {
   opacity: 0.4 !important;
   pointer-events: none !important;
   cursor: not-allowed !important;
+}
+/* styles/globals.css অথবা component এর মধ‍্যে */
+.border-fade-left {
+ 
+  border-image: linear-gradient(to right, white 60%, transparent 100%);
+  border-image-slice: 1;
+}
+
+.border-fade-right {
+  
+  border-image: linear-gradient(to left, white 10%, transparent 70%);
+  border-image-slice: 1;
+}
+/* global.css বা tailwind এর custom CSS section-এ এটুকু দাও */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 28px !important; /* এটিই arrow এর actual size */
 }
