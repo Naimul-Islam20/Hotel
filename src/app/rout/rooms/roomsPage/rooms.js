@@ -8,6 +8,7 @@ export const rooms = [
     //   "/img/image1.jpg",
       "/img/image1.jpg",
     ],
+    path: "/rout/rooms/deluxe",
     price: "$120/night",
     features: [
       { icon: <FaBed />, text: "1 King Bed" },
@@ -16,21 +17,7 @@ export const rooms = [
     ],
     desc: "Perfect for couples or business travelers.",
   },
-  {
-    title: "Executive Suite",
-    img: [
-      "/img/h21.jpg",
-      "/img/h21.jpg",
-      "/img/image1.jpg",
-    ],
-    price: "$180/night",
-    features: [
-      { icon: <FaBed />, text: "1 King Bed" },
-      { icon: <FaCouch />, text: "Lounge Area" },
-      { icon: <FaCity />, text: "City View" },
-    ],
-    desc: "Luxurious suite with space & comfort for VIPs.",
-  },
+  
   {
     title: "Family Room",
     img: [
@@ -38,6 +25,7 @@ export const rooms = [
       "/img/image1.jpg",
       "/img/image1.jpg",
     ],
+    path: "/rout/rooms/family",
     price: "$150/night",
     features: [
       { icon: <FaBed />, text: "2 Queen Beds" },
@@ -46,21 +34,7 @@ export const rooms = [
     ],
     desc: "Spacious room perfect for families.",
   },
-  {
-    title: "Twin Room",
-    img: [
-      "/img/h21.jpg",
-      "/img/h21.jpg",
-      "/img/h21.jpg",
-    ],
-    price: "$110/night",
-    features: [
-      { icon: <FaBed />, text: "2 Single Beds" },
-      { icon: <FaShower />, text: "Ensuite" },
-      { icon: <FaVolumeMute />, text: "Quiet Zone" },
-    ],
-    desc: "Great for friends or solo travelers sharing.",
-  },
+  
   {
     title: "Single Room",
     img: [
@@ -68,6 +42,7 @@ export const rooms = [
       "/rooms/single2.jpg",
       "/rooms/single3.jpg",
     ],
+    path: "/rout/rooms/single",
     price: "$90/night",
     features: [
       { icon: <FaBed />, text: "1 Bed" },
@@ -83,6 +58,7 @@ export const rooms = [
       "/rooms/premium2.jpg",
       "/rooms/premium3.jpg",
     ],
+    path: "/rout/rooms/premium",
     price: "$200/night",
     features: [
       { icon: <FaSpa />, text: "Spa Access" },

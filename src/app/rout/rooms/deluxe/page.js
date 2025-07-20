@@ -11,6 +11,7 @@ import Calendar from './calendar'
 // ⬇️ এই imports গুলো উপরে রাখতে হবে
 import { FaBath, FaCoffee, FaCar, FaWind, FaMugHot, FaWifi, FaShuttleVan, FaSpa, FaHotTub } from 'react-icons/fa';
 import { MdMicrowave } from 'react-icons/md';
+import Link from "next/link";
 
 import { FaQuestionCircle } from 'react-icons/fa'; // Optional icon
 import { FaCaretDown, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaGlobe } from 'react-icons/fa';
@@ -23,7 +24,7 @@ const DeluxeRoomDetails = () => {
       {/* 🟦 Hero Section */}
       <div className="w-full bg-blue-100 py-12 text-center">
         <h1 className="text-4xl font-bold text-gray-800">Deluxe Room</h1>
-        <p className="mt-2 text-sm text-gray-600">Home &gt; Rooms &gt; Deluxe Room</p>
+          <Link href="/" className="hover:underline text-white">Home</Link> &gt; Family Room
       </div>
 
       {/* 🟨 Main Section */}

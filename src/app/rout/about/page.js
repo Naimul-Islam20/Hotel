@@ -20,6 +20,7 @@ export default function AboutPage() {
         <div className="relative z-10">
           <h1 className="text-3xl md:text-5xl font-bold uppercase">About Us</h1>
            <Link href="/" className="hover:underline text-white">Home</Link> &gt; About Us
+           
         </div>
       </section>
 <Brand/>

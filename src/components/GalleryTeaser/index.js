@@ -18,26 +18,13 @@ const rooms = [
     desc: "Perfect for couples or business travelers.",
     path: "/rout/rooms/deluxe",
   },
-  {
-    title: "Executive Suite",
-    img: "/img/h21.jpg",
-    price: "$180/night",
-    desc: "Luxurious suite with space & comfort for VIPs.",
-    path: "/rooms/",
-  },
+ 
   {
     title: "Family Room",
     img: "/img/h21.jpg",
     price: "$150/night",
     desc: "Spacious room perfect for families.",
     path: "/rout/rooms/family",
-  },
-  {
-    title: "Twin Room",
-    img: "/rooms/twin.jpg",
-    price: "$110/night",
-    desc: "Great for friends or solo travelers sharing.",
-    path: "/rout/rooms/twin",
   },
   {
     title: "Single Room",

@@ -41,11 +41,11 @@ const Navbar = () => {
       <div className="sticky top-0 uppercase font-semibold z-50 bg-white shadow-md">
         <nav className="w-full text-black">
           <div
-            className="max-w-7xl mx-auto px-2 py-4 flex items-center justify-between"
-            style={{ height: "60px" }}
+            className="w-full mx-auto px-6 py-4 flex items-center justify-between"
+            style={{ height: "77px" }}
           >
             <Link href="/">
-              <div className="flex items-center space-x-2  cursor-pointer">
+              <div className=" space-x-2  cursor-pointer">
                 <Image src="/img/logo2.png" alt="Logo" width={70} height={60} />
               </div>
             </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
                           height: 0,
                           transition: { duration: 0, ease: "easeIn" },
                         }}
-                        className={`mt-[18px] z-[9999] overflow-hidden ${
+                        className={`mt-[26px] z-[9999] overflow-hidden ${
                           item.dropdown.length > 7
                             ? "absolute left-1/2 top-full -translate-x-1/2 bg-white shadow-xl border border-gray-300 grid grid-cols-2 gap-x-6 px-8 py-5 max-w-[700px] min-w-[500px]"
                             : "absolute top-full left-0 bg-white shadow-xl border border-gray-300 flex flex-col w-auto px-4 py-2"
@@ -127,10 +127,10 @@ const Navbar = () => {
               ))}
             </ul>
 
-            <button className="hover:bg-blue-400 bg-black text-white rounded-full px-2 py-2 hidden md:flex items-center gap-2   hover:text-white">
-              <FaShoppingCart className="text-lg" />
-              View Rate
-            </button>
+            <Link href="/rout/rooms/roomsPage" className="hover:bg-sky-600 bg-sky-500 text-white rounded-full  px-3 py-2 hidden md:flex items-center gap-2   ">
+              
+              VIEW RATE
+            </Link>
 
             <div
               className="md:hidden text-xl cursor-pointer select-none"

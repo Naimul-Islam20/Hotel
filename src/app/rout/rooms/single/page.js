@@ -6,6 +6,7 @@ import RoomInfo from './roomInfo';
 import RoomServices from './service';
 import AdditionalServices from './additional';
 import ContactActions from './contactAction';
+ import Link from "next/link";
 
 import Calendar from './calendar'
 // ⬇️ এই imports গুলো উপরে রাখতে হবে
@@ -23,7 +24,7 @@ const RoomDetailsPage = () => {
       {/* 🟦 Hero Section */}
       <div className="w-full bg-blue-100 py-12 text-center">
         <h1 className="text-4xl font-bold text-gray-800">Single Room</h1>
-        <p className="mt-2 text-gray-600">Home &gt; Rooms &gt; Single Room</p>
+        <Link href="/" className="hover:underline text-white">Home</Link> &gt; Single Room
       </div>
 
       {/* 🟨 Main Section */}

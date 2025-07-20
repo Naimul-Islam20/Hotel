@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const images = ["/img/hero1.jpg", "/img/hero2.jpg", "/img/hero1.jpg"];
 const  captions = [
@@ -51,7 +52,7 @@ export default function HeroSlider() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: index * 0.05 }}
-        className="inline-block me-[25px] text-[125%]"
+        className="inline-block me-[8px] text-[125%]"
       >
         {char === " " ? "\u00A0" : char}
       </motion.span>
@@ -80,9 +81,9 @@ export default function HeroSlider() {
             className="text-left"
           >
             {/* Subtitle */}
-            <p className="text-white mb-2 opacity-90 text-sm sm:text-sm md:text-lg lg:text-xl">
+            {/* <p className="text-white mb-2 opacity-90 text-sm sm:text-sm md:text-lg lg:text-xl">
               {splitText(subtitles[current], "")}
-            </p>
+            </p> */}
 
             {/* Main Caption */}
             <h2 className="text-white font-bold mb-6 leading-tight text-2xl sm:text-2xl md:text-2xl lg:text-6xl xl:text-5xl">
@@ -90,14 +91,17 @@ export default function HeroSlider() {
             </h2>
 
             {/* Button */}
-            <button
-              onClick={() => alert(`Clicked on ${captions[current]}!`)}
-              className="mt-4 px-6 py-2 border border-white text-white text-sm sm:text-base md:text-lg lg:text-xl
-              hover:bg-blue-400 hover:text-black hover:-translate-y-1 transition-all duration-500 ease-in-out transform"
-            >
-              SHOP NOW
-            </button>
             
+
+
+            <Link
+              href="/rout/contact"
+              className="mt-4 inline-block px-6 py-2 text-white bg-sky-500 text-sm sm:text-base md:text-lg lg:text-xl
+              hover:bg-sky-600 hover:-translate-y-1 rounded transition-all duration-500 ease-in-out transform"
+            >
+              CONTACT US
+            </Link>
+
           </motion.div>
         </AnimatePresence>
       </div>

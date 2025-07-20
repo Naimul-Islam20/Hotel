@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const slides = [
   {
@@ -88,9 +89,9 @@ export default function ExclusiveSlider() {
                   <div className=" items-center me-10 ">
                       <button
                       onClick={() => swiperRef.current?.slidePrev()}
-                      className="w-10 md:w-14 h-10 md:h-14 text-xl md:text-3xl border border-white text-white rounded-full flex items-center justify-center hover:bg-white hover:text-black transition cursor-pointer"
+                      className="w-10 md:w-14 h-10 md:h-14 text-xl md:text-3xl border bg-sky-500 border-gray-300 text-white rounded-full flex items-center justify-center hover:bg-sky-600 transition cursor-pointer"
                     >
-                      ←
+                      <FaChevronLeft/>
                     </button>
                   
                   
@@ -121,9 +122,9 @@ export default function ExclusiveSlider() {
                   
                     <button
                       onClick={() => swiperRef.current?.slideNext()}
-                      className="w-10 md:w-14 h-10 md:h-14 text-xl md:text-3xl border border-white text-white rounded-full flex items-center justify-center hover:bg-white hover:text-black transition cursor-pointer"
+                      className="w-10 md:w-14 h-10 md:h-14 text-xl md:text-3xl border bg-sky-500 border-gray-300 text-white rounded-full flex items-center justify-center hover:bg-sky-600 transition cursor-pointer"
                     >
-                      →
+                      <FaChevronRight/>
                     </button>
                   </div>
                 </div>

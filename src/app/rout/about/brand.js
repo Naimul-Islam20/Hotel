@@ -4,8 +4,8 @@ const LuxuryExperience = () => {
       <div className="max-w-7xl mx-auto px-4 w-full">
         <div className="grid grid-cols-5 gap-6 items-center">
           {/* Left Content: 3 columns */}
-          <div className="col-span-5 md:col-span-3">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl text-gray-800 mb-3">
+          <div className="col-span-5 px-4 pt-3 md:col-span-3">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl text-gray-800 mb-3">
               Enjoy a Luxury Experience
             </h2>
             <p className="text-base sm:text-lg md:text-lg text-gray-600 mb-7">

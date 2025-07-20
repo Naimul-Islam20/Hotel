@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import Link from "next/link";
 
 import { FaCaretLeft, FaCaretRight, FaWifi, FaTv, FaFan, FaUtensils, FaBath, FaSnowflake, FaDoorOpen } from "react-icons/fa";
 
@@ -92,15 +93,18 @@ export default function RoomCard({ room }) {
           Our rooms are designed to provide maximum comfort with all essential amenities to make your stay relaxing and memorable. Whether you're here for business or leisure, we got you covered.
         </p>
         <div className="flex justify-between items-center pt-2">
-          <button className="text-blue-600 hover:underline text-sm">
-            View Details
-          </button>
-          <a
-            href="/contact"
+         <Link
+              href={room.path}
+              className="pb-4 text-sky-500 underline tracking-widest transition"
+            >
+              Details
+            </Link>
+          <Link
+            href="/rout/contact"
             className="text-sm border px-4 py-1.5 rounded hover:bg-gray-100 transition"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </div>
