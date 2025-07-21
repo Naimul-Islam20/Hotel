@@ -14,18 +14,18 @@ export default function RoomCard({ room }) {
   const nextRef = useRef(null);
 
   // Extra static features (can be merged with room.features if dynamic)
-  const extraFeatures = [
-    { icon: <FaWifi />, text: "Free Wi-Fi" },
-    { icon: <FaTv />, text: "Smart TV" },
-    { icon: <FaSnowflake />, text: "AC Room" },
-    { icon: <FaBath />, text: "Attached Bath" },
-    { icon: <FaUtensils />, text: "Dining Facility" },
-    { icon: <FaFan />, text: "Ceiling Fan" },
-    { icon: <FaDoorOpen />, text: "Private Entrance" },
-  ];
+  // const extraFeatures = [
+  //   { icon: <FaWifi />, text: "Free Wi-Fi" },
+  //   { icon: <FaTv />, text: "Smart TV" },
+  //   { icon: <FaSnowflake />, text: "AC Room" },
+  //   { icon: <FaBath />, text: "Attached Bath" },
+  //   { icon: <FaUtensils />, text: "Dining Facility" },
+  //   { icon: <FaFan />, text: "Ceiling Fan" },
+  //   { icon: <FaDoorOpen />, text: "Private Entrance" },
+  // ];
 
   return (
-    <div className="bg-white rounded-xl mx-5 shadow-md transition overflow-hidden border border-gray-200">
+    <div className="bg-white rounded mx-5 shadow transition overflow-hidden border border-gray-200">
       {/* Swiper Slider */}
       <div className="relative h-80 sm:h-[22rem] md:h-[26rem]">
         <Swiper
@@ -74,7 +74,7 @@ export default function RoomCard({ room }) {
       </div>
 
       {/* Features */}
-      <div className="px-4 py-6 flex flex-wrap gap-4">
+      {/* <div className="px-4 py-6 flex flex-wrap gap-4">
         {[...room.features, ...extraFeatures].map((feature, i) => (
           <div
             key={i}
@@ -84,7 +84,7 @@ export default function RoomCard({ room }) {
             <span>{feature.text}</span>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Description + Actions */}
       <div className="px-4 pb-5 space-y-5">
@@ -97,11 +97,11 @@ export default function RoomCard({ room }) {
               href={room.path}
               className="pb-4 text-sky-500 underline tracking-widest transition"
             >
-              Details
+              Details Room
             </Link>
           <Link
             href="/rout/contact"
-            className="text-sm border px-4 py-1.5 rounded hover:bg-gray-100 transition"
+            className="text-sm border px-4 py-1.5 bg-sky-500 rounded hover:bg-sky-600 transition"
           >
             Contact Us
           </Link>
