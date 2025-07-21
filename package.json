@@ -29,7 +29,7 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.19",
     "swiper": "^11.2.10",
-    "yet-another-react-lightbox": "^3.24.0"
+    "yet-another-react-lightbox": "^3.25.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

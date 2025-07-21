@@ -47,7 +47,8 @@ export default function RoomSlider() {
   const [swiperReady, setSwiperReady] = useState(false);
 
   useEffect(() => {
-    setSwiperReady(true);
+    const timer = setTimeout(() => setSwiperReady(true), 100); // Delay to prevent flicker
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -87,8 +88,8 @@ export default function RoomSlider() {
           </div>
         </div>
 
-        {/* Swiper */}
-        {swiperReady && (
+        {/* Swiper OR Skeleton */}
+        {swiperReady ? (
           <Swiper
             modules={[Navigation, Autoplay, Pagination]}
             navigation={{
@@ -161,6 +162,23 @@ export default function RoomSlider() {
               </SwiperSlide>
             ))}
           </Swiper>
+        ) : (
+          // 🔵 Skeleton loader
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+            {[...Array(3)].map((_, i) => (
+              <div
+                key={i}
+                className="bg-white animate-pulse rounded shadow p-0 w-full max-w-[400px] h-[500px] mx-auto flex flex-col overflow-hidden"
+              >
+                <div className="bg-gray-300 h-[390px] w-full" />
+                <div className="px-6 pt-4 flex-1 flex flex-col gap-2">
+                  <div className="h-5 bg-gray-300 rounded w-3/4" />
+                  <div className="h-4 bg-gray-200 rounded w-1/2" />
+                  <div className="mt-auto h-4 bg-gray-300 rounded w-1/4 mb-4" />
+                </div>
+              </div>
+            ))}
+          </div>
         )}
 
         <div className="custom-pagination mt-6 text-center" />

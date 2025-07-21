@@ -40,7 +40,8 @@ const LuxuryExperience = () => {
             ></div>
 
             {/* Overlay with spaced content */}
-            <div className="relative bg-white bg-opacity-50 m-2 text-black h-[470px] flex flex-col items-center px-4 sm:px-6 py-8 sm:py-10 text-center space-y-4 sm:space-y-6">
+           <div className="relative bg-white bg-opacity-50 m-2 text-black h-auto flex flex-col items-center px-4 sm:px-6 py-6 sm:py-8 text-center space-y-3 sm:space-y-5">
+
               {/* Title */}
               <h3 className="text-xl sm:text-2xl pt-3 font-semibold">Sky Hotel</h3>
 

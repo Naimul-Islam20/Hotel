@@ -150,3 +150,14 @@ body {
 .swiper-button-next::after {
   font-size: 28px !important; /* এটিই arrow এর actual size */
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .slow-spin {
+    animation-duration: 5s; /* default 1s, তুমি চাইলে 3s বা 5s করতেও পারো */
+  }
+}

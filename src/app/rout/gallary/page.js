@@ -2,6 +2,8 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import Link from "next/link";
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 
 export default function GalleryPage() {
   const imgSrc = "/img/image1.jpg";
@@ -102,88 +104,207 @@ export default function GalleryPage() {
       </div>
 
       {/* ====== Gallery Sections Container ====== */}
-      <div className="max-w-7xl mx-auto bg-black">
-        {/* ========== View Section ========== */}
-        <section
-          ref={viewRef}
-          className="bg-gray-100 mx-auto border-b border-gray-400 scroll-mt-17 px-10 py-8"
-        >
-          <h2 className="text-2xl mb-3">HOTEL VIEW</h2>
-          <div className="grid grid-cols-3 grid-rows-3 gap-4">
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-            <img
-              src={imgSrc}
-              className="w-full h-[417px] object-cover col-span-2 row-span-2"
-            />
-            <img
-              src={imgSrc}
-              className="w-full h-50 object-cover row-start-2 col-start-3"
-            />
-            <img
-              src={imgSrc}
-              className="w-full h-50 object-cover row-start-3 col-start-3"
-            />
-          </div>
-        </section>
+      <PhotoProvider>
+        <div className="max-w-7xl mx-auto bg-black">
+          {/* ========== View Section ========== */}
+          <section
+            ref={viewRef}
+            className="bg-gray-100 mx-auto border-b border-gray-400 scroll-mt-17 px-4 sm:px-10 py-8"
+          >
+            <h2 className="text-2xl mb-3">HOTEL VIEW</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+              {/* 3 small images */}
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Hotel view"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Hotel view"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Hotel view"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
 
-        {/* ========== Guest Section ========== */}
-        <section
-          ref={guestRef}
-          className="bg-gray-100 mx-auto border-b border-gray-300 scroll-mt-[15px] px-10 py-12"
-        >
-          <h2 className="text-2xl mb-6">GUEST ROOMS</h2>
-          <div className="grid grid-cols-3 grid-rows-4 gap-4">
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-            <img
-              src={imgSrc}
-              className="w-full h-[417px] object-cover rounded-md col-span-2 row-span-2"
-            />
-            <img
-              src={imgSrc}
-              className="w-full h-50 object-cover rounded-md row-start-2 col-start-3"
-            />
-            <img
-              src={imgSrc}
-              className="w-full h-50 object-cover rounded-md row-start-3 col-start-3"
-            />
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-          </div>
-        </section>
+              {/* 2x2 layout */}
+              <div className="col-span-2 sm:col-span-2 sm:row-span-2">
+                <PhotoView src={imgSrc}>
+                  <img
+                    src={imgSrc}
+                    alt="Hotel view"
+                    className="w-full h-[180px] sm:h-[250px] lg:h-[417px] object-cover rounded-md"
+                  />
+                </PhotoView>
+              </div>
 
-        {/* ========== Others Section ========== */}
-        <section
-          ref={othersRef}
-          className="bg-gray-100 mx-auto border-b border-gray-300 scroll-mt-[15px] px-10 py-12"
-        >
-          <h2 className="text-2xl mb-6">OTHERS GALLERY</h2>
-          <div className="grid grid-cols-3 grid-rows-4 gap-4">
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-            <img
-              src={imgSrc}
-              className="w-full h-[417px] object-cover col-span-2 row-span-2"
-            />
-            <img
-              src={imgSrc}
-              className="w-full h-50 object-cover row-start-2 col-start-3"
-            />
-            <img
-              src={imgSrc}
-              className="w-full h-50 object-cover row-start-3 col-start-3"
-            />
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-            <img src={imgSrc} className="w-full h-50 object-cover" />
-          </div>
-        </section>
-      </div>
+              {/* 2 small images */}
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Hotel view"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Hotel view"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+            </div>
+          </section>
+
+          {/* ========== Guest Section ========== */}
+          <section
+            ref={guestRef}
+            className="bg-gray-100 mx-auto border-b border-gray-400 scroll-mt-17 px-4 sm:px-10 py-8"
+          >
+            <h2 className="text-2xl mb-6">GUEST ROOMS</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+              {/* 3 small images */}
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Guest room"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Guest room"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Guest room"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+
+              {/* 2x2 layout */}
+              <div className="col-span-2 sm:col-span-2 sm:row-span-2">
+                <PhotoView src={imgSrc}>
+                  <img
+                    src={imgSrc}
+                    alt="Guest room"
+                    className="w-full h-[180px] sm:h-[250px] lg:h-[417px] object-cover rounded-md"
+                  />
+                </PhotoView>
+              </div>
+
+              {/* 2 small images */}
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Guest room"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Guest room"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+            </div>
+          </section>
+
+          {/* ========== Others Section ========== */}
+          <section
+            ref={othersRef}
+            className="bg-gray-100 mx-auto border-b border-gray-400 scroll-mt-17 px-4 sm:px-10 py-8"
+          >
+            <h2 className="text-2xl mb-6">OTHERS GALLERY</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+              {/* 3 small images */}
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Other gallery"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Other gallery"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Other gallery"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+
+              {/* 2x2 layout */}
+              <div className="col-span-2 sm:col-span-2 sm:row-span-2">
+                <PhotoView src={imgSrc}>
+                  <img
+                    src={imgSrc}
+                    alt="Other gallery"
+                    className="w-full h-[180px] sm:h-[250px] lg:h-[417px] object-cover rounded-md"
+                  />
+                </PhotoView>
+              </div>
+
+              {/* 5 small images */}
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Other gallery"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Other gallery"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Other gallery"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Other gallery"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+              <PhotoView src={imgSrc}>
+                <img
+                  src={imgSrc}
+                  alt="Other gallery"
+                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
+                />
+              </PhotoView>
+            </div>
+          </section>
+        </div>
+      </PhotoProvider>
     </div>
   );
 }

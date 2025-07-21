@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 export default function PaathyaSection() {
@@ -22,14 +23,16 @@ export default function PaathyaSection() {
 
       {/* Main Section with centered PNG image */}
       <div className="flex justify-center px-4">
-        <Image
-          src="/exc/about.png"
-          alt="Paathya Illustration"
-          width={600}
-          height={400}
-          className="object-contain w-full max-w-xl"
-          priority
-        />
+    <Image
+  src="/exc/about.png"
+  alt="Paathya Illustration"
+  width={600}
+  height={400}
+  className="object-contain w-full max-w-xl"
+  loading="eager" // ✅ এটুকু দিলেই সমস্যা মিটে যাবে
+  priority
+/>
+
       </div>
     </div>
   );
