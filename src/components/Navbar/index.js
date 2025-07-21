@@ -41,8 +41,8 @@ const Navbar = () => {
       <div className="sticky top-0 uppercase font-semibold z-50 bg-white shadow-md">
         <nav className="w-full text-black">
           <div
-            className="w-full mx-auto px-6 py-4 flex items-center justify-between"
-            style={{ height: "77px" }}
+            className="w-full mx-auto px-6 h-13 md:h-20 py-4 flex items-center justify-between"
+            
           >
             <Link href="/">
               <div className=" space-x-2  cursor-pointer">

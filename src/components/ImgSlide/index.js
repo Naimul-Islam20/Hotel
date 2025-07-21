@@ -85,8 +85,8 @@ export default function ExclusiveSlider() {
             <SwiperSlide key={index}>
               <div className="flex flex-row items-center justify-between w-full h-auto md:h-[630px] gap-2">
                 {/* Prev Button Section */}
-                <div className="flex w-[15%] h-[493px]  md:h-full border-b-2 border-t-2 border-e-2 border-fade-right items-center justify-center relative">
-                  <div className=" items-center me-10 ">
+                <div className="flex w-[15%] h-[393px]   md:h-full border-b-2 border-t-2 border-e-2 border-fade-right items-center justify-center relative">
+                  <div className=" items-center  ">
                       <button
                       onClick={() => swiperRef.current?.slidePrev()}
                       className="w-10 md:w-14 h-10 md:h-14 text-xl md:text-3xl border bg-sky-500 border-gray-300 text-white rounded-full flex items-center justify-center hover:bg-sky-600 transition cursor-pointer"
@@ -100,7 +100,7 @@ export default function ExclusiveSlider() {
 
                 {/* Center Content Section */}
                 <div className="w-[70%] md:w-1/2 h-auto md:h-full flex flex-col">
-                  <div className="relative h-[350px] md:h-[70%] w-full">
+                  <div className="relative h-[250px] md:h-[70%] w-full">
                     <Image
                       src={slide.center}
                       alt="Center"
@@ -116,8 +116,8 @@ export default function ExclusiveSlider() {
                 </div>
 
                 {/* Next Button Section */}
-                <div className="flex w-[15%] h-[493px] md:h-full border-b-2 border-s-2 border-t-2 border-fade-left items-center justify-center relative">
-                  <div className=" items-center ms-10">
+                <div className="flex w-[15%] h-[393px] md:h-full border-b-2 border-s-2 border-t-2 border-fade-left items-center justify-center relative">
+                  <div className=" items-center ">
                     
                   
                     <button
