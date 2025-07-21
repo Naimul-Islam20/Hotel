@@ -60,7 +60,7 @@ export default function HeroSlider() {
   };
 
   return (
-    <div className="relative  w-full h-[85vh] hero-section overflow-visible">
+    <div className="relative  w-full h-[60vh] md:h-[85vh]  overflow-visible">
       {/* Image without animation */}
       <img
         src={images[current]}
@@ -109,7 +109,7 @@ export default function HeroSlider() {
       {/* Navigation Buttons */}
       <button
         onClick={handlePrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2  bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full z-30"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2   bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full "
       >
         <FaChevronLeft className="text-white w-6 h-6" />
       </button>
