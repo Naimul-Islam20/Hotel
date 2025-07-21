@@ -68,7 +68,7 @@ const RoomDetailsPage = () => {
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      123, Beach Road, Cox’s Bazar, Bangladesh.
+      Access Road, Agrabad Chittagong, Bangladesh.
     </div>
   </details>
 
@@ -82,7 +82,7 @@ const RoomDetailsPage = () => {
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      contact@hotelblue.com
+      contact@hotelsky.com
     </div>
   </details>
 
@@ -118,9 +118,11 @@ const RoomDetailsPage = () => {
 
   {/* Contact Us Button */}
   <div className="pt-4 text-center">
-    <button className="text-sky-400 underline tracking-widest py-2 font-medium   transition duration-200">
-      Contact Us
-    </button>
+     <Link href="/rout/contact" legacyBehavior>
+      <a className="text-sky-400 underline tracking-widest py-2 font-medium transition duration-200">
+        Contact Us
+      </a>
+    </Link>
   </div>
 </div>
 

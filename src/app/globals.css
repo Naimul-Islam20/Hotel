@@ -129,17 +129,22 @@ body {
   cursor: not-allowed !important;
 }
 /* styles/globals.css অথবা component এর মধ‍্যে */
+
+/* img slide "home page" */
 .border-fade-left {
  
-  border-image: linear-gradient(to right, white 60%, transparent 100%);
+  border-image: linear-gradient(to right, white 0%, transparent 100%);
   border-image-slice: 1;
 }
 
 .border-fade-right {
   
-  border-image: linear-gradient(to left, white 10%, transparent 70%);
+  border-image: linear-gradient(to left, white 0%, transparent 100%);
   border-image-slice: 1;
 }
+
+
+
 /* global.css বা tailwind এর custom CSS section-এ এটুকু দাও */
 .swiper-button-prev::after,
 .swiper-button-next::after {

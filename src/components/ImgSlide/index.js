@@ -40,7 +40,7 @@ export default function ExclusiveSlider() {
   }, [current, prev]);
 
   return (
-    <div className="w-full h-auto text-white py-10 relative overflow-hidden">
+    <div className="w-full h-auto text-white py-3 md:py-10 relative overflow-hidden">
       {/* Background Layers */}
       <div
         className={`absolute top-0 left-0 w-full h-full bg-cover bg-center transition-opacity duration-700`}
@@ -52,7 +52,7 @@ export default function ExclusiveSlider() {
       />
 
       {/* Top Text Section */}
-      <div className="relative z-10 container mx-auto px-4 flex flex-col md:flex-row justify-between items-center mt-10 gap-6">
+      <div className="relative z-10 container mx-auto px-4 flex flex-col md:flex-row justify-between items-center my-1 md:mt-10 gap-6">
         {/* Left text block */}
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center">
           <div className="w-full flex justify-center items-center">
@@ -71,7 +71,7 @@ export default function ExclusiveSlider() {
       </div>
 
       {/* Slider Section */}
-      <div className="container mx-auto  px-4 my-15 relative z-10">
+      <div className="container mx-auto  px-4 my-8 md:my-15 relative z-10">
         <Swiper
           modules={[Navigation]}
           navigation={false}
@@ -83,13 +83,13 @@ export default function ExclusiveSlider() {
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-row items-center justify-between w-full h-auto md:h-[630px] gap-2">
+              <div className="flex flex-row items-center justify-between w-full h-auto md:h-[480px] gap-2">
                 {/* Prev Button Section */}
-                <div className="flex w-[15%] h-[393px]   md:h-full border-b-2 border-t-2 border-e-2 border-fade-right items-center justify-center relative">
+                <div className="flex w-[15%] h-[328px]   md:h-full border-b-2 border-t-2 border-e-2 border-fade-right items-center justify-center relative">
                   <div className=" items-center  ">
                       <button
                       onClick={() => swiperRef.current?.slidePrev()}
-                      className="w-10 md:w-14 h-10 md:h-14 text-xl md:text-3xl border bg-sky-500 border-gray-300 text-white rounded-full flex items-center justify-center hover:bg-sky-600 transition cursor-pointer"
+                      className="w-10 md:w-11 h-10 md:h-11 text-xl md:text-xl border  border-sky-400 text-white rounded-full flex items-center justify-center hover:bg-sky-600 transition cursor-pointer"
                     >
                       <FaChevronLeft/>
                     </button>
@@ -99,8 +99,8 @@ export default function ExclusiveSlider() {
                 </div>
 
                 {/* Center Content Section */}
-                <div className="w-[70%] md:w-1/2 h-auto md:h-full flex flex-col">
-                  <div className="relative h-[250px] md:h-[70%] w-full">
+                <div className="w-[660%] md:w-1/2 h-auto md:h-full flex flex-col">
+                  <div className="relative h-[220px] md:h-[70%] w-full">
                     <Image
                       src={slide.center}
                       alt="Center"
@@ -108,21 +108,21 @@ export default function ExclusiveSlider() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="h-auto md:h-[30%] bg-white text-black flex flex-col items-center justify-center px-2 md:px-4 py-4 text-center">
+                  <div className="h-auto md:h-[34%] bg-white text-black flex flex-col items-center justify-center px-2 md:px-4 py-2 md:py-5 text-center">
                     <h3 className="text-base md:text-2xl mb-2">Lorem</h3>
-                    <p className="text-xs md:text-lg mb-4 text-gray-500">This is a sample description text that explains more about the image or the offer.</p>
-                    <button className="text-sky-400 underline tracking-widest py-2 text-xs md:text-base">Explore More</button>
+                    <p className="text-xs md:text-lg mb-2 md:mb-4 text-gray-500">This is a sample description text that explains more about the image or the offer.</p>
+                    <button className="text-sky-400 underline tracking-widest pb-1 md:py-2 text-xs md:text-base">Explore More</button>
                   </div>
                 </div>
 
                 {/* Next Button Section */}
-                <div className="flex w-[15%] h-[393px] md:h-full border-b-2 border-s-2 border-t-2 border-fade-left items-center justify-center relative">
+                <div className="flex w-[15%] h-[328px] md:h-full border-b-2 border-s-2 border-t-2 border-fade-left items-center justify-center relative">
                   <div className=" items-center ">
                     
                   
                     <button
                       onClick={() => swiperRef.current?.slideNext()}
-                      className="w-10 md:w-14 h-10 md:h-14 text-xl md:text-3xl border bg-sky-500 border-gray-300 text-white rounded-full flex items-center justify-center hover:bg-sky-600 transition cursor-pointer"
+                      className="w-10 md:w-11 h-10 md:h-11 text-xl md:text-xl border border-sky-400  text-white rounded-full flex items-center justify-center hover:bg-sky-600 transition cursor-pointer"
                     >
                       <FaChevronRight/>
                     </button>

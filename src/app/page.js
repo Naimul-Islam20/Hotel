@@ -9,6 +9,7 @@ import RoomSection from "@/components/GalleryTeaser";
 // import ImgDan from "@/components/RoomsPreview";
 import HotelTag from '@/components/ourHotel'
 import Ex from "@/components/ImgSlide"
+import HeroImagePage from "@/components/fImage";
 
 export default function Home() {
   return (
@@ -17,11 +18,12 @@ export default function Home() {
        <Hero/>
        <HotelTag/>
        <RoomSection/>
-       <Features/>
+       
        {/* <ScrollingNames/>
       <HotelMessageSlider/> */}
       <Ex/>
-      
+      <Features/>
+      <HeroImagePage/>
       {/* <ImgDan/> */}
       </div>
     </main>

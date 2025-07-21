@@ -12,7 +12,7 @@ export default function LocalAttractions() {
   const [activeTab, setActiveTab] = useState("local");
 
   return (
-    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
+    <div className="bg-white text-black ">
       
       {/* ✅ Hero Section */}
       <div

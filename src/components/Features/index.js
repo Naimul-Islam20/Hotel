@@ -55,7 +55,7 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-1xl py-14 p-6 shadow transition duration-300 text-center"
+              className="bg-white rounded-1xl  p-8 md:py-14 md:p-6 shadow transition duration-300 text-center"
             >
               <div className="text-4xl mb-4 flex justify-center items-center text-sky-500">
                 {feature.icon}

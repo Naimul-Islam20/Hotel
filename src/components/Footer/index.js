@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaTwitter, FaArrowUp } from "react-icons/fa";
 import Image from "next/image";
 
@@ -20,82 +21,84 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-gray-200 text-gray-800 pt-16">
-      {/* Main Footer Grid */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-        {/* About */}
+    <footer className="relative bg-[#13130f] text-white pt-16">
+      {/* Footer Grid */}
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
+        
+        {/* Left Column: Logo, Desc, Socials */}
         <div>
-          <h2 className="text-2xl font-bold text-blue-700">Hotel Niribili</h2>
-          <p className="mt-4 text-sm">
+          <Image src="/logo.png" alt="Hotel Logo" width={120} height={50} className="mb-4" />
+          <p className="text-sm">
             A peaceful luxury stay. Book with confidence & comfort.
           </p>
-          <div className="flex gap-4 mt-6 text-lg">
-            <FaFacebookF className="text-blue-800 cursor-pointer" />
-            <FaInstagram className="text-pink-600 cursor-pointer" />
-            <FaTwitter className="text-sky-500 cursor-pointer" />
+          <div className="flex gap-3 mt-6">
+            <Link href="#" legacyBehavior>
+              <a className="p-2 bg-white rounded-full shadow hover:bg-blue-100 transition">
+                <FaFacebookF className="text-blue-800" />
+              </a>
+            </Link>
+            <Link href="#" legacyBehavior>
+              <a className="p-2 bg-white rounded-full shadow hover:bg-pink-100 transition">
+                <FaInstagram className="text-pink-600" />
+              </a>
+            </Link>
+            <Link href="#" legacyBehavior>
+              <a className="p-2 bg-white rounded-full shadow hover:bg-sky-100 transition">
+                <FaTwitter className="text-sky-500" />
+              </a>
+            </Link>
           </div>
         </div>
 
-        {/* Quick Links */}
+        {/* Middle Column: Quick Links */}
         <div>
           <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm">
-            <li><a href="/rooms" className="hover:text-blue-700">Room Types</a></li>
-            <li><a href="/about" className="hover:text-blue-700">About Us</a></li>
-            <li><a href="/gallery" className="hover:text-blue-700">Gallery</a></li>
-            <li><a href="/offers" className="hover:text-blue-700">Special Offers</a></li>
-            <li><a href="/contact" className="hover:text-blue-700">Contact</a></li>
+            <li>
+              <Link href="/rout/rooms/roomsPage" legacyBehavior>
+                <a className="hover:text-sky-400">Room Types</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/rout/about" legacyBehavior>
+                <a className="hover:text-sky-400">About Us</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/rout/gallery" legacyBehavior>
+                <a className="hover:text-sky-400">Gallery</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/rout/faq" legacyBehavior>
+                <a className="hover:text-sky-400">Faq</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/rout/contact" legacyBehavior>
+                <a className="hover:text-sky-400">Contact</a>
+              </Link>
+            </li>
           </ul>
         </div>
 
-        {/* Policies */}
+        {/* Right Column: Contact Info */}
         <div>
-          <h4 className="text-lg font-semibold mb-4">Policies</h4>
+          <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
           <ul className="space-y-2 text-sm">
-            <li><a href="/terms" className="hover:text-blue-700">Terms & Conditions</a></li>
-            <li><a href="/privacy" className="hover:text-blue-700">Privacy Policy</a></li>
-            <li><a href="/faq" className="hover:text-blue-700">FAQs</a></li>
-            <li><a href="/cancellation" className="hover:text-blue-700">Cancellation Policy</a></li>
+            <li><span className="font-medium">Phone:</span> +880 1234 567 890</li>
+            <li><span className="font-medium">Email:</span> info@hotelsky.com</li>
+            <li><span className="font-medium">Address:</span> 123 Access Road,Agrabad Chittagong</li>
+            <li><span className="font-medium">Hours:</span> 24/7 Service Available</li>
           </ul>
         </div>
 
-        {/* Newsletter + Payment Icons */}
-        <div>
-          <h4 className="text-lg font-semibold mb-4">Subscribe</h4>
-          <p className="text-sm mb-3">Get exclusive updates in your inbox.</p>
-          <form className="flex flex-col sm:flex-row gap-2">
-            <input
-              type="email"
-              placeholder="Your email"
-              className="px-3 py-2 border border-gray-300 rounded text-sm w-full"
-            />
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm">
-              Subscribe
-            </button>
-          </form>
-
-          {/* Payment Logos */}
-          <div className="flex gap-4 mt-6">
-            <Image src="/visa.png" alt="Visa" width={40} height={24} />
-            <Image src="/mastercard.png" alt="Mastercard" width={40} height={24} />
-            <Image src="/bkash.png" alt="bKash" width={40} height={24} />
-            <Image src="/nagad.png" alt="Nagad" width={40} height={24} />
-          </div>
-        </div>
       </div>
 
       {/* Bottom Bar */}
       <div className="mt-12 border-t border-gray-300 py-4 text-xs text-gray-600 px-4 text-center">
-        <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
-          <p>© 2025 Hotel Niribili. All rights reserved.</p>
-          <div className="mt-2 md:mt-0 flex gap-4 items-center">
-            <a href="/privacy" className="hover:text-blue-700">Privacy</a>
-            <a href="/terms" className="hover:text-blue-700">Terms</a>
-            <select className="border px-2 py-1 text-xs rounded bg-white">
-              <option>English</option>
-              <option>বাংলা</option>
-            </select>
-          </div>
+        <div className="max-w-7xl mx-auto">
+          <p>© 2025 Hotel Sky. All rights reserved.</p>
         </div>
       </div>
 
@@ -103,24 +106,11 @@ export default function Footer() {
       {showScroll && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 p-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition"
+          className="fixed bottom-6 right-6 p-3 bg-sky-500 text-white rounded-full shadow-lg hover:bg-sky-600 transition"
         >
           <FaArrowUp />
         </button>
       )}
-
-      {/* Floating TripAdvisor Badge */}
-      <div className="fixed left-2 bottom-6 z-40">
-        <a href="https://www.tripadvisor.com/" target="_blank" rel="noopener noreferrer">
-          <Image
-            src="/tripadvisor-badge.png"
-            alt="TripAdvisor"
-            width={100}
-            height={40}
-            className="hover:scale-105 transition"
-          />
-        </a>
-      </div>
     </footer>
   );
 }

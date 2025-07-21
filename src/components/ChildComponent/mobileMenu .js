@@ -77,7 +77,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                     <li key={index}>
                       <Link
                         href={subItem.href}
-                        className="block text-gray-600 ps-2 text-sm py-2 border-b border-gray-400 hover:bg-gray-200 hover:text-blue-500"
+                        className="block text-gray-600 ps-2 text-sm py-2 border-b border-gray-400 hover:bg-gray-200 hover:text-sky-500"
                         onClick={onClose}
                       >
                         {subItem.name}

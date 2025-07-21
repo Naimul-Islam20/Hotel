@@ -33,17 +33,15 @@ const navItems = [
 
    
   },
-  {
-    name: "Facilities",
-       dropdown: [
-    { name: "Fitness", href: "rout/facilities/fitness" },
-    { name: "Pool", href: "rout/facilities/pool" },
-    { name: "Others", href: "rout/facilities" },
-
-  ]
+    {
+    name: "GALLARY",href: "/rout/gallary"
     
 
   },
+
+    
+
+ 
     {
     name: "About us",href: "/rout/about"
     
@@ -54,22 +52,20 @@ const navItems = [
     
 
   },
-   {
-    name: "GALLARY",href: "/rout/gallary"
+  {
+    name: "ATTRACTION",href: "/rout/local"
     
 
   },
+   { name: "Fitness", href: "rout/facilities/fitness" },
+ 
  
  {
     name: "FAQ",href: "/rout/faq"
     
 
   },
-   {
-    name: "Local",href: "/rout/local"
-    
-
-  },
+   
 
 ];
 

@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="sticky top-0 uppercase font-semibold z-50 bg-white shadow-md">
         <nav className="w-full text-black">
           <div
-            className="w-full mx-auto px-6 h-13 md:h-20 py-4 flex items-center justify-between"
+            className="w-full mx-auto px-6 h-13 md:h-17 py-4 flex items-center justify-between"
             
           >
             <Link href="/">
@@ -60,7 +60,7 @@ const Navbar = () => {
                 >
                   <Link
                     href={item.href || "#"}
-                    className="cursor-pointer hover:text-blue-700 select-none flex items-center gap-1"
+                    className="cursor-pointer hover:text-sky-500 select-none flex items-center gap-1"
                   >
                     <span>{item.name}</span>
                     {item.dropdown && <GoChevronDown className="text-sm mt-[1px]" />}
@@ -80,7 +80,7 @@ const Navbar = () => {
                           height: 0,
                           transition: { duration: 0, ease: "easeIn" },
                         }}
-                        className={`mt-[26px] z-[9999] overflow-hidden ${
+                        className={`mt-[22px] z-[9999] overflow-hidden ${
                           item.dropdown.length > 7
                             ? "absolute left-1/2 top-full -translate-x-1/2 bg-white shadow-xl border border-gray-300 grid grid-cols-2 gap-x-6 px-8 py-5 max-w-[700px] min-w-[500px]"
                             : "absolute top-full left-0 bg-white shadow-xl border border-gray-300 flex flex-col w-auto px-4 py-2"
@@ -108,7 +108,7 @@ const Navbar = () => {
                           >
                             <Link
                               href={subItem.href || "#"}
-                              className="w-full min-w-[200px] text-black hover:text-blue-700 py-2 px-4 whitespace-nowrap text-base flex items-center justify-between font-medium duration-300"
+                              className="w-full min-w-[200px] text-black hover:text-sky-500 py-2 px-4 whitespace-nowrap text-base flex items-center justify-between font-medium duration-300"
                               onClick={(e) => {
                                 if (!subItem.href) e.preventDefault();
                               }}
