@@ -66,7 +66,7 @@ export default function FAQPage() {
 
       {/* Hero Section */}
       <div
-  className="relative h-[300px] flex flex-col items-center justify-center text-white"
+  className="relative h-[180px] md:h-[260px]  flex flex-col items-center justify-center text-white"
   style={{
     backgroundImage: "url(/img/contact4.jpg)",
     backgroundSize: "cover",

@@ -152,9 +152,7 @@ body {
 }
 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 @layer utilities {
   .slow-spin {

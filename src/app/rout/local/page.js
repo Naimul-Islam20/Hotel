@@ -16,7 +16,7 @@ export default function LocalAttractions() {
       
       {/* ✅ Hero Section */}
       <div
-        className="relative h-[260px]   flex flex-col items-center justify-center text-white"
+        className="relative h-[180px] md:h-[260px]    flex flex-col items-center justify-center text-white"
         style={{
           backgroundImage: "url(/img/hero1.jpg)", // তুমি চাইলে এখানে ভিন্ন ছবি দিতে পারো
           backgroundSize: "cover",
@@ -24,13 +24,13 @@ export default function LocalAttractions() {
         }}
       >
         <div className="absolute inset-0 bg-opacity-50" />
-        <h1 className="relative z-10 text-5xl font-bold text-center">
+        <h1 className="relative z-10 text-2xl  md:text-5xl font-bold text-center">
           Attraction Chittagong Area
         </h1>
         {/* Breadcrumb */}
         <div className="relative z-10 mt-2">
           <p className="text-sm text-gray-200">
-            <Link href="/" className="hover:underline text-blue-200">
+            <Link href="/" className="hover:underline ">
               Home
             </Link>{" "}
             &gt; <span className="text-white">Attraction</span>
@@ -39,7 +39,7 @@ export default function LocalAttractions() {
       </div>
 
       {/* ✅ Filter Buttons */}
-      <div className="flex justify-center gap-4 mt-5 border-b border-gray-300">
+      <div className="flex justify-center gap-4 md:mt-5 border-b border-gray-300">
         <ScrollLink
           to="localSection"
           smooth={true}
@@ -74,15 +74,15 @@ export default function LocalAttractions() {
       {/* ✅ Local Section */}
       <Element
         name="localSection"
-        className="max-w-7xl mx-auto bg-gray-50 dark:bg-gray-800 px-10 py-8"
+        className="max-w-7xl mx-auto bg-gray-50 px-2 md:px-10 py-2 md:py-8"
       >
-        <h1 className="text-2xl mb-7 font-semibold">LOCAL ATTRACTIONS</h1>
+        <h1 className=" text-xl md:text-2xl mb-2 md:mb-7 ">LOCAL ATTRACTIONS</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-2 md:gap-6">
           {localAttractions.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white dark:bg-gray-900 shadow border border-gray-100 dark:border-gray-700 overflow-hidden flex flex-col"
+              className="bg-white  shadow border border-gray-100  overflow-hidden flex flex-col"
             >
               <Image
                 src="/img/view.jpg"
@@ -94,14 +94,14 @@ export default function LocalAttractions() {
               />
               <div className="p-4 flex flex-col flex-1 justify-between">
                 <div className="flex justify-between items-center mb-1">
-                  <h2 className="text-xl font-semibold">{item.title}</h2>
-                  <span className="text-sm text-blue-600 font-medium">
+                  <h2 className="text-md md:text-xl  font-semibold">{item.title}</h2>
+                  <span className="text-sm text-sky-600 ">
                     {item.distance}
                   </span>
                 </div>
 
                 <div className="flex justify-between items-center mb-3">
-                  <span className="text-gray-600 text-sm dark:text-gray-300">
+                  <span className="text-gray-700 text-sm ">
                     {item.location}
                   </span>
                   <a

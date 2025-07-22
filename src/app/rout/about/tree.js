@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function PaathyaSection() {
   return (
-    <div className="w-full px-4 py-16 bg-sky-100">
+    <div className="w-full px-2 md:px-4 py-5 md:py-16 bg-sky-100">
       
       {/* Large Heading */}
       <div className="flex items-center justify-center mb-6">
@@ -15,7 +15,7 @@ export default function PaathyaSection() {
       </div>
 
       {/* Paragraph */}
-      <p className="max-w-4xl mx-auto text-center text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-16 px-2">
+      <p className="max-w-4xl mx-auto text-center text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6 md:mb-16 px-2">
         Derived from the Sanskrit term पथ्य, inferring a path, Paathya encapsulates
         our initiatives to lead positive change in alignment with the core values of IHCL: 
         Trust amongst stakeholders, Awareness of the needs of our ecosystem and Joy at the heart of all efforts.

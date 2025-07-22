@@ -16,7 +16,7 @@ export default function FullPageLoader({ children }) {
     return (
       <div className="w-screen h-screen fixed inset-0 z-[9999] bg-white flex items-center justify-center">
         {/* ঘুরঘুর Animation */}
-        <div className="w-16 h-16 border-4 border-blue-500 border-dashed rounded-full animate-spin slow-spin"></div>
+        <div className="w-16 h-16 border-6 border-blue-500 border-dashed rounded-full animate-spin slow-spin"></div>
 
       </div>
     );

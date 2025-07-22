@@ -14,10 +14,10 @@ export default function AboutPage() {
 
       {/* ✅ Hero Section */}
       <section
-        className="w-full h-[230px] md:h-[230px] bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-4 relative"
+        className="w-full h-[180px] md:h-[260px] bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-4 relative"
         style={{ backgroundImage: "url('/exc/about2.jpg')" }} // 🔁 তোমার background image path
       >
-        <div className="absolute inset-0 bg-black/40" /> {/* Overlay */}
+        <div className="absolute inset-0 bg-black/70" /> {/* Overlay */}
         <div className="relative z-10">
           <h1 className="text-3xl md:text-5xl font-bold uppercase">About Us</h1>
            <Link href="/" className="hover:underline text-white">Home</Link> &gt; About Us
@@ -25,9 +25,10 @@ export default function AboutPage() {
         </div>
       </section>
 <Brand/>
-<Tree/>
+
       {/* 🔽 History Section */}
       <History />
+      <Tree/>
       <Video/>
 
       

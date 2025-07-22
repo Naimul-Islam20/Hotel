@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function TajIntro() {
   return (
     <div
-      className="w-full bg-cover bg-center bg-no-repeat py-20"
+      className="w-full bg-cover bg-center bg-no-repeat py-5 md:py-20"
       style={{ backgroundImage: "url('/exc/about2.jpg')" }}
     >
       {/* Banner Section */}
@@ -20,19 +20,19 @@ export default function TajIntro() {
       </div>
 
       {/* Main Section */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 my-12 px-4 relative">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 gap-2 md:gap-8 my-5 md:my-12 px-2 md:px-4 relative">
         {/* Left Box */}
-        <div className="bg-white p-4 sm:p-6 md:p-10 shadow-md z-10 md:translate-x-4">
+        <div className="bg-white p-2 sm:p-6 md:p-10 shadow-md z-10 md:translate-x-4">
           {/* Top Border Line with Text only left side border */}
           <div className="flex items-center mb-2">
             <div className="w-6 sm:w-8 md:w-10 border-t-2 border-gray-700"></div>
-            <span className="ml-2 sm:ml-3 md:ml-4 text-xl sm:text-2xl md:text-4xl uppercase text-gray-700">
+            <span className="ml-2 sm:ml-3 md:ml-4 text-lg sm:text-2xl md:text-4xl uppercase text-gray-700">
               A Monumental
             </span>
           </div>
 
           {/* Main Heading */}
-          <h2 className="text-xl sm:text-2xl md:text-4xl uppercase text-gray-700 mb-7">
+          <h2 className="text-xl sm:text-2xl md:text-4xl uppercase text-gray-700 mb-3 md:mb-7">
             Vision
           </h2>
 
@@ -46,11 +46,11 @@ export default function TajIntro() {
         <div className="relative md:-translate-x-18 md:translate-y-10">
           <div className="h-full w-full overflow-hidden">
             <Image
-              src="/taj/jamsetji.jpg"
-              alt="Taj Founder"
+              src="/img/ceo.jpg"
+              alt="Sky Founder"
               width={600}
               height={400}
-              className="w-[300px] sm:w-[350px] md:w-[410px] bg-sky-300 h-full object-cover shadow-xl"
+              className="w-[240px] sm:w-[350px] md:w-[410px] bg-sky-300 h-full object-cover shadow-xl"
             />
           </div>
         </div>

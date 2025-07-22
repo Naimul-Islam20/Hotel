@@ -136,7 +136,7 @@ export default function RoomSlider() {
                       src={room.img}
                       alt={room.title}
                       fill
-                      className="object-cover hover:scale-105 transition-transform duration-300"
+                      className="object-cover transition-transform "
                     />
                   </div>
 
