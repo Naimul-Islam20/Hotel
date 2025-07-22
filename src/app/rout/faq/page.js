@@ -62,7 +62,7 @@ export default function FAQPage() {
   const rightColumn = faqData.slice(half);
 
   return (
-   <div className="min-h-[130vh] bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50">
+   <div className="min-h-[130vh] bg-white  text-gray-900 ">
 
       {/* Hero Section */}
       <div
@@ -99,15 +99,15 @@ export default function FAQPage() {
               {column.map((faq, index) => (
                 <details
                   key={index}
-                  className="group border border-gray-300 rounded-md overflow-hidden bg-white dark:bg-gray-800"
+                  className="group border border-gray-300 rounded-md overflow-hidden bg-white "
                 >
-                  <summary className="cursor-pointer bg-gray-100 dark:bg-gray-700 px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 dark:text-gray-200 group-open:bg-blue-50 group-open:text-blue-700">
+                  <summary className="cursor-pointer bg-gray-100 px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700  group-open:bg-blue-50 group-open:text-blue-700">
                     {faq.question}
                     <span className="text-lg transform group-open:rotate-180 transition duration-300">
                       <FaCaretDown />
                     </span>
                   </summary>
-                  <div className="px-4 py-3 text-sm text-gray-600 dark:text-gray-300">
+                  <div className="px-4 py-3 text-sm text-gray-600 ">
                     {faq.answer}
                   </div>
                 </details>
