@@ -4,10 +4,10 @@ import { GoLocation } from "react-icons/go";
 const Topbar = () => {
   return (
     <div className="w-full bg-sky-200 border-b border-gray-200 text-gray-700 text-xs sm:text-sm md:text-base">
-      <div className="w-full mx-auto text-sm px-6 py-1 flex justify-between items-center">
+      <div className="w-full mx-auto text-sm px-3 md:px-6 py-1 flex justify-between items-center">
         
         {/* Left Side: Location & Phone */}
-        <div className="flex items-center  gap-1 sm:gap-6 whitespace-nowrap">
+        <div className="flex items-center  gap-2 sm:gap-6 whitespace-nowrap">
           
           <div className="flex items-center gap-1">
             <FaPhoneAlt className="text-gray-600" />

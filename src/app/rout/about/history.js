@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function TajIntro() {
   return (
     <div
-      className="w-full bg-cover bg-center bg-no-repeat py-5 md:py-20"
+      className="w-full bg-cover bg-center bg-no-repeat py-10 md:py-20"
       style={{ backgroundImage: "url('/exc/about2.jpg')" }}
     >
       {/* Banner Section */}
