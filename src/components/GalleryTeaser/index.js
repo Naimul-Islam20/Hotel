@@ -70,23 +70,26 @@ export default function RoomSlider() {
         </div>
 
         {/* Navigation Buttons */}
-        <div className="absolute left-2 sm:left-4 md:left-6 lg:left-8 top-1/2 z-20 -translate-y-1/2">
-          <div
-            ref={prevRef}
-            className="bg-white rounded-full border border-sky-300 shadow-md flex items-center justify-center cursor-pointer w-12 h-12 md:w-14 md:h-14"
-          >
-            <FaChevronLeft className="text-sky-500 text-lg md:text-xl" />
-          </div>
-        </div>
+        {/* Left Arrow */}
+<div className="absolute left-4 top-1/2 z-20 -translate-y-1/2">
+  <div
+    ref={prevRef}
+    className="bg-white/100 backdrop-blur-md hover:bg-white/80 transition duration-300 rounded-full   shadow-lg flex items-center justify-center cursor-pointer w-12 h-12"
+  >
+    <FaChevronLeft className="text-sky-600 text-lg" />
+  </div>
+</div>
 
-        <div className="absolute right-2 sm:right-4 md:right-6 lg:right-8 top-1/2 z-20 -translate-y-1/2">
-          <div
-            ref={nextRef}
-            className="bg-white rounded-full border border-sky-300 shadow-md flex items-center justify-center cursor-pointer w-12 h-12 md:w-14 md:h-14"
-          >
-            <FaChevronRight className="text-sky-500 text-lg md:text-xl" />
-          </div>
-        </div>
+{/* Right Arrow */}
+<div className="absolute right-4 top-1/2 z-20 -translate-y-1/2">
+  <div
+    ref={nextRef}
+    className="bg-white/100 backdrop-blur-md hover:bg-white/80 transition duration-300 rounded-full  shadow-lg flex items-center justify-center cursor-pointer w-12 h-12"
+  >
+    <FaChevronRight className="text-sky-600  text-lg" />
+  </div>
+</div>
+
 
         {/* Swiper OR Skeleton */}
         {swiperReady ? (

@@ -22,17 +22,26 @@ export default function DynamicSwiper({ rooms }) {
   return (
     <>
       {/* Navigation Buttons */}
-      <div className="absolute left-4 top-1/2 z-20 -translate-y-1/2">
-        <div ref={prevRef} className="bg-white rounded-full border border-sky-300 shadow-md flex items-center justify-center cursor-pointer w-12 h-12">
-          <FaChevronLeft className="text-sky-500 text-lg" />
-        </div>
-      </div>
+     {/* Left Arrow */}
+<div className="absolute left-4 top-1/2 z-20 -translate-y-1/2">
+  <div
+    ref={prevRef}
+    className="bg-white/30 backdrop-blur-md hover:bg-white/50 transition duration-300 rounded-full border border-sky-300 shadow-lg flex items-center justify-center cursor-pointer w-12 h-12"
+  >
+    <FaChevronLeft className="text-sky-500 text-lg" />
+  </div>
+</div>
 
-      <div className="absolute right-4 top-1/2 z-20 -translate-y-1/2">
-        <div ref={nextRef} className="bg-white rounded-full border border-sky-300 shadow-md flex items-center justify-center cursor-pointer w-12 h-12">
-          <FaChevronRight className="text-sky-500 text-lg" />
-        </div>
-      </div>
+{/* Right Arrow */}
+<div className="absolute right-4 top-1/2 z-20 -translate-y-1/2">
+  <div
+    ref={nextRef}
+    className="bg-white/30 backdrop-blur-md hover:bg-white/50 transition duration-300 rounded-full border border-sky-300 shadow-lg flex items-center justify-center cursor-pointer w-12 h-12"
+  >
+    <FaChevronRight className="text-sky-500 text-lg" />
+  </div>
+</div>
+
 
       {/* Swiper */}
       {swiperReady && (

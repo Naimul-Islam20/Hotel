@@ -85,11 +85,11 @@ export default function ExclusiveSlider() {
             <SwiperSlide key={index}>
               <div className="flex flex-row items-center justify-between w-full h-auto md:h-[480px] gap-2">
                 {/* Prev Button Section */}
-                <div className="flex w-[15%] h-[328px]   md:h-full border-b-2 border-t-2 border-e-2 border-fade-right items-center justify-center relative">
+                <div className="flex w-[15%] h-[328px] pe-2  md:h-full border-b-2 border-t-2 border-e-2 border-fade-right items-center justify-center relative">
                   <div className=" items-center  ">
                       <button
                       onClick={() => swiperRef.current?.slidePrev()}
-                      className="w-10 md:w-11 h-10 md:h-11 text-xl md:text-xl border  border-sky-400 text-white rounded-full flex items-center justify-center hover:bg-sky-600 transition cursor-pointer"
+                      className="w-10 md:w-11 h-10 md:h-11 text-xl  md:text-xl border  border-sky-400 text-white rounded-full flex items-center justify-center hover:bg-sky-600 transition cursor-pointer"
                     >
                       <FaChevronLeft/>
                     </button>
@@ -116,7 +116,7 @@ export default function ExclusiveSlider() {
                 </div>
 
                 {/* Next Button Section */}
-                <div className="flex w-[15%] h-[328px] md:h-full border-b-2 border-s-2 border-t-2 border-fade-left items-center justify-center relative">
+                <div className="flex w-[15%] h-[328px] ps-2 md:h-full border-b-2 border-s-2 border-t-2 border-fade-left items-center justify-center relative">
                   <div className=" items-center ">
                     
                   
