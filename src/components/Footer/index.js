@@ -32,20 +32,14 @@ export default function Footer() {
             A peaceful luxury stay. Book with confidence & comfort.
           </p>
           <div className="flex gap-3 mt-6">
-            <Link href="#" legacyBehavior>
-              <a className="p-2 bg-white rounded-full shadow hover:bg-blue-100 transition">
-                <FaFacebookF className="text-blue-800" />
-              </a>
+            <Link href="#" className="p-2 bg-white rounded-full shadow hover:bg-blue-100 transition">
+              <FaFacebookF className="text-blue-800" />
             </Link>
-            <Link href="#" legacyBehavior>
-              <a className="p-2 bg-white rounded-full shadow hover:bg-pink-100 transition">
-                <FaInstagram className="text-pink-600" />
-              </a>
+            <Link href="#" className="p-2 bg-white rounded-full shadow hover:bg-pink-100 transition">
+              <FaInstagram className="text-pink-600" />
             </Link>
-            <Link href="#" legacyBehavior>
-              <a className="p-2 bg-white rounded-full shadow hover:bg-sky-100 transition">
-                <FaTwitter className="text-sky-500" />
-              </a>
+            <Link href="#" className="p-2 bg-white rounded-full shadow hover:bg-sky-100 transition">
+              <FaTwitter className="text-sky-500" />
             </Link>
           </div>
         </div>
@@ -55,29 +49,19 @@ export default function Footer() {
           <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/rout/rooms/roomsPage" legacyBehavior>
-                <a className="hover:text-sky-400">Room Types</a>
-              </Link>
+              <Link href="/rout/rooms/roomsPage" className="hover:text-sky-400">Room Types</Link>
             </li>
             <li>
-              <Link href="/rout/about" legacyBehavior>
-                <a className="hover:text-sky-400">About Us</a>
-              </Link>
+              <Link href="/rout/about" className="hover:text-sky-400">About Us</Link>
             </li>
             <li>
-              <Link href="/rout/gallery" legacyBehavior>
-                <a className="hover:text-sky-400">Gallery</a>
-              </Link>
+              <Link href="/rout/gallery" className="hover:text-sky-400">Gallery</Link>
             </li>
             <li>
-              <Link href="/rout/faq" legacyBehavior>
-                <a className="hover:text-sky-400">Faq</a>
-              </Link>
+              <Link href="/rout/faq" className="hover:text-sky-400">Faq</Link>
             </li>
             <li>
-              <Link href="/rout/contact" legacyBehavior>
-                <a className="hover:text-sky-400">Contact</a>
-              </Link>
+              <Link href="/rout/contact" className="hover:text-sky-400">Contact</Link>
             </li>
           </ul>
         </div>
@@ -88,7 +72,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li><span className="font-medium">Phone:</span> +880 1234 567 890</li>
             <li><span className="font-medium">Email:</span> info@hotelsky.com</li>
-            <li><span className="font-medium">Address:</span> 123 Access Road,Agrabad Chittagong</li>
+            <li><span className="font-medium">Address:</span> 123 Access Road, Agrabad, Chittagong</li>
             <li><span className="font-medium">Hours:</span> 24/7 Service Available</li>
           </ul>
         </div>
