@@ -25,9 +25,9 @@ export default function RoomCard({ room }) {
   // ];
 
   return (
-    <div className="bg-white rounded mx-5 shadow transition overflow-hidden border border-gray-200">
+    <div className="bg-white rounded mx-1 md:mx-5 shadow transition overflow-hidden border border-gray-200">
       {/* Swiper Slider */}
-      <div className="relative h-80 sm:h-[22rem] md:h-[26rem]">
+      <div className="relative h-70 sm:h-[22rem] md:h-[26rem]">
         <Swiper
           modules={[Navigation]}
           loop={true}
@@ -52,7 +52,7 @@ export default function RoomCard({ room }) {
           ))}
         </Swiper>
 
-        {/* Navigation Buttons */}
+        {/* Navigation Buttons
         <button
           ref={prevRef}
           className="absolute top-1/2 -translate-y-1/2 left-2 z-10 text-white bg-black/40 hover:bg-black/70 p-2 rounded-full"
@@ -64,13 +64,15 @@ export default function RoomCard({ room }) {
           className="absolute top-1/2 -translate-y-1/2 right-2 z-10 text-white bg-black/40 hover:bg-black/70 p-2 rounded-full"
         >
           <FaCaretRight size={22} />
-        </button>
+        </button> */}
       </div>
 
       {/* Title & Price */}
-      <div className="flex justify-between items-center px-4 pt-4">
+      <div className="flex justify-between items-center px-4 pt-2 md:pt-4">
         <h3 className="text-3xl ">{room.title}</h3>
-        <p className="text-base text-blue-600 font-bold">{room.price}</p>
+         <span className="text-gray-500 bg-gray-200 h-8 w-25 pt-1 ps-3 rounded-lg font-semibold">
+                      {room.price}
+                    </span>
       </div>
 
       {/* Features */}
@@ -87,7 +89,7 @@ export default function RoomCard({ room }) {
       </div> */}
 
       {/* Description + Actions */}
-      <div className="px-4 pb-5 space-y-5">
+      <div className=" px-2 md:px-4 pb-2 md:pb-5 space-y-3 md:space-y-5">
         <p className="text-sm text-gray-500">{room.desc}</p>
         <p className="text-sm text-gray-500">
           Our rooms are designed to provide maximum comfort with all essential amenities to make your stay relaxing and memorable. Whether you're here for business or leisure, we got you covered.
@@ -95,13 +97,13 @@ export default function RoomCard({ room }) {
         <div className="flex justify-between items-center pt-2">
          <Link
               href={room.path}
-              className="pb-4 text-sky-500 underline tracking-widest transition"
+              className=" text-sky-500 underline tracking-widest transition"
             >
               Details Room
             </Link>
           <Link
             href="/rout/contact"
-            className="text-sm border px-4 py-1.5 bg-sky-500 rounded hover:bg-sky-600 transition"
+            className="text-sm  text-white px-4 py-1.5 bg-sky-500 rounded hover:bg-sky-600 transition"
           >
             Contact Us
           </Link>

@@ -51,27 +51,11 @@ export default function GalleryPage() {
   return (
     <div className="w-screen bg-white pe-2">
       {/* ====== Hero Section ====== */}
-      <div
-        className="relative h-[300px] flex flex-col items-center justify-center text-white"
-        style={{
-          backgroundImage: "url(/img/gallery-hero.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
-        <h1 className="relative z-10 text-5xl font-bold">Photos & Videos</h1>
-
-        <div className="relative z-10 mt-4">
-          <p className="text-sm text-gray-200">
-            <Link href="/" className="hover:underline text-blue-200">
-              Home
-            </Link>{" "}
-            &gt; <span className="text-white">Gallery</span>
-          </p>
-        </div>
-      </div>
+        <div className="w-full bg-blue-100 py-12 text-center">
+              <h1 className="text-4xl font-bold text-gray-800">Gallery</h1>
+              <Link href="/" className="hover:underline text-gray-600">Home</Link> &gt; Gallery
+            </div>
+      
 
       {/* ====== Filter Buttons ====== */}
       <div className="w-screen border-b border-gray-400 flex justify-center gap-4 ">
@@ -79,24 +63,24 @@ export default function GalleryPage() {
           onClick={() => scrollToSection(viewRef, "view")}
           className={`mx-4 px-1 py-2 text-gray-700 transition ${
             activeTab === "view"
-              ? "border-b-2 border-black text-semibolt text-sky-600 "
+              ? "border-b-2 border-black text-sm text-sky-600 "
               : ""
           }`}
         >
-          Hotel View
+          View
         </button>
         <button
           onClick={() => scrollToSection(guestRef, "guest")}
           className={`mx-4 px-1 py-2 transition ${
-            activeTab === "guest" ? "border-b-2 border-black text-black" : ""
+            activeTab === "guest" ? "border-b-2 text-sm border-black text-black" : ""
           }`}
         >
-          Guest Rooms
+          Rooms
         </button>
         <button
           onClick={() => scrollToSection(othersRef, "dining")}
           className={`mx-4 px-1 py-2 transition ${
-            activeTab === "dining" ? "border-b-2 border-black text-black " : ""
+            activeTab === "dining" ? "border-b-2 text-sm border-black text-black " : ""
           }`}
         >
           Dining

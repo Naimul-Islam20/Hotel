@@ -85,7 +85,7 @@ export default function ExclusiveSlider() {
             <SwiperSlide key={index}>
               <div className="flex flex-row items-center justify-between w-full h-auto md:h-[480px] gap-2">
                 {/* Prev Button Section */}
-                <div className="flex w-[15%] h-[328px] pe-2  md:h-full border-b-2 border-t-2 border-e-2 border-fade-right items-center justify-center relative">
+                <div className="flex w-[15%] h-[328px] pe-1  md:h-full border-b-2 border-t-2 border-e-2 border-fade-right items-center justify-center relative">
                   <div className=" items-center  ">
                       <button
                       onClick={() => swiperRef.current?.slidePrev()}
@@ -100,7 +100,7 @@ export default function ExclusiveSlider() {
 
                 {/* Center Content Section */}
                 <div className="w-[660%] md:w-1/2 h-auto md:h-full flex flex-col">
-                  <div className="relative h-[220px] md:h-[70%] w-full">
+                  <div className="relative h-[205px] md:h-[70%] w-full">
                     <Image
                       src={slide.center}
                       alt="Center"
@@ -116,7 +116,7 @@ export default function ExclusiveSlider() {
                 </div>
 
                 {/* Next Button Section */}
-                <div className="flex w-[15%] h-[328px] ps-2 md:h-full border-b-2 border-s-2 border-t-2 border-fade-left items-center justify-center relative">
+                <div className="flex w-[15%] h-[328px] ps-1 md:h-full border-b-2 border-s-2 border-t-2 border-fade-left items-center justify-center relative">
                   <div className=" items-center ">
                     
                   

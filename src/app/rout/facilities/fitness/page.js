@@ -11,7 +11,7 @@ export default function FitnessPage() {
   return (
     <main className="w-full pb-20">
       {/* Hero Section */}
-      <section className="relative w-full bg-gray-900 rounded overflow-hidden mb-16 h-[400px] flex justify-center items-center px-10">
+      <section className="relative w-full bg-gray-900 rounded overflow-hidden mb-16 h-[180px] md:h-[260px] flex justify-center items-center px-10">
         <img
           src="/img/f1.jpg"
           alt="Fitness Hero"
