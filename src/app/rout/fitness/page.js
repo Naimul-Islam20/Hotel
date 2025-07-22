@@ -5,6 +5,9 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
+
 const images = ["/img/gym1.jpg", "/img/gym2.jpg"];
 
 export default function FitnessPage() {
@@ -18,12 +21,12 @@ export default function FitnessPage() {
           className="absolute inset-0 w-full h-full object-cover opacity-60"
           draggable={false}
         />
-        <h1 className="relative items-center justify-center text-white text-4xl md:text-5xl font-extrabold">
+        <h1 className="relative text-white text-3xl md:text-5xl font-extrabold text-center">
           Fitness Center
         </h1>
       </section>
 
-      {/* Main Two Column Section */}
+      {/* Two Column Section */}
       <section className="flex flex-col md:flex-row items-center gap-10 px-6 max-w-7xl mx-auto">
         {/* Left Column (Text) */}
         <div className="md:w-1/2 space-y-6 text-gray-800">
@@ -47,27 +50,31 @@ export default function FitnessPage() {
           </button>
         </div>
 
-        {/* Right Column (Slider) */}
-        <div className="md:w-1/2 flex justify-center items-center">
-          <div className="w-[65%] h-[530px] rounded overflow-hidden shadow-lg">
-            <Swiper
-              modules={[Autoplay, Pagination]}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 2000, disableOnInteraction: false }}
-              loop={true}
-              className="h-full"
-            >
-              {images.map((img, i) => (
-                <SwiperSlide key={i}>
-                  <img
-                    src={img}
-                    alt={`Fitness Image ${i + 1}`}
-                    className="w-full h-full object-cover"
-                    draggable={false}
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+        {/* Right Column (Slider with PhotoView) */}
+        <div className="md:w-1/2 w-full flex justify-center items-center">
+          <div className="w-full max-w-md h-[400px] rounded overflow-hidden shadow-lg">
+            <PhotoProvider>
+              <Swiper
+                className="w-full h-full"
+                modules={[Autoplay, Pagination]}
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                loop={true}
+              >
+                {images.map((img, i) => (
+                  <SwiperSlide key={i}>
+                    <PhotoView src={img}>
+                      <img
+                        src={img}
+                        alt={`Fitness Image ${i + 1}`}
+                        className="w-full h-full object-cover cursor-zoom-in"
+                        draggable={false}
+                      />
+                    </PhotoView>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </PhotoProvider>
           </div>
         </div>
       </section>

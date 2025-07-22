@@ -23,7 +23,7 @@ const RoomDetailsPage = () => {
       {/* 🟦 Hero Section */}
       <div className="w-full bg-blue-100 py-12 text-center">
         <h1 className="text-4xl font-bold text-gray-800">Family Room</h1>
-         <Link href="/" className="hover:underline text-white">Home</Link> &gt; Family Room
+         <Link href="/" className="hover:underline ">Home</Link> &gt; Family Room
                   
       </div>
 
@@ -118,10 +118,10 @@ const RoomDetailsPage = () => {
 
   {/* Contact Us Button */}
   <div className="pt-4 text-center">
-     <Link href="/rout/contact" legacyBehavior>
-      <a className="text-sky-400 underline tracking-widest py-2 font-medium transition duration-200">
+    <Link href="/rout/contact"
+       className="text-sky-400 underline tracking-widest py-2 font-medium transition duration-200" >
+      
         Contact Us
-      </a>
     </Link>
   </div>
 </div>

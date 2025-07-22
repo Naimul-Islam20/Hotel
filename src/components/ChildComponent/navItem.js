@@ -5,7 +5,7 @@ const navItems = [
     
    },
   {
-    name: "Rooms",href: "/rout/rooms/roomsPage",
+    name: "Rooms",
         dropdown: [
     
     
@@ -57,8 +57,12 @@ const navItems = [
     
 
   },
-   { name: "Fitness", href: "rout/facilities/fitness" },
- 
+
+  {
+    name: "Fitness",href: "/rout/fitness"
+    
+
+  },
  
  {
     name: "FAQ",href: "/rout/faq"

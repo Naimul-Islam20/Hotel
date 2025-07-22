@@ -6,13 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const images = ["/img/hero1.jpg", "/img/hero2.jpg", "/img/hero1.jpg"];
-const  captions = [
-  "EXPERIENCE LUXURY",
-  "STAY IN COMFORT",
-  "BOOK YOUR DREAM VACATION",
-];
-
-
+const captions = ["EXPERIENCE LUXURY", "STAY IN COMFORT", "BOOK YOUR DREAM VACATION"];
 const subtitles = ["FROM $69", "FROM $69", "FROM $69"];
 
 export default function HeroSlider() {
@@ -60,39 +54,30 @@ export default function HeroSlider() {
   };
 
   return (
-    <div className="relative  w-full h-[60vh] md:h-[85vh]  overflow-visible">
-      {/* Image without animation */}
+    <div className="relative w-full h-[60vh] md:h-[85vh] overflow-hidden will-change-transform">
+      {/* Background Image */}
       <img
         src={images[current]}
         alt="Hero Slide"
-        className="w-full h-full object-cover absolute inset-0"
+        className="w-full h-full object-cover absolute inset-0 pointer-events-none"
         draggable={false}
       />
 
-      {/* Caption container */}
-      <div className="absolute top-1/2 left-4 right-4 md:left-[2in] md:right-[1in] transform -translate-y-1/2 z-20 px-4 flex flex-col items-start ">
+      {/* Caption with Animation */}
+      <div className="absolute top-1/2 left-4 right-4 md:left-[2in] md:right-[1in] transform -translate-y-1/2 z-20 px-4 flex flex-col items-start">
         <AnimatePresence mode="wait">
           <motion.div
             key={current}
+            layout={false}
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: -500, x: -100 }}
+            exit={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.9, ease: "easeInOut" }}
             className="text-left"
           >
-            {/* Subtitle */}
-            {/* <p className="text-white mb-2 opacity-90 text-sm sm:text-sm md:text-lg lg:text-xl">
-              {splitText(subtitles[current], "")}
-            </p> */}
-
-            {/* Main Caption */}
             <h2 className="text-white font-bold mb-6 leading-tight text-2xl sm:text-2xl md:text-2xl lg:text-6xl xl:text-5xl">
-              {splitText(captions[current], "")}
+              {splitText(captions[current])}
             </h2>
-
-            {/* Button */}
-            
-
 
             <Link
               href="/rout/contact"
@@ -101,29 +86,24 @@ export default function HeroSlider() {
             >
               CONTACT US
             </Link>
-
           </motion.div>
         </AnimatePresence>
       </div>
 
-      {/* Navigation Buttons */}
+      {/* Navigation Arrows */}
       <button
         onClick={handlePrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2   bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full "
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full z-30"
       >
         <FaChevronLeft className="text-white w-6 h-6" />
       </button>
+
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2  bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full z-30"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full z-30"
       >
         <FaChevronRight className="text-white w-6 h-6" />
       </button>
-      
-
-   
-
-
     </div>
   );
 }

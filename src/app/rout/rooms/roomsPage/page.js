@@ -1,17 +1,17 @@
 import { rooms } from "./rooms";
 import RoomCard from "./RoomCard";
+import Link from "next/link";
 
 export default function RoomsPage() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 px-2 md:px-4 py-10">
-      <div className="text-center mb-10">
-        <h1 className="text-3xl font-bold">Explore Our Rooms</h1>
-        <p className="text-gray-500 italic mt-2">
-          Comfortable, affordable, and designed for you.
-        </p>
-      </div>
+    <div className="min-h-screen bg-gray-50 w-full text-gray-800 md:mb-6  ">
+       {/* 🟦 Hero Section */}
+            <div className="w-full bg-blue-100 py-12 text-center">
+              <h1 className="text-4xl font-bold text-gray-800">Explore Our Rooms</h1>
+              <Link href="/" className="hover:underline text-gray-600">Home</Link> &gt; Rooms
+            </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full md:max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 mt-3 md:mt-6 sm:grid-cols-2 gap-6 w-full md:max-w-7xl mx-auto">
         {rooms.map((room, index) => (
           <RoomCard key={index} room={room} />
         ))}

@@ -118,10 +118,10 @@ const RoomDetailsPage = () => {
 
   {/* Contact Us Button */}
   <div className="pt-4 text-center">
-   <Link href="/rout/contact" legacyBehavior>
-  <a className="text-sky-400 underline tracking-widest py-2 font-medium transition duration-200">
+  <Link href="/rout/contact"
+   className="text-sky-400 underline tracking-widest py-2 font-medium transition duration-200" >
+  
     Contact Us
-  </a>
 </Link>
   </div>
 </div>
