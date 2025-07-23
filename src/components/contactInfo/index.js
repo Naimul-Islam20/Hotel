@@ -16,7 +16,7 @@ export default function ContactMapSection() {
       </div>
 
       {/* Container Fluid */}
-      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-6 md:gap-10">
+      <div className="w-full max-w-7xl bg-white p-4 shadow mx-auto flex flex-col md:flex-row gap-6 md:gap-10">
         
         {/* Left: Google Map */}
         <div className="w-full md:w-2/3 h-[300px] md:h-[500px] rounded overflow-hidden shadow-inner">

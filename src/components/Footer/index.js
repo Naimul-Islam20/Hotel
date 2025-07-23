@@ -72,7 +72,7 @@ export default function Footer() {
           <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
           <ul className="space-y-2 text-sm">
             <li><span className="font-medium">Phone:</span> +880 1234 567 890</li>
-            <li><span className="font-medium">Email:</span> info@hotelsky.com</li>
+            <li><span className="font-medium">Email:</span> info@ocenresidence.com</li>
             <li><span className="font-medium">Address:</span> 123 Access Road, Agrabad, Chittagong</li>
             <li><span className="font-medium">Hours:</span> 24/7 Service Available</li>
           </ul>
@@ -89,7 +89,7 @@ export default function Footer() {
         href="https://muktodharaltd.com/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-500 hover:underline"
+        className="text-sky-400 hover:underline"
       >
         Muktodhara Technology Limited
       </a>
