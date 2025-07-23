@@ -6,7 +6,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
+import Link from "next/link";
 const slides = [
   {
     center: '/exc/exc7.jpg',
@@ -111,7 +111,12 @@ export default function ExclusiveSlider() {
                   <div className="h-auto md:h-[34%] bg-white text-black flex flex-col items-center justify-center px-2 md:px-4 py-2 md:py-5 text-center">
                     <h3 className="text-base md:text-2xl mb-2">Lorem</h3>
                     <p className="text-xs md:text-lg mb-2 md:mb-4 text-gray-500">This is a sample description text that explains more about the image or the offer.</p>
-                    <button className="text-sky-400 underline tracking-widest pb-1 md:py-2 text-xs md:text-base">Explore More</button>
+                    <Link
+                               href="/rout/local"
+                               className="hover:bg-sky-600 bg-sky-500 text-white rounded px-3 py-2 hidden md:flex items-center gap-2   "
+                             >
+                               VIEW RATE
+                             </Link>
                   </div>
                 </div>
 

@@ -16,9 +16,7 @@ export default function PaathyaSection() {
 
       {/* Paragraph */}
       <p className="max-w-4xl mx-auto text-center text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6 md:mb-16 px-2">
-        Derived from the Sanskrit term पथ्य, inferring a path, Paathya encapsulates
-        our initiatives to lead positive change in alignment with the core values of IHCL: 
-        Trust amongst stakeholders, Awareness of the needs of our ecosystem and Joy at the heart of all efforts.
+        Inspired by the concept of meaningful journeys, Ocean Residence reflects our commitment to bringing positive change — grounded in trust, attentiveness to our guests and community, and a spirit of joy that defines every stay.
       </p>
 
       {/* Main Section with centered PNG image */}

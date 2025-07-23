@@ -15,7 +15,7 @@ export default function TajIntro() {
           The Unparalleled <br /> Guardian of Grandeur
         </h1>
         <p className="mt-6 max-w-3xl text-xs sm:text-sm md:text-lg text-gray-800">
-          Built on a vision of grandeur, Taj Hotels conjures a panoply of superlative experiences that are envisioned to indulge and forge unforgettable memories.
+          Built on a vision of elegance, Ocean Residence curates a collection of exceptional experiences designed to delight guests and create unforgettable memories in the heart of Chittagong.
         </p>
       </div>
 
@@ -38,7 +38,7 @@ export default function TajIntro() {
 
           {/* Paragraph */}
           <p className="text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed">
-            In December 1903, a visionary realised his dream. Mr Jamsetji Nusserwanji Tata – patriot, philanthropist, entrepreneur – opened the doors of what would become one of the world’s greatest hotels.
+            In December 2023, a vision turned into reality. Ocean Residence opened its doors with the dream of redefining hospitality in Chittagong — setting new standards of comfort, elegance, and memorable experiences.
           </p>
         </div>
 

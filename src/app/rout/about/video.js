@@ -10,16 +10,14 @@ export default function PaathyaSection() {
       <div className="flex items-center justify-center flex-wrap gap-2 sm:gap-4 text-center pb-4 pt-14">
         <div className="border-t border-gray-700 w-12 sm:w-16"></div>
         <span className="text-base sm:text-lg md:text-2xl lg:text-3xl text-black uppercase tracking-widest font-semibold">
-          A Feeling Called ‘Sky hotel’
+          A Feeling Called ‘Ocean Residence’
         </span>
         <div className="border-t border-gray-700 w-12 sm:w-16"></div>
       </div>
 
       {/* ===== Description Paragraph ===== */}
       <p className="max-w-4xl mx-auto text-center text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed mb-8 md:mb-12 px-2">
-        Derived from the Sanskrit term, inferring a path, Paathya encapsulates
-        our initiatives to lead positive change in alignment with the core values of IHCL: 
-        Trust amongst stakeholders, Awareness of the needs of our ecosystem and Joy at the heart of all efforts.
+        Rooted in a vision of purpose and direction, Ocean Residence represents our initiative to inspire positive change — guided by trust in our guests and partners, awareness of our environment’s needs, and the joy that lies at the heart of every stay.
       </p>
 
       {/* ===== Responsive Video Embed ===== */}
