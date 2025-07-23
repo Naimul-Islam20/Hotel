@@ -135,7 +135,7 @@ const Navbar = () => {
 
             <Link
               href="/rout/rooms/roomsPage"
-              className="hover:bg-sky-600 bg-sky-500 text-white rounded-full  px-3 py-2 hidden md:flex items-center gap-2   "
+              className="hover:bg-sky-600 bg-sky-500 text-white rounded px-3 py-2 hidden md:flex items-center gap-2   "
             >
               VIEW RATE
             </Link>
