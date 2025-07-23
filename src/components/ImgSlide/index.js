@@ -113,7 +113,7 @@ export default function ExclusiveSlider() {
                     <p className="text-xs md:text-lg mb-2 md:mb-4 text-gray-500">This is a sample description text that explains more about the image or the offer.</p>
                     <Link
                                href="/rout/local"
-                               className="  text-sky-500  underline  tracking-widest  hidden md:flex items-center gap-2   "
+                               className="  text-sky-500 rounded px-3 underline py-2 hidden md:flex items-center gap-2   "
                              >
                                Explore More
                              </Link>
@@ -121,7 +121,7 @@ export default function ExclusiveSlider() {
                 </div>
 
                 {/* Next Button Section */}
-                <div className="flex w-[15%] h-[328px] ps-1 md:h-full border-b-2 border-s-2 border-t-2 border-fade-left items-center justify-center relative">
+                <div className="flex w-[15%] h-[328px] ps-1 md:h-full  border-b-2 border-s-2 border-t-2 border-fade-left items-center justify-center relative">
                   <div className=" items-center ">
                     
                   
