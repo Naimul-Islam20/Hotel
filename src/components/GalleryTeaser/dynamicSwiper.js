@@ -92,7 +92,7 @@ export default function DynamicSwiper({ rooms }) {
                   <p className="text-gray-600 text-sm mt-2">{room.desc}</p>
                   <div className="mt-auto pt-6 flex justify-between">
                     <Link href={room.path} className="pb-4 text-sky-500 underline tracking-widest transition">
-                      Details
+                      Details Room
                     </Link>
                   </div>
                 </div>

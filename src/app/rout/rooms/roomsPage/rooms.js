@@ -2,6 +2,24 @@ import { FaBed, FaWifi, FaShower, FaCouch, FaCity, FaUserFriends, FaUtensils, Fa
 
 export const rooms = [
   {
+    title: "Premium Room",
+    img: [
+      "/img/premium1.jpg",
+      "/img/premium2.jpg",
+      "/img/premium3.jpg",
+      "/img/premium4.jpg",
+      "/img/premium5.jpg",
+    ],
+    path: "/rout/rooms/premium",
+    price: "$200/night",
+    features: [
+      { icon: <FaSpa />, text: "Spa Access" },
+      { icon: <FaVolumeMute />, text: "Soundproof" },
+      { icon: <FaWifi />, text: "High-Speed Wi-Fi" },
+    ],
+    desc: "Top-tier comfort & exclusive amenities.",
+  },
+  {
     title: "Deluxe Room",
     img: [
       "/img/h21.jpg",
@@ -21,9 +39,9 @@ export const rooms = [
   {
     title: "Family Room",
     img: [
-      "/img/h21.jpg",
-      "/img/image1.jpg",
-      "/img/image1.jpg",
+      "/img/family.jpg",
+      "/img/family3.jpg",
+      "/img/family4.jpg",
     ],
     path: "/rout/rooms/family",
     price: "$150/night",
@@ -38,9 +56,9 @@ export const rooms = [
   {
     title: "Single Room",
     img: [
-     "/img/h21.jpg",
-      "/rooms/single2.jpg",
-      "/rooms/single3.jpg",
+    
+      "/img/single.jpg",
+      "/img/single.jpg",
     ],
     path: "/rout/rooms/single",
     price: "$90/night",
@@ -51,20 +69,5 @@ export const rooms = [
     ],
     desc: "Affordable option for solo travelers.",
   },
-  {
-    title: "Premium Room",
-    img: [
-      "/img/h21.jpg",
-      "/rooms/premium2.jpg",
-      "/rooms/premium3.jpg",
-    ],
-    path: "/rout/rooms/premium",
-    price: "$200/night",
-    features: [
-      { icon: <FaSpa />, text: "Spa Access" },
-      { icon: <FaVolumeMute />, text: "Soundproof" },
-      { icon: <FaWifi />, text: "High-Speed Wi-Fi" },
-    ],
-    desc: "Top-tier comfort & exclusive amenities.",
-  },
+  
 ];

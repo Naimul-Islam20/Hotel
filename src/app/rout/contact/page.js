@@ -43,19 +43,19 @@ export default function ContactPage() {
             <h2 className="text-xl sm:text-2xl font-semibold text-black">Hotel Sky </h2>
 
             <div>
-              <h4 className="text-base sm:text-lg font-medium text-black">Address</h4>
-              <p className="text-sm sm:text-base text-gray-800">122 Access Road, Agrabad </p>
-              <p className="text-sm sm:text-base text-gray-800">Chittagong - Bangladesh</p>
+              <h4 className="text-base sm:text-lg font-semibold text-gray-900">Address</h4>
+              <p className="text-sm sm:text-base text-gray-950">Ocean tower, 9th floor, Agrabad access road, beparilara, circle</p>
+              <p className="text-sm sm:text-base text-gray-950">Chattogram - Bangladesh</p>
             </div>
 
             <div>
-              <h4 className="text-base sm:text-lg font-medium text-black">Bookings</h4>
+              <h4 className="text-base sm:text-lg font-semibold text-gray-900">Bookings</h4>
               <p className="text-sm sm:text-base text-gray-800">+41 934 121 1334</p>
             </div>
 
             <div>
-              <h4 className="text-base sm:text-lg font-medium text-black">Questions</h4>
-              <p className="text-sm sm:text-base text-gray-800">info@hotelsky.com</p>
+              <h4 className="text-base sm:text-lg font-semibold text-gray-900">Questions</h4>
+              <p className="text-sm sm:text-base text-gray-800">info@oceanresidence.com</p>
             </div>
 
             {/* ✅ Social Icons */}
@@ -80,7 +80,7 @@ export default function ContactPage() {
             
             {/* Airport Toggle */}
             <details className="group border border-gray-300 rounded-md overflow-hidden">
-              <summary className="cursor-pointer bg-gray-100 px-1 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-sky-50 group-open:text-sky-500">
+              <summary className="cursor-pointer bg-gray-100 px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-sky-50 group-open:text-sky-500">
                 <IoAirplane className="text-lg" />
                 Airport
                 <span className="text-lg transform group-open:rotate-180 transition">
@@ -123,14 +123,15 @@ export default function ContactPage() {
         {/* Google Map Full Width */}
         <div className="w-full bg-white  ">
           <div className="w-full h-[320px] md:h-[500px] rounded overflow-hidden shadow-inner">
-            <iframe
-              title="Muktodhara Technology Limited Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.5914230645894!2d91.78723127434566!3d22.33128684177332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd90f5872b99d%3A0x878f02d031662a33!2sMuktodhara%20Technology%20Limited!5e0!3m2!1sen!2sbd!4v1752478976306!5m2!1sen!2sbd"
-              className="w-full h-full border-0"
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <iframe
+  title="Ocean Residence Location"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.655460609474!2d91.80170537436182!3d22.328866441861148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd90075dfd4b5%3A0x243e1276af5452d1!2sOcean%20residence!5e0!3m2!1sen!2sbd!4v1753263245597!5m2!1sen!2sbd"
+  className="w-full h-full border-0"
+  loading="lazy"
+  allowFullScreen
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+
           </div>
         </div>
       </div>

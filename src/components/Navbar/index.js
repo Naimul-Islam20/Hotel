@@ -35,18 +35,21 @@ const Navbar = () => {
   return (
     <>
       {/* 🔹 Location + Contact Info (scroll করলে উপরে চলে যাবে) */}
-     <Topbar/>
+      <Topbar />
 
       {/* 🔸 Sticky Navbar */}
       <div className="sticky top-0 uppercase font-semibold text-sm z-50 bg-white shadow-md">
         <nav className="w-full text-black">
-          <div
-            className="w-full mx-auto px-6 h-13 md:h-17 py-4 flex items-center justify-between"
-            
-          >
+          <div className="w-full mx-auto px-6 h-13 md:h-17 py-4 flex items-center justify-between">
             <Link href="/">
-              <div className=" space-x-2  cursor-pointer">
-                <Image src="/img/logo2.png" alt="Logo" width={70} height={60} />
+              <div className="cursor-pointer w-32 sm:w-40 md:w-44">
+                <Image
+                  src="/img/logo2.png"
+                  alt="Logo"
+                  width={160}
+                  height={50}
+                  className="w-full h-auto object-contain"
+                />
               </div>
             </Link>
 
@@ -63,7 +66,9 @@ const Navbar = () => {
                     className="cursor-pointer hover:text-sky-500 select-none flex items-center gap-1"
                   >
                     <span>{item.name}</span>
-                    {item.dropdown && <GoChevronDown className="text-sm mt-[1px]" />}
+                    {item.dropdown && (
+                      <GoChevronDown className="text-sm mt-[1px]" />
+                    )}
                   </Link>
 
                   <div className="absolute top-full left-0 w-full h-7"></div>
@@ -80,7 +85,7 @@ const Navbar = () => {
                           height: 0,
                           transition: { duration: 0, ease: "easeIn" },
                         }}
-                        className={`mt-[22px] z-[9999]  overflow-hidden ${
+                        className={`mt-[20px] z-[9999]  overflow-hidden ${
                           item.dropdown.length > 7
                             ? "absolute left-1/2 top-full -translate-x-1/2 bg-white shadow-xl border border-gray-300 grid grid-cols-2 gap-x-6 px-8 py-5 max-w-[700px] min-w-[500px]"
                             : "absolute top-full left-0 bg-white shadow-xl border border-gray-300 flex flex-col w-auto px-4 py-2"
@@ -93,7 +98,8 @@ const Navbar = () => {
                             className="relative"
                             onMouseEnter={(e) => {
                               if (subItem.dropdown) {
-                                const rect = e.currentTarget.getBoundingClientRect();
+                                const rect =
+                                  e.currentTarget.getBoundingClientRect();
                                 setHoveredSubItem(subItem);
                               }
                             }}
@@ -127,8 +133,10 @@ const Navbar = () => {
               ))}
             </ul>
 
-            <Link href="/rout/rooms/roomsPage" className="hover:bg-sky-600 bg-sky-500 text-white rounded-full  px-3 py-2 hidden md:flex items-center gap-2   ">
-              
+            <Link
+              href="/rout/rooms/roomsPage"
+              className="hover:bg-sky-600 bg-sky-500 text-white rounded-full  px-3 py-2 hidden md:flex items-center gap-2   "
+            >
               VIEW RATE
             </Link>
 
@@ -151,4 +159,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar;

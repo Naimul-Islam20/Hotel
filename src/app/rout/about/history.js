@@ -42,18 +42,33 @@ export default function TajIntro() {
           </p>
         </div>
 
-        {/* Right Box (Image Box with overlap) */}
-        <div className="relative md:-translate-x-18 md:translate-y-10">
-          <div className="h-full w-full overflow-hidden">
-            <Image
-              src="/img/ceo.jpg"
-              alt="Sky Founder"
-              width={600}
-              height={400}
-              className="w-[240px] sm:w-[350px] md:w-[410px] bg-sky-300 h-full object-cover shadow-xl"
-            />
-          </div>
-        </div>
+{/* Right Box (Image Top + Text Bottom) */}
+<div className="relative md:-translate-x-18 md:translate-y-10">
+  <div className="w-[240px] sm:w-[350px] md:w-[410px] bg-white shadow rounded overflow-hidden">
+    
+    {/* Top: Image 70% approx */}
+    <div className="aspect-[4/3]">
+      <Image
+        src="/img/ceo.jpg"
+        alt="Sky Founder"
+        width={600}
+        height={400}
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    {/* Bottom: Name & Title */}
+    <div className="px-4 py-3 bg-white text-center">
+      <h3 className="text-base sm:text-lg font-semibold text-gray-800">
+        Mr. Naimul Islam
+      </h3>
+      <p className="text-xs sm:text-sm text-gray-600">
+        Founder, Hotel Sky
+      </p>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   );

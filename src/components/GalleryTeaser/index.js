@@ -13,29 +13,29 @@ import "swiper/css/pagination";
 const rooms = [
   {
     title: "Deluxe Room",
-    img: "/img/h21.jpg",
-    price: "$120/night",
+    img: "/img/deluxe.jpg",
+    price: "৳3000/night",
     desc: "Perfect for couples or business travelers.",
     path: "/rout/rooms/deluxe",
   },
   {
     title: "Family Room",
-    img: "/img/h21.jpg",
-    price: "$150/night",
+    img: "/img/family.jpg",
+    price: "৳3000/night",
     desc: "Spacious room perfect for families.",
     path: "/rout/rooms/family",
   },
   {
     title: "Single Room",
-    img: "/img/h21.jpg",
-    price: "$90/night",
+    img: "/img/single.jpg",
+    price: "৳3000/night",
     desc: "Affordable option for solo travelers.",
     path: "/rout/rooms/single",
   },
   {
     title: "Premium Room",
-    img: "/img/h21.jpg",
-    price: "$200/night",
+    img: "/img/premium1.jpg",
+    price: "৳3000/night",
     desc: "Top-tier comfort & exclusive amenities.",
     path: "/rout/rooms/premium",
   },
@@ -147,7 +147,7 @@ export default function RoomSlider() {
                   <div className="px-6 pt-4 mt-0 flex flex-col flex-grow">
                     <div className="flex justify-between items-center">
                       <h3 className="text-xl font-semibold">{room.title}</h3>
-                      <span className="text-gray-500 bg-gray-200 h-8 w-25 pt-1 ps-3 rounded-lg font-semibold">
+                      <span className="text-gray-400 bg-gray-200 h-8 w-28 pt-1 ps-2 rounded-lg font-semibold">
                         {room.price}
                       </span>
                     </div>
@@ -157,7 +157,7 @@ export default function RoomSlider() {
                         href={room.path}
                         className="pb-4 text-sky-500 underline tracking-widest transition"
                       >
-                        Details
+                        Details Room
                       </Link>
                     </div>
                   </div>

@@ -27,11 +27,12 @@ export default function Footer() {
         
         {/* Left Column: Logo, Desc, Socials */}
         <div>
-          <Image src="/logo.png" alt="Hotel Logo" width={120} height={50} className="mb-4" />
+          <Image src="/img/logo2.png" alt="Hotel Logo" width={140} height={50} className="mb-4" />
           <p className="text-sm">
             A peaceful luxury stay. Book with confidence & comfort.
           </p>
           <div className="flex gap-3 mt-6">
+            Follow us : 
             <Link href="#" className="p-2 bg-white rounded-full shadow hover:bg-blue-100 transition">
               <FaFacebookF className="text-blue-800" />
             </Link>
@@ -80,7 +81,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="mt-12 border-t border-gray-300 py-4 text-xs text-gray-600 px-4 text-center">
+      <div className="mt-12 border-t border-gray-300 py-4 text-xs text-gray-400 px-4 text-center">
         <div className="max-w-7xl mx-auto">
           <p>© 2025 Hotel Sky. All rights reserved.</p>
         </div>

@@ -98,7 +98,7 @@ export default function GalleryPage() {
             <h2 className="text-2xl mb-3">HOTEL VIEW</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
               {/* 3 small images */}
-              <PhotoView src={imgSrc}>
+              <PhotoView src={/img/primium1.jpg}>
                 <img
                   src={imgSrc}
                   alt="Hotel view"
