@@ -44,7 +44,7 @@ export default function TajIntro() {
 
 {/* Right Box (Image Top + Text Bottom) */}
 <div className="relative md:-translate-x-18 md:translate-y-10">
-  <div className="w-[180px] sm:w-[350px] md:w-[410px] md:bg-white md:shadow md:rounded overflow-hidden">
+  <div className="w-full sm:w-[350px] md:w-[410px] md:bg-white md:shadow md:rounded overflow-hidden">
     
     {/* Top: Image 70% approx */}
     <div className="aspect-[4/3]">
