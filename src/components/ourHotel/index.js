@@ -52,7 +52,7 @@ const LuxuryExperience = () => {
   {/* Logo */}
  <div className="pt-3 flex flex-col items-center ">
   {/* Icon */}
-  <div className="text-2xl sm:text-3xl text-blue-600">
+  <div className="text-2xl sm:text-3xl text-sky-500">
    <FaHotel/>
   </div>
 

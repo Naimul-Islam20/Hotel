@@ -3,7 +3,7 @@ import { GoLocation } from "react-icons/go";
 
 const Topbar = () => {
   return (
-    <div className="w-full bg-sky-200 border-b border-gray-200 text-gray-700 text-xs sm:text-sm md:text-base">
+    <div className="w-full bg-sky-100 border-b border-gray-200 text-gray-700 text-xs sm:text-sm md:text-base">
       <div className="w-full mx-auto text-sm px-3 md:px-6 py-1 flex justify-between items-center">
         
         {/* Left Side: Location & Phone */}

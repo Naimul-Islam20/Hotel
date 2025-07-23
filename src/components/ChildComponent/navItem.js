@@ -53,7 +53,7 @@ const navItems = [
 
   },
   {
-    name: "ATTRACTION",href: "/rout/local"
+    name: "LOCAL ATTRACTION",href: "/rout/local"
     
 
   },
