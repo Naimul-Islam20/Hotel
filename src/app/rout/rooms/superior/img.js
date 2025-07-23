@@ -12,10 +12,10 @@ import 'react-photo-view/dist/react-photo-view.css';
 
 const images = [
   '/img/family.jpg',
-  '/img/family1.jpg',
-  '/img/family2.jpg',
+  '/img/family3.jpg',
+  '/img/family4.jpg',
   '/img/family.jpg',
-  '/img/family1.jpg',
+  '/img/family3.jpg',
 ];
 
 const ImageSliderWithModal = () => {

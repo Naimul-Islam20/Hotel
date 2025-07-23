@@ -63,7 +63,7 @@ export default function TajIntro() {
         Mr. Naimul Islam
       </h3>
       <p className="text-xs sm:text-sm text-gray-600">
-        Founder, Hotel Sky
+        Founder, Ocean Residence
       </p>
     </div>
   </div>

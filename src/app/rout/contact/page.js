@@ -26,8 +26,8 @@ export default function ContactPage() {
       >
         <div className="absolute inset-0 bg-sky-200" />
         <div className="relative z-10">
-          <h1 className="text-3xl md:text-5xl  uppercase">Contact Us</h1>
-          <Link href="/" className="hover:underline text-sm text-gray-900 ">
+          <h1 className="text-3xl md:text-5xl  pb-5">Contact Us</h1>
+          <Link href="/" className="hover:underline text-sm text-gray-700 ">
             Home
           </Link>{" "}
           &gt; Contact Us

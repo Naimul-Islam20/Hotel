@@ -21,11 +21,20 @@ import { FaCaretDown, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaGlobe } from 're
 const RoomDetailsPage = () => {
   return (
     <div className="w-full">
-      {/* 🟦 Hero Section */}
-      <div className="w-full bg-blue-100 py-12 text-center">
-        <h1 className="text-4xl font-bold text-gray-800">Single Room</h1>
-        <Link href="/" className="hover:underline text-gray-600">Home</Link> &gt; Single Room
-      </div>
+         {/* ✅ Hero Section */}
+           <section
+             className="w-full bg-cover bg-center flex flex-col items-center justify-center text-black text-center px-4 py-10 relative"
+             // style={{ backgroundImage: "url('/exc/about2.jpg')" }}
+           >
+             <div className="absolute inset-0 bg-sky-200" />
+             <div className="relative z-10">
+               <h1 className="text-3xl md:text-5xl  pb-5">Executive Room</h1>
+               <Link href="/" className="hover:underline text-sm text-gray-700 ">
+                 Home
+               </Link>{" "}
+               &gt; Executive Room
+             </div>
+           </section>
 
       {/* 🟨 Main Section */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 py-4">
@@ -40,27 +49,21 @@ const RoomDetailsPage = () => {
           <Calendar/>
 
             <div className="max-w-7xl mx-auto  py-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Room Description</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Room Overview</h2>
             <p className="text-gray-600 leading-relaxed text-justify">
-                Quisque fermentum aliquam consectetur. Ut molestie dictum enim vel placerat. Suspendisse potenti. 
-                Pellentesque sed quam ante. Mauris ut felis sodales, euismod erat et, hendrerit purus. Sed diam orci, 
-                aliquet a condimentum nec, consequat fermentum velit. Duis gravida aliquet fermentum. Pellentesque nec dui 
-                at lorem mollis molestie sed eu orci. Vestibulum et elit dolor. Mauris vulputate felis quis urna consequat, 
-                a tincidunt libero blandit. Morbi eros metus, egestas eget magna ac, dignissim imperdiet est. In eget augue 
-                nunc. In id nisi porta, mollis tellus auctor, rhoncus justo. Praesent imperdiet tincidunt ipsum, vel tincidunt 
-                odio iaculis et. Sed posuere sollicitudin nisi in dignissim.
+               Discover the perfect balance of luxury and practicality in our Executive Room — designed to meet the needs of discerning travelers. The room features a refined interior with premium furnishings, a spacious king-size bed, and a comfortable work area ideal for both business and leisure. Floor-to-ceiling windows fill the space with natural light and offer a serene view of the surrounding cityscape. For entertainment, enjoy a selection of local and international channels on the flat-screen Smart TV. The en-suite bathroom includes a walk-in rain shower, deluxe toiletries, and soft bathrobes, creating a relaxing atmosphere after a long day. Every detail in the Executive Room is thoughtfully curated to offer you a seamless and memorable stay.
             </p>
             </div>
 
 
         </div>
-
+       
 <div className="space-y-4 w-full p-2 bg-gray-100 h-fit sticky top-18">
   <h2 className="text-xl font-semibold mb-2">Contact Info</h2>
 
   {/* Location */}
   <details className="group border border-gray-300 rounded-md overflow-hidden">
-    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-blue-700">
+    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-sky-500">
       <span className="flex items-center gap-2">
         <FaMapMarkerAlt className="text-base" />
         <span className="leading-none">Location</span>
@@ -68,13 +71,13 @@ const RoomDetailsPage = () => {
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      Access Road, Agrabad Chittagong, Bangladesh.
+      Ocean tower, 9th floor, Agrabad access road, beparilara, circle Chittagong, Bangladesh.
     </div>
   </details>
 
   {/* Email */}
   <details className="group border border-gray-300 rounded-md overflow-hidden">
-    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-blue-700">
+    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-sky-500">
       <span className="flex items-center gap-2">
         <FaEnvelope className="text-base" />
         <span className="leading-none">Email</span>
@@ -82,13 +85,13 @@ const RoomDetailsPage = () => {
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      contact@hotelblue.com
+      contact@oceanresidence.com
     </div>
   </details>
 
   {/* Phone */}
   <details className="group border border-gray-300 rounded-md overflow-hidden">
-    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-blue-700">
+    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-sky-500">
       <span className="flex items-center gap-2">
         <FaPhoneAlt className="text-base" />
         <span className="leading-none">Phone</span>
@@ -102,7 +105,7 @@ const RoomDetailsPage = () => {
 
   {/* Website */}
   <details className="group border border-gray-300 rounded-md overflow-hidden">
-    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-blue-700">
+    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-sky-500">
       <span className="flex items-center gap-2">
         <FaGlobe className="text-base" />
         <span className="leading-none">Website</span>
@@ -110,19 +113,19 @@ const RoomDetailsPage = () => {
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      <a href="https://hotelblue.com" className="text-blue-600 underline" target="_blank" rel="noreferrer">
-        www.hotelblue.com
+      <a href="https://oceanresidencectg.com" className="text-blue-600 underline" target="_blank" rel="noreferrer">
+        www.oceanresidencectg.com
       </a>
     </div>
   </details>
 
   {/* Contact Us Button */}
-  <div className="pt-4 text-center">
-  <Link href="/rout/contact"
-   className="text-sky-400 underline tracking-widest py-2 font-medium transition duration-200" >
-  
-    Contact Us
-</Link>
+  <div className="p-2 bg-sky-500 rounded text-center">
+    <Link href="/rout/contact"
+       className="text-white tracking-widest py-2 font-medium transition duration-200" >
+      
+        Contact Us
+    </Link>
   </div>
 </div>
 

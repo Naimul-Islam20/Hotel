@@ -19,18 +19,18 @@ const rooms = [
     path: "/rout/rooms/deluxe",
   },
   {
-    title: "Family Room",
+    title: "Superior Room",
     img: "/img/family.jpg",
     price: "৳3000/night",
     desc: "Spacious room perfect for families.",
-    path: "/rout/rooms/family",
+    path: "/rout/rooms/superior",
   },
   {
-    title: "Single Room",
+    title: "Executive Room",
     img: "/img/single.jpg",
     price: "৳3000/night",
     desc: "Affordable option for solo travelers.",
-    path: "/rout/rooms/single",
+    path: "/rout/rooms/superior",
   },
   {
     title: "Premium Room",

@@ -10,22 +10,22 @@ const navItems = [
     
     
       {
-    name: "SINGLE",href: "/rout/rooms/single"
+    name: "EXECUTIVE ROOM",href: "/rout/rooms/executive "
     
 
   },
       {
-    name: "DELUXE",href: "/rout/rooms/deluxe"
+    name: "DELUXE ROOM",href: "/rout/rooms/deluxe"
     
 
   },
     {
-    name: "FAMILY",href: "/rout/rooms/family"
+    name: "SUPERIOR ROOM",href: "/rout/rooms/superior"
     
 
   },
     {
-    name: "PREMIUM",href: "/rout/rooms/premium"
+    name: "PREMIUM ROOM",href: "/rout/rooms/premium"
     
 
   },

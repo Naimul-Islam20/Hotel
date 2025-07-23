@@ -9,11 +9,8 @@ import ContactActions from './contactAction';
  import Link from "next/link";
 
 import Calendar from './calendar'
-// ⬇️ এই imports গুলো উপরে রাখতে হবে
-import { FaBath, FaCoffee, FaCar, FaWind, FaMugHot, FaWifi, FaShuttleVan, FaSpa, FaHotTub } from 'react-icons/fa';
-import { MdMicrowave } from 'react-icons/md';
 
-import { FaQuestionCircle } from 'react-icons/fa'; // Optional icon
+
 import { FaCaretDown, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaGlobe } from 'react-icons/fa';
 
 // import { Accordion } from '@/components/ui/accordion'; // যদি Tailwind UI or Custom component use করো
@@ -21,11 +18,20 @@ import { FaCaretDown, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaGlobe } from 're
 const RoomDetailsPage = () => {
   return (
     <div className="w-full border-e">
-      {/* 🟦 Hero Section */}
-      <div className="w-full bg-yellow-50 py-12 text-center">
-        <h1 className="text-4xl font-semibold text-gray-800">Premium Room</h1>
-        <Link href="/" className="hover:underline text-white">Home</Link> &gt; Premium Room
-      </div>
+          {/* ✅ Hero Section */}
+            <section
+              className="w-full bg-cover bg-center flex flex-col items-center justify-center text-black text-center px-4 py-10 relative"
+              // style={{ backgroundImage: "url('/exc/about2.jpg')" }}
+            >
+              <div className="absolute inset-0 bg-sky-200" />
+              <div className="relative z-10">
+                <h1 className="text-3xl md:text-5xl  pb-5">Premium Room</h1>
+                <Link href="/" className="hover:underline text-sm text-gray-700 ">
+                  Home
+                </Link>{" "}
+                &gt;Premium Room
+              </div>
+            </section>
 
       {/* 🟨 Main Section */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 py-4">
@@ -40,27 +46,22 @@ const RoomDetailsPage = () => {
           <Calendar/>
 
             <div className="max-w-7xl mx-auto py-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Room Description</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Room Overview</h2>
             <p className="text-gray-600 leading-relaxed text-justify">
-                Quisque fermentum aliquam consectetur. Ut molestie dictum enim vel placerat. Suspendisse potenti. 
-                Pellentesque sed quam ante. Mauris ut felis sodales, euismod erat et, hendrerit purus. Sed diam orci, 
-                aliquet a condimentum nec, consequat fermentum velit. Duis gravida aliquet fermentum. Pellentesque nec dui 
-                at lorem mollis molestie sed eu orci. Vestibulum et elit dolor. Mauris vulputate felis quis urna consequat, 
-                a tincidunt libero blandit. Morbi eros metus, egestas eget magna ac, dignissim imperdiet est. In eget augue 
-                nunc. In id nisi porta, mollis tellus auctor, rhoncus justo. Praesent imperdiet tincidunt ipsum, vel tincidunt 
-                odio iaculis et. Sed posuere sollicitudin nisi in dignissim.
+                Experience understated elegance in our Premium Room, crafted to deliver comfort, style, and privacy. This room features a cozy king or twin bed, tasteful decor with warm tones, and a private balcony or large window for scenic views. Guests can unwind in a calm ambiance while enjoying modern conveniences such as a flat-screen Smart TV and complimentary Wi-Fi. The room also includes a luxurious bathroom equipped with a walk-in rain shower, quality toiletries, and fluffy towels. Whether you're traveling for business or a romantic getaway, the Premium Room offers an inviting retreat for a peaceful stay.
             </p>
             </div>
 
 
         </div>
 
-<div className="space-y-4 w-full  p-2 bg-gray-100 h-fit sticky top-18">
+
+<div className="space-y-4 w-full p-2 bg-gray-100 h-fit sticky top-18">
   <h2 className="text-xl font-semibold mb-2">Contact Info</h2>
 
   {/* Location */}
   <details className="group border border-gray-300 rounded-md overflow-hidden">
-    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-blue-700">
+    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-sky-500">
       <span className="flex items-center gap-2">
         <FaMapMarkerAlt className="text-base" />
         <span className="leading-none">Location</span>
@@ -68,13 +69,13 @@ const RoomDetailsPage = () => {
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-     Access Road, Agrabad Chittagong, Bangladesh.
+      Ocean tower, 9th floor, Agrabad access road, beparilara, circle Chittagong, Bangladesh.
     </div>
   </details>
 
   {/* Email */}
   <details className="group border border-gray-300 rounded-md overflow-hidden">
-    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-blue-700">
+    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-sky-500">
       <span className="flex items-center gap-2">
         <FaEnvelope className="text-base" />
         <span className="leading-none">Email</span>
@@ -82,13 +83,13 @@ const RoomDetailsPage = () => {
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      contact@hotelblue.com
+      contact@oceanresidence.com
     </div>
   </details>
 
   {/* Phone */}
   <details className="group border border-gray-300 rounded-md overflow-hidden">
-    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-blue-700">
+    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-sky-500">
       <span className="flex items-center gap-2">
         <FaPhoneAlt className="text-base" />
         <span className="leading-none">Phone</span>
@@ -102,7 +103,7 @@ const RoomDetailsPage = () => {
 
   {/* Website */}
   <details className="group border border-gray-300 rounded-md overflow-hidden">
-    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-blue-700">
+    <summary className="cursor-pointer bg-white px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700 group-open:bg-blue-50 group-open:text-sky-500">
       <span className="flex items-center gap-2">
         <FaGlobe className="text-base" />
         <span className="leading-none">Website</span>
@@ -110,19 +111,19 @@ const RoomDetailsPage = () => {
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      <a href="https://hotelblue.com" className="text-blue-600 underline" target="_blank" rel="noreferrer">
-        www.hotelblue.com
+      <a href="https://oceanresidencectg.com" className="text-blue-600 underline" target="_blank" rel="noreferrer">
+        www.oceanresidencectg.com
       </a>
     </div>
   </details>
 
   {/* Contact Us Button */}
-  <div className="pt-4 text-center">
-   <Link href="/rout/contact"
-   className="text-sky-400 underline tracking-widest py-2 font-medium transition duration-200" >
-  
-    Contact Us
-</Link>
+  <div className="p-2 bg-sky-500 rounded text-center">
+    <Link href="/rout/contact"
+       className="text-white tracking-widest py-2 font-medium transition duration-200" >
+      
+        Contact Us
+    </Link>
   </div>
 </div>
 

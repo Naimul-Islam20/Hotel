@@ -1,3 +1,9 @@
+import { FaStar } from "react-icons/fa";
+
+import { FaHotel } from "react-icons/fa";
+
+
+
 const LuxuryExperience = () => {
   return (
     <div className="w-full bg-white min-h-[92vh] flex items-center">
@@ -39,38 +45,47 @@ const LuxuryExperience = () => {
               }}
             ></div>
 
-            {/* Overlay with spaced content */}
-           <div className="relative bg-white bg-opacity-50 m-2 text-black h-auto flex flex-col items-center px-4 sm:px-6 py-6 sm:py-8 text-center space-y-3 sm:space-y-5">
+        
 
-              {/* Title */}
-              <h3 className="text-xl sm:text-2xl pt-3 font-semibold">Sky Hotel</h3>
+<div className="relative bg-white bg-opacity-50 m-2 text-black h-auto flex flex-col items-center px-4 sm:px-6 py-6 sm:py-8 text-center space-y-3 sm:space-y-5">
 
-              {/* Stars */}
-              <div className="flex justify-center pt-10 sm:pt-14 space-x-1">
-                {Array(5)
-                  .fill(0)
-                  .map((_, i) => (
-                    <svg
-                      key={i}
-                      className="w-4 sm:w-5 h-4 sm:h-5 text-yellow-400"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.564-.955L10 0l2.948 5.955 6.564.955-4.756 4.635 1.122 6.545z" />
-                    </svg>
-                  ))}
-              </div>
+  {/* Logo */}
+ <div className="pt-3 flex flex-col items-center ">
+  {/* Icon */}
+  <div className="text-2xl sm:text-3xl text-blue-600">
+   <FaHotel/>
+  </div>
 
-              {/* Subtitle */}
-              <h4 className="text-base sm:text-lg pt-4 sm:pt-5 font-bold">Luxury Hotel</h4>
+  {/* Main Heading */}
+  <h3 className="text-xl text-sky-500 sm:text-2xl font-bold ">
+    Ocean Residential
+  </h3>
 
-              {/* Description */}
-              <p className="text-xs sm:text-sm md:text-sm leading-relaxed px-2 sm:px-0">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem iste
-                suscipit. Ad dolorem iste suscipit.sint sit voluptatem, vero doloribus nesciunt suscipit dolores
-                veritatis minus quam atque non autem quasi
-              </p>
-            </div>
+  {/* Sub Text */}
+  <p className="text-sm text-black">Luxury Experience</p>
+</div>
+
+
+  {/* Stars */}
+  <div className="flex justify-center pt-4 sm:pt-0 space-x-1">
+    {Array(5)
+      .fill(0)
+      .map((_, i) => (
+        <FaStar key={i} className="text-yellow-400 w-4 sm:w-5 h-4 sm:h-5" />
+      ))}
+  </div>
+
+  {/* Subtitle */}
+  <h4 className="text-base sm:text-lg pt-4 sm:pt-5 font-bold">Luxury Hotel</h4>
+
+  {/* Description */}
+  <p className="text-xs sm:text-sm md:text-sm leading-relaxed px-2 sm:px-0">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem iste
+    suscipit. Ad dolorem iste suscipit.sint sit voluptatem, vero doloribus nesciunt suscipit dolores
+    veritatis minus quam atque non autem quasi
+  </p>
+</div>
+
           </div>
         </div>
       </div>

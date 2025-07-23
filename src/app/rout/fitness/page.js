@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
@@ -45,9 +46,12 @@ export default function FitnessPage() {
             </ul>
           </div>
 
-          <button className="bg-sky-500 text-white px-6 py-3 rounded hover:bg-sky-600 transition w-max">
-            Request Information
-          </button>
+            <Link
+                      href="/rout/contact"
+                      className="text-lg  text-white p-3 bg-sky-500 rounded hover:bg-sky-600 transition"
+                    >
+                      Contact Us
+                    </Link>
         </div>
 
         {/* Right Column (Slider with PhotoView) */}
