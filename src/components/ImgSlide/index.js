@@ -113,9 +113,9 @@ export default function ExclusiveSlider() {
                     <p className="text-xs md:text-lg mb-2 md:mb-4 text-gray-500">This is a sample description text that explains more about the image or the offer.</p>
                     <Link
                                href="/rout/local"
-                               className="hover:bg-sky-600 bg-sky-500 text-white rounded px-3 py-2 hidden md:flex items-center gap-2   "
+                               className="  text-sky-500  underline  tracking-widest  hidden md:flex items-center gap-2   "
                              >
-                               VIEW RATE
+                               Explore More
                              </Link>
                   </div>
                 </div>

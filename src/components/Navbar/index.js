@@ -85,7 +85,7 @@ const Navbar = () => {
                           height: 0,
                           transition: { duration: 0, ease: "easeIn" },
                         }}
-                        className={`mt-[20px] z-[9999]  overflow-hidden ${
+                        className={`mt-[24px] z-[9999]  overflow-hidden ${
                           item.dropdown.length > 7
                             ? "absolute left-1/2 top-full -translate-x-1/2 bg-white shadow-xl border border-gray-300 grid grid-cols-2 gap-x-6 px-8 py-5 max-w-[700px] min-w-[500px]"
                             : "absolute top-full left-0 bg-white shadow-xl border border-gray-300 flex flex-col w-auto px-4 py-2"

@@ -35,8 +35,8 @@ export default function ContactPage() {
       </section>
 
       {/* ✅ Contact Info Section */}
-      <section className="w-full px-4 py-10 flex bg-white justify-center">
-        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section className="w-full  px-4 py-10 flex bg-white justify-center">
+        <div className="w-full max-w-6xl  grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/* Left Column */}
           <div className="space-y-4">

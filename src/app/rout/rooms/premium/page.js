@@ -118,13 +118,15 @@ const RoomDetailsPage = () => {
   </details>
 
   {/* Contact Us Button */}
-  <div className="p-2 bg-sky-500 rounded text-center">
-    <Link href="/rout/contact"
-       className="text-white tracking-widest py-2 font-medium transition duration-200" >
-      
-        Contact Us
-    </Link>
-  </div>
+<div className="bg-sky-500 rounded text-center">
+  <Link
+    href="/rout/contact"
+    className="block w-full text-white tracking-widest px-4 py-2 font-medium transition duration-200 hover:bg-sky-600"
+  >
+    Contact Us
+  </Link>
+</div>
+
 </div>
 
       </div>
