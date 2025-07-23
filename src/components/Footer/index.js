@@ -82,10 +82,22 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="mt-12 border-t border-gray-300 py-4 text-xs text-gray-400 px-4 text-center">
-        <div className="max-w-7xl mx-auto">
-          <p>© 2025 Hotel Sky. All rights reserved.</p>
-        </div>
-      </div>
+  <div className="max-w-7xl mx-auto">
+    <p>
+      © 2025{" "}
+      <a
+        href="https://muktodharaltd.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-500 hover:underline"
+      >
+        Muktodhara Technology Limited
+      </a>
+      . All rights reserved.
+    </p>
+  </div>
+</div>
+
 
       {/* Scroll to Top Button */}
       {showScroll && (

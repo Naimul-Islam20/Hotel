@@ -22,7 +22,7 @@ export default function TajIntro() {
       {/* Main Section */}
       <div className="max-w-6xl mx-auto grid grid-cols-2 gap-2 md:gap-8 my-5 md:my-12 px-2 md:px-4 relative">
         {/* Left Box */}
-        <div className="bg-white p-2 sm:p-6 md:p-10 shadow-md z-10 md:translate-x-4">
+        <div className="bg-white p-2 sm:p-6 md:p-10 shadow z-10 md:translate-x-4">
           {/* Top Border Line with Text only left side border */}
           <div className="flex items-center mb-2">
             <div className="w-6 sm:w-8 md:w-10 border-t-2 border-gray-700"></div>
@@ -58,7 +58,7 @@ export default function TajIntro() {
     </div>
 
     {/* Bottom: Name & Title */}
-    <div className="px-4 py-3 bg-white text-center">
+    <div className="px-4 py-3  text-center">
       <h3 className="text-base sm:text-lg font-semibold text-gray-800">
         Mr. Naimul Islam
       </h3>
