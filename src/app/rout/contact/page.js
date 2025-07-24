@@ -40,7 +40,7 @@ export default function ContactPage() {
           
           {/* Left Column */}
           <div className="space-y-4">
-            <h2 className="text-xl sm:text-2xl font-semibold text-black">Hotel Sky </h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-black"> Ocean Residence </h2>
 
             <div>
               <h4 className="text-base sm:text-lg font-semibold text-gray-900">Address</h4>
