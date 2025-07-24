@@ -37,13 +37,13 @@ export const rooms = [
   },
   
   {
-    title: "Family Room",
+    title: "Executive Room",
     img: [
       "/img/family.jpg",
       "/img/family3.jpg",
       "/img/family4.jpg",
     ],
-    path: "/rout/rooms/family",
+    path: "/rout/rooms/executive",
     price: "$150/night",
     features: [
       { icon: <FaBed />, text: "2 Queen Beds" },
@@ -54,13 +54,13 @@ export const rooms = [
   },
   
   {
-    title: "Single Room",
+    title: "Superior Room",
     img: [
     
       "/img/single.jpg",
       "/img/single.jpg",
     ],
-    path: "/rout/rooms/single",
+    path: "/rout/rooms/superior",
     price: "$90/night",
     features: [
       { icon: <FaBed />, text: "1 Bed" },
