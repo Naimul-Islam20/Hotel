@@ -66,7 +66,7 @@ The room comes with modern amenities such as a Smart TV, high-speed Wi-Fi, and a
 
 
         </div>
-       
+
 <div className="space-y-4 w-full p-2 bg-gray-100 h-fit sticky top-18">
   <h2 className="text-xl font-semibold mb-2">Contact Info</h2>
 
@@ -122,7 +122,12 @@ The room comes with modern amenities such as a Smart TV, high-speed Wi-Fi, and a
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      <a href="https://oceanresidencectg.com" className="text-blue-600 underline" target="_blank" rel="noreferrer">
+      <a
+        href="https://oceanresidencectg.com"
+        className="text-blue-600 underline"
+        target="_blank"
+        rel="noreferrer"
+      >
         www.oceanresidencectg.com
       </a>
     </div>
@@ -130,14 +135,27 @@ The room comes with modern amenities such as a Smart TV, high-speed Wi-Fi, and a
 
   {/* Contact Us Button */}
   <div className="bg-sky-500 rounded text-center">
-  <Link
-    href="/rout/contact"
-    className="block w-full text-white tracking-widest px-4 py-2 font-medium transition duration-200 hover:bg-sky-600"
-  >
-    Contact Us
-  </Link>
-</div>
+    <Link
+      href="/rout/contact"
+      className="block w-full text-white tracking-widest px-4 py-2 font-medium transition duration-200 hover:bg-sky-600"
+    >
+      Contact Us
+    </Link>
+  </div>
 
+  {/* Footer Messages */}
+  <div className="text-sm text-gray-600 pt-4 border-t border-gray-300 space-y-4">
+    {/* English */}
+    <ul className="list-indent space-y-1">
+      <li>Experience comfort, elegance, and care — only at Ocean Residence.</li>
+      <li>Your peaceful stay is our top priority.</li>
+      <li>Friendly service, secure environment, unforgettable memories.</li>
+      <li>Ocean Residence — where hospitality feels like home.</li>
+    </ul>
+  </div>
+  <div className="text-center text-sm text-gray-600 pt-4 border-t border-gray-300">
+    At Ocean Residence, we’re always here for you — committed to providing a peaceful, secure, and memorable stay every time.
+  </div>
 </div>
 
       </div>

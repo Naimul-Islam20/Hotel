@@ -14,9 +14,7 @@ const LuxuryExperience = () => {
   <h2 className="text-2xl sm:text-4xl md:text-5xl text-gray-800 mb-3">
     Experience the Elegance of Ocean Residence
   </h2>
-  <p className="text-base sm:text-lg md:text-lg text-gray-600 mb-7">
-    Providing exceptional hospitality since 1990
-  </p>
+  
   <p className="text-xs text-justify sm:text-sm md:text-base text-gray-500 leading-relaxed mb-4">
     Ocean Residence offers a serene retreat blending luxury with comfort. 
     Our thoughtfully designed rooms provide a peaceful atmosphere, 

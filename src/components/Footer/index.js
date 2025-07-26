@@ -49,7 +49,7 @@ export default function Footer() {
           <p className="text-sm pt-2"><span className=" font-medium">Address : </span> Ocean Tower, 6th Floor, Agrabad Access Road, Beparilara, Circle Chittagong, Bangladesh.</p>
           <div className="flex gap-3 mt-6">
             Follow us : 
-            <Link href="#" className="p-2 bg-white rounded-full shadow hover:bg-blue-100 transition">
+            <Link href="https://www.facebook.com/profile.php?id=61576255126669" className="p-2 bg-white rounded-full shadow hover:bg-blue-100 transition">
               <FaFacebookF className="text-blue-800" />
             </Link>
             <Link href="#" className="p-2 bg-white rounded-full shadow hover:bg-pink-100 transition">
@@ -117,12 +117,13 @@ export default function Footer() {
 
       {/* Scroll to Top Button */}
       {showScroll && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-6 right-6 p-3 bg-sky-500 text-white rounded-full shadow-lg hover:bg-sky-600 transition"
-        >
-          <FaArrowUp />
-        </button>
+       <button
+  onClick={scrollToTop}
+  className="fixed bottom-6 right-6 p-3 bg-sky-500 text-white rounded-full shadow-lg hover:bg-sky-600 transition z-[99999]"
+>
+  <FaArrowUp />
+</button>
+
       )}
     </footer>
   );

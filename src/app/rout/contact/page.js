@@ -60,7 +60,7 @@ export default function ContactPage() {
 
             {/* ✅ Social Icons */}
             <div className="flex gap-4 pt-4">
-              <a href="#" className="text-blue-500">
+              <a href="https://www.facebook.com/profile.php?id=61576255126669" className="text-blue-500">
                 <FaFacebookF size={20} />
               </a>
               <a href="#" className="text-pink-500">

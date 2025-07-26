@@ -12,6 +12,15 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
+/* global.css বা app.css ইত্যাদি ফাইলে রাখো */
+
+.list-indent {
+  list-style-type: disc;       /* বুলেট পয়েন্ট */
+  list-style-position: inside; /* বুলেট টেক্সটের সাথে একই লাইনে */
+  padding-left: 1.25rem;       /* বুলেট + gap */
+  text-indent: -1.25rem;       /* multiline alignment */
+}
+
 
 :root {
   --font-gilda: 'Gilda Display', serif;

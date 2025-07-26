@@ -22,18 +22,30 @@ export default function PaathyaSection() {
 {/* ===== Responsive Video Embed ===== */}
 <div className="flex justify-center pb-12 md:pb-28">
   <div
-    className="relative w-full max-w-4xl rounded overflow-hidden shadow cursor-pointer aspect-video"
+    className="relative w-full max-w-xl rounded overflow-hidden shadow bg-black"
+    style={{ aspectRatio: '16 / 9' }} // ✅ এখানে aspect ratio স্টাইল দিয়ে ফিক্স করা হলো
     onClick={() => setIsVideoPlaying(true)}
   >
-    {isVideoPlaying && (
- <video
-  className="w-full max-w-4xl rounded overflow-hidden shadow aspect-video bg-black"
-  src="/img/video.mp4"
-  controls
-  autoPlay
-/>
-
-
+    {isVideoPlaying ? (
+      <video
+        className="w-full h-full object-contain bg-black"
+        src="/img/video2.mp4"
+        controls
+        autoPlay
+      />
+    ) : (
+      <div className="relative w-full h-full cursor-pointer bg-black">
+        <img
+          src="/img/video-thumbnail.jpg"
+          alt="Video thumbnail"
+          className="absolute inset-0 w-full h-full object-cover rounded"
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-white bg-black bg-opacity-50 p-4 rounded-full text-4xl select-none">
+            ▶
+          </div>
+        </div>
+      </div>
     )}
   </div>
 </div>
