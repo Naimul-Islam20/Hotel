@@ -55,7 +55,7 @@ export default function ContactPage() {
 
             <div>
               <h4 className="text-base sm:text-lg font-semibold text-gray-900">Questions</h4>
-              <p className="text-sm sm:text-base text-gray-800">info@oceanresidence.com</p>
+              <p className="text-sm sm:text-base text-gray-800">oceanresidence10@gmail.com</p>
             </div>
 
             {/* ✅ Social Icons */}

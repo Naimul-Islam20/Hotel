@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useRef } from "react";
 import Link from "next/link";
 import navItems from "./navItem";
@@ -13,6 +15,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
 
   return (
     <>
+      {/* Overlay */}
       {isOpen && (
         <div
           onClick={onClose}
@@ -21,22 +24,23 @@ const MobileMenu = ({ isOpen, onClose }) => {
         />
       )}
 
+      {/* Mobile Sidebar Menu */}
       <div
         ref={menuRef}
         className={`fixed top-0 right-0 h-full w-2/3 bg-white shadow-lg z-50 transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        } flex flex-col min-h-screen`}
       >
         {/* Header */}
-        <div className="p-4 border-b border-black pb-8 flex justify-between items-center">
+        <div className="p-4 border-b border-black pb-8 flex justify-between items-center shrink-0">
           <h2 className="text-xl text-black font-semibold">Menu</h2>
           <button onClick={onClose} className="text-2xl text-black" aria-label="Close menu">
             ✕
           </button>
         </div>
 
-        {/* Menu Items */}
-        <ul className="p-4 space-y-2 overflow-y-auto flex-1">
+        {/* Scrollable Menu Items */}
+        <ul className="p-4 space-y-2 overflow-y-auto flex-grow">
           {navItems.map((item) => (
             <li key={item.name} className="border-b border-black pb-2">
               {item.dropdown ? (
@@ -83,7 +87,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                   )}
                 </>
               ) : (
-                // Non-dropdown item: পুরো লাইন জুড়ে clickable Link
+                // Normal Link (no dropdown)
                 <Link
                   href={item.href}
                   className="block w-full text-sm text-gray-800 py-2"

@@ -88,7 +88,7 @@ export default function Footer() {
           <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
           <ul className="space-y-2 text-sm">
             <li><span className="font-medium">Phone : </span> +8801336188906</li>
-            <li><span className="font-medium">Email : </span> info@ocenresidence.com</li>
+            <li><span className="font-medium">Email : </span> oceanresidence10@gmail.com</li>
             <li></li>
             <li><span className="font-medium">Hours : </span> 24/7 Service Available</li>
           </ul>

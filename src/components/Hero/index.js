@@ -59,7 +59,7 @@ export default function HeroSlider() {
       <img
         src={images[current]}
         alt="Hero Slide"
-        className="w-full h-full object-cover brightness-75 absolute inset-0 pointer-events-none"
+        className="w-full h-full object-cover brightness-50 absolute inset-0 pointer-events-none"
         draggable={false}
       />
 
