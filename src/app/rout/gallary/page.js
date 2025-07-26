@@ -83,7 +83,7 @@ export default function GalleryPage() {
             activeTab === "dining" ? "border-b-2 text-sm border-black text-black " : ""
           }`}
         >
-          Deluxe
+          View
         </button>
       </div>
 
@@ -95,12 +95,12 @@ export default function GalleryPage() {
             ref={viewRef}
             className="bg-gray-100 mx-auto border-b border-gray-400 scroll-mt-17 px-4 sm:px-10 py-8"
           >
-            <h2 className="text-2xl uppercase mb-3">Premium room</h2>
+            <h2 className="text-2xl uppercase mb-3">Deluxe room</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
               {/* 3 small images */}
-              <PhotoView src="/img/premium5.jpg">
+              <PhotoView src="/img/premium1.jpg">
                 <img
-                  src="/img/premium5.jpg"
+                  src="/img/premium1.jpg"
                   alt="Guest room"
                   className="w-full h-24 sm:h-40 lg:h-50 object-cover"
                 />
@@ -112,9 +112,9 @@ export default function GalleryPage() {
                   className="w-full h-24 sm:h-40 lg:h-50 object-cover"
                 />
               </PhotoView>
-              <PhotoView src="/img/family3.jpg">
+              <PhotoView src="/img/premium3.jpg">
                 <img
-                  src="/img/family3.jpg"
+                  src="/img/premium3.jpg"
                   alt="Guest room"
                   className="w-full h-24 sm:h-40 lg:h-50 object-cover"
                 />
@@ -122,9 +122,9 @@ export default function GalleryPage() {
 
               {/* 2x2 layout */}
               <div className="col-span-2 sm:col-span-2 sm:row-span-2">
-                <PhotoView src="/img/premium3.jpg">
+                <PhotoView src="/img/premium4.jpg">
                   <img
-                    src="/img/premium3.jpg"
+                    src="/img/premium4.jpg"
                     alt="Guest room"
                     className="w-full h-[180px] sm:h-[250px] lg:h-[417px] object-cover rounded-md"
                   />
@@ -132,16 +132,16 @@ export default function GalleryPage() {
               </div>
 
               {/* 2 small images */}
-              <PhotoView src="/img/premium4.jpg">
+              <PhotoView src="/img/family4.jpg">
                 <img
-                  src="/img/premium4.jpg"
+                  src="/img/family4.jpg"
                   alt="Guest room"
                   className="w-full h-24 sm:h-40 lg:h-50 object-cover"
                 />
               </PhotoView>
-              <PhotoView src="/img/premium5.jpg">
+              <PhotoView src="/img/deluxe1.jpg">
                 <img
-                  src="/img/premium5.jpg"
+                  src="/img/deluxe1.jpg"
                   alt="Guest room"
                   className="w-full h-24 sm:h-40 lg:h-50 object-cover"
                 />
@@ -213,26 +213,26 @@ export default function GalleryPage() {
             ref={othersRef}
             className="bg-gray-100 mx-auto border-b border-gray-400 scroll-mt-17 px-4 sm:px-10 py-8"
           >
-            <h2 className="text-2xl uppercase mb-6">Deluxe room</h2>
+            <h2 className="text-2xl uppercase mb-6">Hotel View</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
               {/* 3 small images */}
-              <PhotoView src="/img/deluxe1.jpg">
+              <PhotoView src="/img/view1.jpg">
                 <img
-                  src="/img/deluxe1.jpg"
+                  src="/img/view1.jpg"
                   alt="Other gallery"
                   className="w-full h-24 sm:h-40 lg:h-50 object-cover"
                 />
               </PhotoView>
-              <PhotoView src="/img/deluxe1.jpg">
+              <PhotoView src="/img/view2.jpg">
                 <img
-                  src="/img/deluxe1.jpg"
+                  src="/img/view2.jpg"
                   alt="Other gallery"
                   className="w-full h-24 sm:h-40 lg:h-50 object-cover"
                 />
               </PhotoView>
-              <PhotoView src="/img/deluxe2.jpg">
+              <PhotoView src="/img/view3.jpg">
                 <img
-                  src="/img/deluxe2.jpg"
+                  src="/img/view3.jpg"
                   alt="Other gallery"
                   className="w-full h-24 sm:h-40 lg:h-50 object-cover"
                 />
@@ -240,9 +240,9 @@ export default function GalleryPage() {
 
               {/* 2x2 layout */}
               <div className="col-span-2 sm:col-span-2 sm:row-span-2">
-                <PhotoView src="/img/deluxe.jpg">
+                <PhotoView src="/img/view4.jpg">
                   <img
-                    src="/img/deluxe.jpg"
+                    src="/img/view4.jpg"
                     alt="Other gallery"
                     className="w-full h-[180px] sm:h-[250px] lg:h-[417px] object-cover rounded-md"
                   />
@@ -250,41 +250,21 @@ export default function GalleryPage() {
               </div>
 
               {/* 5 small images */}
-              <PhotoView src="/img/deluxe1.jpg">
+              <PhotoView src="/img/view5.jpg">
                 <img
-                  src="/img/deluxe1.jpg"
+                  src="/img/view5.jpg"
                   alt="Other gallery"
                   className="w-full h-24 sm:h-40 lg:h-50 object-cover"
                 />
               </PhotoView>
-              <PhotoView src="/img/deluxe2.jpg">
+              <PhotoView src="/img/view6.jpg">
                 <img
-                  src="/img/deluxe2.jpg"
+                  src="/img/view6.jpg"
                   alt="Other gallery"
                   className="w-full h-24 sm:h-40 lg:h-50 object-cover"
                 />
               </PhotoView>
-              <PhotoView src="/img/deluxe.jpg">
-                <img
-                  src="/img/deluxe.jpg"
-                  alt="Other gallery"
-                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
-                />
-              </PhotoView>
-              <PhotoView src="/img/deluxe2.jpg">
-                <img
-                  src="/img/deluxe2.jpg"
-                  alt="Other gallery"
-                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
-                />
-              </PhotoView>
-              <PhotoView src="/img/deluxe1.jpg">
-                <img
-                  src="/img/deluxe1.jpg"
-                  alt="Other gallery"
-                  className="w-full h-24 sm:h-40 lg:h-50 object-cover"
-                />
-              </PhotoView>
+              
             </div>
           </section>
         </div>

@@ -9,12 +9,12 @@ const faqData = [
   {
     question: "How can I book a room?",
     answer:
-      "You can easily book a room through our website booking form or by calling our hotline number directly.",
+      "You can easily book a room by calling our hotline number directly—our team is ready to assist you anytime.",
   },
   {
     question: "What is your cancellation policy?",
     answer:
-      "If you cancel at least 24 hours before your check-in time, you will receive a full refund. For cancellations made within 24 hours, 50% will be charged.",
+      "You can cancel your booking at any time before the scheduled check-in date.",
   },
   {
     question: "What are the check-in and check-out times?",
@@ -36,7 +36,7 @@ const faqData = [
   },
   {
     question: "Do you offer airport shuttle service?",
-    answer: "Yes, we offer airport pickup and drop service at an additional cost.",
+    answer: "Sorry, airport pickup and drop-off service is not available.",
   },
   {
     question: "Can I modify my booking later?",
@@ -46,7 +46,7 @@ const faqData = [
   {
     question: "Do you have conference rooms?",
     answer:
-      "Yes, we offer fully-equipped conference rooms for business meetings and events.",
+      "Sorry, we currently do not provide conference rooms for business meetings or events.",
   },
   {
     question: "Is smoking allowed inside the rooms?",
@@ -101,7 +101,7 @@ export default function FAQPage() {
                   key={index}
                   className="group border border-gray-300 rounded-md overflow-hidden bg-white "
                 >
-                  <summary className="cursor-pointer bg-gray-100 px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700  group-open:bg-blue-50 group-open:text-blue-700">
+                  <summary className="cursor-pointer bg-gray-100 px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700  group-open:bg-blue-50 group-open:text-sky-500">
                     {faq.question}
                     <span className="text-lg transform group-open:rotate-180 transition duration-300">
                       <FaCaretDown />

@@ -1,7 +1,7 @@
 import { FaStar } from "react-icons/fa";
 
 import { FaHotel } from "react-icons/fa";
-
+import { PiBuildings } from "react-icons/pi";
 
 
 const LuxuryExperience = () => {
@@ -17,12 +17,12 @@ const LuxuryExperience = () => {
   <p className="text-base sm:text-lg md:text-lg text-gray-600 mb-7">
     Providing exceptional hospitality since 1990
   </p>
-  <p className="text-xs sm:text-sm md:text-base text-gray-500 leading-relaxed mb-4">
+  <p className="text-xs text-justify sm:text-sm md:text-base text-gray-500 leading-relaxed mb-4">
     Ocean Residence offers a serene retreat blending luxury with comfort. 
     Our thoughtfully designed rooms provide a peaceful atmosphere, 
     creating an unforgettable stay for travelers seeking tranquility and elegance.
   </p>
-  <p className="text-xs sm:text-sm md:text-base text-gray-500 leading-relaxed mb-4">
+  <p className="text-xs text-justify sm:text-sm md:text-base text-gray-500 leading-relaxed mb-4">
     With personalized services, modern amenities, and a warm, welcoming atmosphere, 
     Ocean Residence ensures that every guest feels right at home. Whether you're here 
     for business or leisure, our dedicated team is committed to making your visit seamless and memorable.
@@ -47,8 +47,8 @@ const LuxuryExperience = () => {
   {/* Logo */}
  <div className="pt-3 flex flex-col items-center ">
   {/* Icon */}
-  <div className="text-2xl sm:text-3xl text-sky-500">
-   <FaHotel/>
+  <div className="text-2xl sm:text-4xl text-sky-500">
+   <PiBuildings/>
   </div>
 
   {/* Main Heading */}

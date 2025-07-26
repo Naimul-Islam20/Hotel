@@ -31,11 +31,9 @@ export default function FitnessPage() {
       <section className="flex flex-col md:flex-row items-center gap-10 px-6 max-w-7xl mx-auto">
         {/* Left Column (Text) */}
         <div className="md:w-1/2 space-y-6 text-gray-800">
-          <h2 className="text-3xl font-bold">Personal Training & Movement</h2>
+          <h2 className="text-3xl font-bold">Gym & Movement</h2>
           <p className="leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-            ultricies nec, pellentesque eu, pretium quis, sem.
+           Build strength, improve mobility, and move with confidence. Our training programs are designed to support a healthier, stronger you—every step of the way.
           </p>
 
           <div>

@@ -43,6 +43,11 @@ const DeluxeRoomDetails = () => {
         {/* 🖼️ First 3 Columns: Image Slider */}
         <div className="md:col-span-3 mx-5 ">
           <ImageSliderWithModal />
+             <div className="w-full bg-white py-6 text-start">
+                <h2 className="text-2xl font-semibold text-black">
+                  Price: <span className="text-sky-500">৳3500 / night</span>
+                </h2>
+              </div>
           <RoomInfo/>
           <RoomServices/>
           <AdditionalServices/>
@@ -50,7 +55,7 @@ const DeluxeRoomDetails = () => {
 
             <div className="max-w-7xl mx-auto  py-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Room Overview</h2>
-            <p className="text-gray-600 leading-relaxed text-justify">
+            <p className="text-gray-600 text-justify leading-relaxed text-justify">
                Our Deluxe Room is a refined space that combines simplicity with charm, offering extra space and thoughtful design. Ideal for travelers who appreciate comfort without compromising on style, it features elegant furnishings, a soft double or king-size bed, and large windows that invite daylight and scenic views.
 
 While the room itself offers a peaceful indoor retreat, guests can enjoy a breathtaking port view from the hotel’s top-floor terrace, perfect for relaxing and soaking in the natural beauty.

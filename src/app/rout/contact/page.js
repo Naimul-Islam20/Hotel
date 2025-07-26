@@ -49,8 +49,8 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h4 className="text-base sm:text-lg font-semibold text-gray-900">Booking/Call</h4>
-              <p className="text-sm sm:text-base text-gray-800">+41 934 121 1334</p>
+              <h4 className="text-base sm:text-lg font-semibold text-gray-900">Booking / Call Now</h4>
+              <p className="text-sm sm:text-base text-gray-800">+8801336188906</p>
             </div>
 
             <div>
@@ -66,12 +66,7 @@ export default function ContactPage() {
               <a href="#" className="text-pink-500">
                 <FaInstagram size={20} />
               </a>
-              <a href="#" className="text-blue-600">
-                <FaLinkedinIn size={20} />
-              </a>
-              <a href="#" className="text-red-600">
-                <FaYoutube size={20} />
-              </a>
+              
             </div>
           </div>
 
@@ -104,7 +99,7 @@ export default function ContactPage() {
               </summary>
               <div className="px-4 py-3 text-sm text-gray-600 space-y-3">
                 <div>
-                  <h4 className="font-semibold text-gray-700">
+                  <h4 className=" text-gray-600">
                     Public taxis are readily available. Hotel cars and town cars can be organised by the concierge.
                   </h4>
                 </div>

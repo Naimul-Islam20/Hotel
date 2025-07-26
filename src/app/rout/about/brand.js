@@ -2,6 +2,7 @@ import { FaStar } from "react-icons/fa";
 
 import { FaHotel } from "react-icons/fa";
 
+import { PiBuildings } from "react-icons/pi";
 
 
 const LuxuryExperience = () => {
@@ -17,13 +18,13 @@ const LuxuryExperience = () => {
             <p className="text-base sm:text-lg md:text-lg text-gray-600 mb-7">
               We provide accommodation services since 1990
             </p>
-            <p className="text-xs sm:text-sm md:text-base text-gray-500 leading-relaxed mb-4">
+            <p className="text-xs sm:text-sm md:text-base text-justify text-gray-500 leading-relaxed mb-4">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
               deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo
               voluptates cupiditate, ipsum provident facere modi tempora ducimus enim
               dicta laborum esse aliquam rem assumenda dolores.
             </p>
-            <p className="text-xs sm:text-sm md:text-base text-gray-500 leading-relaxed mb-4">
+            <p className="text-xs sm:text-sm text-justify md:text-base text-gray-500 leading-relaxed mb-4">
               Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga.
               Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero
               doloribus nesciunt suscipit dolores veritatis minus quam atque non autem
@@ -52,8 +53,8 @@ const LuxuryExperience = () => {
   {/* Logo */}
  <div className="pt-3 flex flex-col items-center ">
   {/* Icon */}
-  <div className="text-2xl sm:text-3xl text-sky-500">
-   <FaHotel/>
+  <div className="text-2xl sm:text-4xl text-sky-500">
+   <PiBuildings/>
   </div>
 
   {/* Main Heading */}
@@ -79,7 +80,7 @@ const LuxuryExperience = () => {
   <h4 className="text-base sm:text-lg pt-4 sm:pt-5 font-bold">Luxury Hotel</h4>
 
   {/* Description */}
-  <p className="text-xs sm:text-sm md:text-sm leading-relaxed px-2 sm:px-0">
+  <p className="text-xs text-justify sm:text-sm md:text-sm leading-relaxed px-2 sm:px-0">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem iste
     suscipit. Ad dolorem iste suscipit.sint sit voluptatem, vero doloribus nesciunt suscipit dolores
     veritatis minus quam atque non autem quasi

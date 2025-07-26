@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+       textAlign: {
+        'justify': 'justify',
+      },
       colors: {
         primary: "#0d6efd",
       },

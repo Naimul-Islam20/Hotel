@@ -11,11 +11,11 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 
 const images = [
-  '/img/premium1.jpg',
-  '/img/premium2.jpg',
-  '/img/premium3.jpg',
-  '/img/premium4.jpg',
-  '/img/premium2.jpg',
+  '/img/family.jpg',
+  '/img/family3.jpg',
+  '/img/family4.jpg',
+  '/img/single.jpg',
+  '/img/single2.jpg',
 ];
 
 const ImageSliderWithModal = () => {

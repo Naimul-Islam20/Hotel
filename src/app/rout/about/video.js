@@ -19,42 +19,26 @@ export default function PaathyaSection() {
       <p className="max-w-4xl mx-auto text-center text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed mb-8 md:mb-12 px-2">
         Rooted in a vision of purpose and direction, Ocean Residence represents our initiative to inspire positive change — guided by trust in our guests and partners, awareness of our environment’s needs, and the joy that lies at the heart of every stay.
       </p>
+{/* ===== Responsive Video Embed ===== */}
+<div className="flex justify-center pb-12 md:pb-28">
+  <div
+    className="relative w-full max-w-4xl rounded overflow-hidden shadow cursor-pointer aspect-video"
+    onClick={() => setIsVideoPlaying(true)}
+  >
+    {isVideoPlaying && (
+ <video
+  className="w-full max-w-4xl rounded overflow-hidden shadow aspect-video bg-black"
+  src="/img/video.mp4"
+  controls
+  autoPlay
+/>
 
-      {/* ===== Responsive Video Embed ===== */}
-      <div className="flex justify-center pb-12 md:pb-28">
-        <div
-          className="relative w-full max-w-4xl rounded overflow-hidden shadow cursor-pointer aspect-video"
-          onClick={() => setIsVideoPlaying(true)}
-        >
-          {isVideoPlaying ? (
-            <iframe
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/x7xk_wp_wl8?autoplay=1"
-              title="Paathya Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          ) : (
-            <>
-              <img
-                src="https://img.youtube.com/vi/x7xk_wp_wl8/hqdefault.jpg"
-                alt="Paathya Video Thumbnail"
-                className="absolute top-0 left-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-opacity-40">
-                <svg
-                  className="w-12 h-12 sm:w-16 sm:h-16 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-            </>
-          )}
-        </div>
-      </div>
+
+    )}
+  </div>
+</div>
+
+
     </div>
   );
 }

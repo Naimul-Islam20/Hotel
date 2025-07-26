@@ -102,7 +102,7 @@ export default function ExclusiveSlider() {
                     />
                   </div>
                 <div className="h-auto md:h-[34%] bg-white text-black flex flex-col items-center justify-center px-2 md:px-4 py-2 md:py-5 text-center">
-  <h3 className="text-base md:text-2xl mb-2">Lorem</h3>
+  <h3 className="text-base md:text-2xl mb-2">The Beauty of Chattogram”</h3>
   <p className="text-xs md:text-lg mb-2 md:mb-4 text-gray-500">
     Discover the charm of Chattogram—Ocean Hotel places you moments away from scenic hills, peaceful parks, lively markets, and seaside escapes.
   </p>
@@ -110,7 +110,7 @@ export default function ExclusiveSlider() {
     href="/rout/local"
     className="text-sky-500 underline tracking-widest transition"
   >
-    View Details
+   Explore More
   </Link>
 </div>
 

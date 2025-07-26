@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaTwitter, FaArrowUp } from "react-icons/fa";
 import Image from "next/image";
+import { PiBuildings } from "react-icons/pi";
 
 export default function Footer() {
   const [showScroll, setShowScroll] = useState(false);
@@ -27,10 +28,25 @@ export default function Footer() {
         
         {/* Left Column: Logo, Desc, Socials */}
         <div>
-          <Image src="/img/logo2.png" alt="Hotel Logo" width={140} height={50} className="mb-4" />
-          <p className="text-sm">
-            A peaceful luxury stay. Book with confidence & comfort.
-          </p>
+           <Link href="/">
+<div className="cursor-pointer flex items-center gap-1 w-fit h-[2.2rem]">
+  {/* বাম পাশের আইকন */}
+  <div className="h-full aspect-square flex items-center justify-center">
+    <PiBuildings className="text-sky-500 w-full h-full" />
+  </div>
+
+  {/* ডান পাশের টেক্সট */}
+  <div className="flex flex-col justify-center leading-tight">
+    <div className="text-sky-500 text-lg font-black uppercase leading-none">Ocean</div>
+    <div className="text-white text-lg font-black leading-none">Residence</div>
+  </div>
+</div>
+
+
+
+            </Link>
+         
+          <p className="text-sm pt-2"><span className=" font-medium">Address : </span> Ocean Tower, 6th Floor, Agrabad Access Road, Beparilara, Circle Chittagong, Bangladesh.</p>
           <div className="flex gap-3 mt-6">
             Follow us : 
             <Link href="#" className="p-2 bg-white rounded-full shadow hover:bg-blue-100 transition">
@@ -71,10 +87,10 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
           <ul className="space-y-2 text-sm">
-            <li><span className="font-medium">Phone:</span> +880 1234 567 890</li>
-            <li><span className="font-medium">Email:</span> info@ocenresidence.com</li>
-            <li><span className="font-medium">Address:</span> 123 Access Road, Agrabad, Chittagong</li>
-            <li><span className="font-medium">Hours:</span> 24/7 Service Available</li>
+            <li><span className="font-medium">Phone : </span> +880 1234 567 890</li>
+            <li><span className="font-medium">Email : </span> info@ocenresidence.com</li>
+            <li></li>
+            <li><span className="font-medium">Hours : </span> 24/7 Service Available</li>
           </ul>
         </div>
 

@@ -10,7 +10,7 @@ export default function TajIntro() {
         <h1 className="text-xl sm:text-2xl md:text-4xl uppercase text-black leading-tight">
           The Unparalleled <br /> Guardian of Grandeur
         </h1>
-        <p className="mt-6 max-w-3xl text-xs sm:text-sm md:text-lg text-gray-800">
+        <p className="mt-6 max-w-3xl  text-xs sm:text-sm md:text-lg text-gray-800">
           Built on a vision of elegance, Ocean Residence curates a collection of exceptional experiences designed to delight guests and create unforgettable memories in the heart of Chittagong.
         </p>
       </div>
@@ -19,28 +19,27 @@ export default function TajIntro() {
       <div className="max-w-4xl mx-auto my-10 md:my-16 px-4">
         {/* Vision Box */}
         <div className="bg-white p-4 sm:p-6 md:p-10 shadow relative z-10">
-          {/* Top Border Line with Text */}
-          <div className="flex items-center mb-2">
-            <div className="w-6 sm:w-8 md:w-10 border-t-2 border-gray-700"></div>
-            <span className="ml-2 sm:ml-3 md:ml-4 text-lg sm:text-2xl md:text-4xl uppercase text-gray-700">
-              A Monumental
+       
+<span className="  text-lg sm:text-2xl md:text-4xl uppercase text-gray-700">
+              — A Monumental
             </span>
-          </div>
-
           {/* Heading */}
           <h2 className="text-xl sm:text-2xl md:text-4xl uppercase text-gray-700 mb-3 md:mb-7">
             Vision
           </h2>
 
           {/* Paragraph */}
-          <p className="text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed">
-            In December 2023, a vision turned into reality. Ocean Residence opened its doors with the dream of redefining hospitality in Chittagong — setting new standards of comfort, elegance, and memorable experiences.
+          <p className="text-gray-700 text-justify text-xs sm:text-sm md:text-base leading-relaxed">
+            Ocean Residence was our long-held dream.
+We wanted to raise the standards of hospitality in Chittagong.
+Today, that dream has come true.
+Thanks to everyone’s support, this journey has been successful.
           </p>
 
           {/* Chairman Info */}
           <div className="mt-8 text-start">
             <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-800">
-              Mr. Naimul Islam
+              — Mr. Naimul Islam
             </h3>
             <p className="text-sm sm:text-base text-gray-600">
               Chairman, Ocean Residence

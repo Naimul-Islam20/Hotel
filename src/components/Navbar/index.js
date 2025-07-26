@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaShoppingCart } from "react-icons/fa";
+import { PiBuildings } from "react-icons/pi";
 import Link from "next/link";
 import Image from "next/image";
 import NavItem from "../ChildComponent/navItem";
@@ -42,15 +43,21 @@ const Navbar = () => {
         <nav className="w-full text-black">
           <div className="w-full mx-auto px-6 h-13 md:h-17 py-4 flex items-center justify-between">
             <Link href="/">
-              <div className="cursor-pointer w-32 sm:w-40 md:w-44">
-                <Image
-                  src="/img/logo2.png"
-                  alt="Logo"
-                  width={160}
-                  height={50}
-                  className="w-full h-auto object-contain"
-                />
-              </div>
+<div className="cursor-pointer flex items-center gap-1 w-fit h-[2.2rem]">
+  {/* বাম পাশের আইকন */}
+  <div className="h-full aspect-square flex items-center justify-center">
+    <PiBuildings className="text-sky-500 w-full h-full" />
+  </div>
+
+  {/* ডান পাশের টেক্সট */}
+  <div className="flex flex-col justify-center leading-tight">
+    <div className="text-sky-500 text-lg font-black uppercase leading-none">Ocean</div>
+    <div className="text-black text-lg font-black leading-none">Residence</div>
+  </div>
+</div>
+
+
+
             </Link>
 
             <ul className="hidden md:flex space-x-10 h-20 items-center">

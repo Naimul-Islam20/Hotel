@@ -42,6 +42,11 @@ const RoomDetailsPage = () => {
         {/* 🖼️ First 3 Columns: Image Slider */}
         <div className="md:col-span-3 mx-5 ">
           <ImageSliderWithModal />
+         <div className="w-full bg-white py-6 text-start">
+      <h2 className="text-2xl font-semibold text-black">
+        Price: <span className="text-sky-500">৳3000 / night</span>
+      </h2>
+    </div>
           <RoomInfo/>
           <RoomServices/>
           
@@ -49,7 +54,7 @@ const RoomDetailsPage = () => {
 
             <div className="max-w-7xl mx-auto  py-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Room Overview</h2>
-            <p className="text-gray-600 leading-relaxed text-justify">
+            <p className="text-gray-600 text-justify leading-relaxed text-justify">
               Discover the perfect balance of luxury and practicality in our Executive Room — designed to meet the needs of discerning travelers. The room features a refined interior with premium furnishings, a spacious king-size bed, and a comfortable work area ideal for both business and leisure.
 
 

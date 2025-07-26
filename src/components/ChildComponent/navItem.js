@@ -60,6 +60,11 @@ const navItems = [
     
 
   },
+  {
+    name: "MEDICAL-HELP",href: "/rout/emergency"
+    
+
+  },
    
 
 ];

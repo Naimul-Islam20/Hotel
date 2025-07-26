@@ -5,7 +5,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-const images = ["/img/hero1.jpg", "/img/hero2.jpg", "/img/hero1.jpg"];
+const images = ["/img/bad1.jpg", "/img/bad2.jpg", "/img/bad3.jpg"];
 const captions = ["EXPERIENCE LUXURY", "STAY IN COMFORT", "Residencial Service"];
 
 
@@ -59,7 +59,7 @@ export default function HeroSlider() {
       <img
         src={images[current]}
         alt="Hero Slide"
-        className="w-full h-full object-cover absolute inset-0 pointer-events-none"
+        className="w-full h-full object-cover brightness-75 absolute inset-0 pointer-events-none"
         draggable={false}
       />
 
