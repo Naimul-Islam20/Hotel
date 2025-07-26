@@ -108,7 +108,7 @@ The room comes with modern amenities such as a Smart TV, high-speed Wi-Fi, and a
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      +880 1234-567890
+      +8801336188906
     </div>
   </details>
 

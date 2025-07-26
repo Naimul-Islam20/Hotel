@@ -111,7 +111,7 @@ For entertainment, enjoy a selection of local and international channels on the 
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      +880 1234-567890
+      +8801336188906
     </div>
   </details>
 
