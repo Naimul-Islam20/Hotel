@@ -2,6 +2,9 @@
 import { FaSwimmer, FaCar, FaWifi, FaSpa } from "react-icons/fa";
 import { MdLocalDining, MdOutlineSecurity } from "react-icons/md";
 import { FaBellConcierge, FaUmbrellaBeach, FaBed } from "react-icons/fa6";
+import { FaUserTie } from "react-icons/fa6";
+import { MdAccessTime } from "react-icons/md";
+
 import { GiKeyCard } from "react-icons/gi";
 
 const features = [
@@ -16,11 +19,7 @@ const features = [
     title: "Free Secure Parking",
     description: "Spacious & secure parking for all guests.",
   },
-  {
-    icon: <MdLocalDining />,
-    title: "Fine Dining",
-    description: "World-class meals prepared by top chefs.",
-  },
+ 
   {
     icon: <FaWifi />,
     title: "High-Speed Wi-Fi",
@@ -32,11 +31,17 @@ const features = [
     description: "Your safety is our top priority at all times.",
   },
   
-  {
-    icon: <GiKeyCard />,
-    title: "Smart Key Card",
-    description: "Keyless and secure access to your room.",
-  },
+{
+  icon: <FaUserTie />, // Friendly Host আইকনের জন্য
+  title: "Friendly Host / Personal Touch",
+  description: "Owner-managed, so guests are treated like family.",
+},
+{
+  icon: <MdAccessTime />, // Flexible Check-in/Check-out আইকনের জন্য
+  title: "Flexible Check-in/Check-out",
+  description: "We adjust to your schedule whenever possible.",
+},
+
 ];
 
 const Features = () => {

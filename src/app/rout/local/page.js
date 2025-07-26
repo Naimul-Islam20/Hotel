@@ -85,7 +85,7 @@ export default function LocalAttractions() {
               className="bg-white  shadow border border-gray-100  overflow-hidden flex flex-col"
             >
               <Image
-                src="/img/view.jpg"
+                src={item.img}
                 alt={item.title}
                 width={600}
                 height={400}

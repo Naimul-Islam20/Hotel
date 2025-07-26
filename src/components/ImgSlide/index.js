@@ -12,14 +12,7 @@ const slides = [
     center: '/exc/exc7.jpg',
     bgImage: '/exc/exc8.jpg'
   },
-  {
-    center: '/exc/exc3.jpg',
-    bgImage: '/exc/exc4.jpg'
-  },
-  {
-    center: '/exc/exc5.jpg',
-    bgImage: '/exc/exc6.jpg'
-  }
+
 ];
 
 export default function ExclusiveSlider() {
@@ -65,7 +58,7 @@ export default function ExclusiveSlider() {
         {/* Right text block */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-start">
           <p className="text-xs md:text-base max-w-md text-gray-200 text-center md:text-start">
-            Refinement and creativity intertwine with dreamlike destinations and soulful moments on each sojourn with Taj.
+           Located in the middle of Chattogram, Ocean Residence is your perfect base to explore the city’s many attractions just minutes away.
           </p>
         </div>
       </div>
@@ -87,12 +80,12 @@ export default function ExclusiveSlider() {
                 {/* Prev Button Section */}
                 <div className="flex w-[15%] h-[328px] pe-1  md:h-full border-b-2 border-t-2 border-e-2 border-fade-right items-center justify-center relative">
                   <div className=" items-center  ">
-                      <button
+                      {/* <button
                       onClick={() => swiperRef.current?.slidePrev()}
                       className="w-10 md:w-11 h-10 md:h-11 text-xl  md:text-xl border  border-sky-400 text-white rounded-full flex items-center justify-center hover:bg-sky-600 transition cursor-pointer"
                     >
                       <FaChevronLeft/>
-                    </button>
+                    </button> */}
                   
                   
                   </div>
@@ -111,10 +104,10 @@ export default function ExclusiveSlider() {
                 <div className="h-auto md:h-[34%] bg-white text-black flex flex-col items-center justify-center px-2 md:px-4 py-2 md:py-5 text-center">
   <h3 className="text-base md:text-2xl mb-2">Lorem</h3>
   <p className="text-xs md:text-lg mb-2 md:mb-4 text-gray-500">
-    This is a sample description text that explains more about the image or the offer.
+    Discover the charm of Chattogram—Ocean Hotel places you moments away from scenic hills, peaceful parks, lively markets, and seaside escapes.
   </p>
   <Link
-    href="/img/locl"
+    href="/rout/local"
     className="text-sky-500 underline tracking-widest transition"
   >
     View Details
@@ -128,12 +121,12 @@ export default function ExclusiveSlider() {
                   <div className=" items-center ">
                     
                   
-                    <button
+                    {/* <button
                       onClick={() => swiperRef.current?.slideNext()}
                       className="w-10 md:w-11 h-10 md:h-11 text-xl md:text-xl border border-sky-400  text-white rounded-full flex items-center justify-center hover:bg-sky-600 transition cursor-pointer"
                     >
                       <FaChevronRight/>
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>

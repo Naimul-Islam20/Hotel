@@ -1,6 +1,4 @@
 'use client';
-import Image from 'next/image';
-
 export default function TajIntro() {
   return (
     <div
@@ -8,9 +6,7 @@ export default function TajIntro() {
       style={{ backgroundImage: "url('/exc/about2.jpg')" }}
     >
       {/* Banner Section */}
-      <div
-        className="w-full bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-4"
-      >
+      <div className="w-full flex flex-col items-center justify-center text-white text-center px-4">
         <h1 className="text-xl sm:text-2xl md:text-4xl uppercase text-black leading-tight">
           The Unparalleled <br /> Guardian of Grandeur
         </h1>
@@ -19,11 +15,11 @@ export default function TajIntro() {
         </p>
       </div>
 
-      {/* Main Section */}
-      <div className="max-w-6xl mx-auto grid grid-cols-2 gap-2 md:gap-8 my-5 md:my-12 px-2 md:px-4 relative">
-        {/* Left Box */}
-        <div className="bg-white p-2 sm:p-6 md:p-10 shadow z-10 md:translate-x-4">
-          {/* Top Border Line with Text only left side border */}
+      {/* Main Section - Single Column */}
+      <div className="max-w-4xl mx-auto my-10 md:my-16 px-4">
+        {/* Vision Box */}
+        <div className="bg-white p-4 sm:p-6 md:p-10 shadow relative z-10">
+          {/* Top Border Line with Text */}
           <div className="flex items-center mb-2">
             <div className="w-6 sm:w-8 md:w-10 border-t-2 border-gray-700"></div>
             <span className="ml-2 sm:ml-3 md:ml-4 text-lg sm:text-2xl md:text-4xl uppercase text-gray-700">
@@ -31,7 +27,7 @@ export default function TajIntro() {
             </span>
           </div>
 
-          {/* Main Heading */}
+          {/* Heading */}
           <h2 className="text-xl sm:text-2xl md:text-4xl uppercase text-gray-700 mb-3 md:mb-7">
             Vision
           </h2>
@@ -40,35 +36,17 @@ export default function TajIntro() {
           <p className="text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed">
             In December 2023, a vision turned into reality. Ocean Residence opened its doors with the dream of redefining hospitality in Chittagong — setting new standards of comfort, elegance, and memorable experiences.
           </p>
+
+          {/* Chairman Info */}
+          <div className="mt-8 text-start">
+            <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-800">
+              Mr. Naimul Islam
+            </h3>
+            <p className="text-sm sm:text-base text-gray-600">
+              Chairman, Ocean Residence
+            </p>
+          </div>
         </div>
-
-{/* Right Box (Image Top + Text Bottom) */}
-<div className="relative md:-translate-x-18 md:translate-y-10">
-  <div className="w-full sm:w-[350px] md:w-[410px] md:bg-white md:shadow md:rounded overflow-hidden">
-    
-    {/* Top: Image 70% approx */}
-    <div className="aspect-[4/3]">
-      <Image
-        src="/img/ceo.jpg"
-        alt="Sky Founder"
-        width={600}
-        height={400}
-        className="w-full h-full object-cover"
-      />
-    </div>
-
-    {/* Bottom: Name & Title */}
-    <div className="px-4 py-3  text-center">
-      <h3 className="text-base sm:text-lg font-semibold text-gray-800">
-        Mr. Naimul Islam
-      </h3>
-      <p className="text-xs sm:text-sm text-gray-600">
-        Founder, Ocean Residence
-      </p>
-    </div>
-  </div>
-</div>
-
       </div>
     </div>
   );

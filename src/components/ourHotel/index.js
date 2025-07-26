@@ -10,30 +10,25 @@ const LuxuryExperience = () => {
       <div className=" md:max-w-7xl mx-auto  md:px-4 w-full">
         <div className="grid grid-cols-5 gap-6 items-center">
           {/* Left Content: 3 columns */}
-          <div className="col-span-5 px-4 pt-3 md:col-span-3">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl text-gray-800 mb-3">
-              Enjoy a Luxury Experience
-            </h2>
-            <p className="text-base sm:text-lg md:text-lg text-gray-600 mb-7">
-              We provide accommodation services since 1990
-            </p>
-            <p className="text-xs sm:text-sm md:text-base text-gray-500 leading-relaxed mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
-              deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo
-              voluptates cupiditate, ipsum provident facere modi tempora ducimus enim
-              dicta laborum esse aliquam rem assumenda dolores.
-            </p>
-            <p className="text-xs sm:text-sm md:text-base text-gray-500 leading-relaxed mb-4">
-              Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga.
-              Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero
-              doloribus nesciunt suscipit dolores veritatis minus quam atque non autem
-              quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum
-              cupiditate quaerat assumenda. Excepturi facilis libero dicta soluta
-              officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores
-              veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa
-              facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.
-            </p>
-          </div>
+         <div className="col-span-5 px-4 pt-3 md:col-span-3">
+  <h2 className="text-2xl sm:text-4xl md:text-5xl text-gray-800 mb-3">
+    Experience the Elegance of Ocean Residence
+  </h2>
+  <p className="text-base sm:text-lg md:text-lg text-gray-600 mb-7">
+    Providing exceptional hospitality since 1990
+  </p>
+  <p className="text-xs sm:text-sm md:text-base text-gray-500 leading-relaxed mb-4">
+    Ocean Residence offers a serene retreat blending luxury with comfort. 
+    Our thoughtfully designed rooms provide a peaceful atmosphere, 
+    creating an unforgettable stay for travelers seeking tranquility and elegance.
+  </p>
+  <p className="text-xs sm:text-sm md:text-base text-gray-500 leading-relaxed mb-4">
+    With personalized services, modern amenities, and a warm, welcoming atmosphere, 
+    Ocean Residence ensures that every guest feels right at home. Whether you're here 
+    for business or leisure, our dedicated team is committed to making your visit seamless and memorable.
+  </p>
+</div>
+
 
           {/* Right Content: 2 columns */}
           <div className="col-span-5 mx-4 bg-black md:col-span-2 relative h-full">
@@ -75,15 +70,15 @@ const LuxuryExperience = () => {
       ))}
   </div>
 
-  {/* Subtitle */}
-  <h4 className="text-base sm:text-lg pt-4 sm:pt-5 font-bold">Luxury Hotel</h4>
+ {/* Subtitle */}
+<h4 className="text-base sm:text-lg pt-4 sm:pt-5 font-bold">Luxury Hotel</h4>
 
-  {/* Description */}
-  <p className="text-xs sm:text-sm md:text-sm leading-relaxed px-2 sm:px-0">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem iste
-    suscipit. Ad dolorem iste suscipit.sint sit voluptatem, vero doloribus nesciunt suscipit dolores
-    veritatis minus quam atque non autem quasi
-  </p>
+{/* Description */}
+<p className="text-xs sm:text-sm md:text-sm leading-relaxed px-2 sm:px-0">
+  Experience unparalleled comfort and world-class services in the heart of the city.  
+  Our hotel combines modern amenities with timeless elegance to make your stay unforgettable.
+</p>
+
 </div>
 
           </div>

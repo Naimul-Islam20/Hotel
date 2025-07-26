@@ -55,6 +55,11 @@ const RoomDetailsPage = () => {
 
         </div>
 
+<div className="w-full p-2">
+  {/* Price Box */}
+  <div className="bg-sky-100 text-sky-700 rounded-md px-4 py-2 mb-4 font-semibold text-center text-lg shadow-sm">
+    Starting at ৳3,500 / night
+  </div>
 
 <div className="space-y-4 w-full p-2 bg-gray-100 h-fit sticky top-18">
   <h2 className="text-xl font-semibold mb-2">Contact Info</h2>
@@ -127,6 +132,7 @@ const RoomDetailsPage = () => {
   </Link>
 </div>
 
+</div>
 </div>
 
       </div>

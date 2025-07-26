@@ -1,18 +1,18 @@
 // RoomServices.jsx
 import React from 'react';
-import { FaBath, FaCoffee, FaCar, FaWind, FaMugHot } from 'react-icons/fa';
+import { FaBath,FaWifi , FaCoffee, FaCar, FaWind, FaMugHot } from 'react-icons/fa';
 import { MdMicrowave } from 'react-icons/md';
-
+import { FaTv } from "react-icons/fa";
 const RoomServices = () => {
   const services = [
     { icon: <FaBath className="text-md" />, label: 'Towels' },
-    { icon: <MdMicrowave className="text-xl" />, label: 'Microwave' },
+   
     { icon: <FaCar className="text-md" />, label: 'Parking' },
-    { icon: <FaWind className="text-md" />, label: 'Private Balcony' },
     { icon: <FaWind className="text-md" />, label: 'Air Conditioner' },
-    { icon: <FaMugHot className="text-md" />, label: 'Coffee Maker' },
-    { icon: <FaCoffee className="text-xl" />, label: 'Mini Bar' },
-    { icon: <FaWind className="text-md" />, label: 'WiFi' },
+    { icon: <FaMugHot className="text-md" />, label: 'Tea Maker' },
+   { icon: <FaTv className="text-xl" />, label: 'TV' },
+{ icon: < FaWifi className="text-md" />, label: 'WiFi' },
+
   ];
 
   return (

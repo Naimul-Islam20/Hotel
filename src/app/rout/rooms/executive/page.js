@@ -4,7 +4,6 @@ import React from 'react';
 import ImageSliderWithModal from './img';
 import RoomInfo from './roomInfo';
 import RoomServices from './service';
-import AdditionalServices from './additional';
 import ContactActions from './contactAction';
  import Link from "next/link";
 
@@ -45,18 +44,26 @@ const RoomDetailsPage = () => {
           <ImageSliderWithModal />
           <RoomInfo/>
           <RoomServices/>
-          <AdditionalServices/>
+          
           <Calendar/>
 
             <div className="max-w-7xl mx-auto  py-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Room Overview</h2>
             <p className="text-gray-600 leading-relaxed text-justify">
-               Discover the perfect balance of luxury and practicality in our Executive Room — designed to meet the needs of discerning travelers. The room features a refined interior with premium furnishings, a spacious king-size bed, and a comfortable work area ideal for both business and leisure. Floor-to-ceiling windows fill the space with natural light and offer a serene view of the surrounding cityscape. For entertainment, enjoy a selection of local and international channels on the flat-screen Smart TV. The en-suite bathroom includes a walk-in rain shower, deluxe toiletries, and soft bathrobes, creating a relaxing atmosphere after a long day. Every detail in the Executive Room is thoughtfully curated to offer you a seamless and memorable stay.
+              Discover the perfect balance of luxury and practicality in our Executive Room — designed to meet the needs of discerning travelers. The room features a refined interior with premium furnishings, a spacious king-size bed, and a comfortable work area ideal for both business and leisure.
+
+
+While the room itself offers a peaceful indoor retreat, guests can enjoy a breathtaking port view from the hotel’s top-floor terrace, perfect for relaxing and soaking in the natural beauty.
+
+For entertainment, enjoy a selection of local and international channels on the flat-screen Smart TV. The en-suite bathroom includes a walk-in rain shower, deluxe toiletries, and soft bathrobes, creating a relaxing atmosphere after a long day. Every detail in the Executive Room is thoughtfully curated to offer you a seamless and memorable stay.
             </p>
             </div>
 
 
         </div>
+
+        
+       
        
 <div className="space-y-4 w-full p-2 bg-gray-100 h-fit sticky top-18">
   <h2 className="text-xl font-semibold mb-2">Contact Info</h2>
@@ -71,7 +78,7 @@ const RoomDetailsPage = () => {
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      Ocean tower, 9th floor, Agrabad access road, beparilara, circle Chittagong, Bangladesh.
+      Ocean Tower, 6th Floor, Agrabad Access Road, Beparilara, Circle Chittagong, Bangladesh.
     </div>
   </details>
 
@@ -130,6 +137,7 @@ const RoomDetailsPage = () => {
 </div>
 
 </div>
+
 
       </div>
   

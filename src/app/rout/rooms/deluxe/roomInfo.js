@@ -8,22 +8,22 @@ const RoomInfoSection = () => {
     {
       icon: <FaUserFriends className="text-xl" />,
       title: 'Max. Guests',
-      detail: '3 Adults / 0 Children',
+      detail: '2 Adults / 2 Children',
     },
     {
       icon: <FaCalendarAlt className="text-xl" />,
-      title: 'Booking Nights',
+      title: 'Minimum Stay',
       detail: '1 Min.',
     },
     {
       icon: <FaBed className="text-xl" />,
       title: 'Bed Type',
-      detail: 'Single',
+      detail: 'King Size',
     },
     {
       icon: <FaRulerCombined className="text-xl" />,
       title: 'Area',
-      detail: '50 m²',
+      detail: '60 m²',
     },
   ];
 

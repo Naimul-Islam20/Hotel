@@ -51,7 +51,11 @@ const DeluxeRoomDetails = () => {
             <div className="max-w-7xl mx-auto  py-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Room Overview</h2>
             <p className="text-gray-600 leading-relaxed text-justify">
-                Our Deluxe Room is a refined space that combines simplicity with charm, offering extra space and thoughtful design. Ideal for travelers who appreciate comfort without compromising on style, it features elegant furnishings, a soft double or king-size bed, and large windows that invite daylight and scenic views. The room comes with modern amenities such as a Smart TV, high-speed Wi-Fi, and a writing desk for added convenience. The attached bathroom is well-appointed with a rain shower, essential toiletries, and premium fittings. With a calm, inviting ambiance, the Deluxe Room ensures a restful and rejuvenating experience.
+               Our Deluxe Room is a refined space that combines simplicity with charm, offering extra space and thoughtful design. Ideal for travelers who appreciate comfort without compromising on style, it features elegant furnishings, a soft double or king-size bed, and large windows that invite daylight and scenic views.
+
+While the room itself offers a peaceful indoor retreat, guests can enjoy a breathtaking port view from the hotel’s top-floor terrace, perfect for relaxing and soaking in the natural beauty.
+
+The room comes with modern amenities such as a Smart TV, high-speed Wi-Fi, and a writing desk for added convenience. The attached bathroom is well-appointed with a rain shower, essential toiletries, and premium fittings. With a calm, inviting ambiance, the Deluxe Room ensures a restful and rejuvenating experience.
             </p>
             </div>
 
@@ -71,7 +75,7 @@ const DeluxeRoomDetails = () => {
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      Ocean tower, 9th floor, Agrabad access road, beparilara, circle Chittagong, Bangladesh.
+      Ocean Tower, 6th Floor, Agrabad Access Road, Beparilara, Circle Chittagong, Bangladesh.
     </div>
   </details>
 

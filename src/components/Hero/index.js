@@ -6,8 +6,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const images = ["/img/hero1.jpg", "/img/hero2.jpg", "/img/hero1.jpg"];
-const captions = ["EXPERIENCE LUXURY", "STAY IN COMFORT", "BOOK YOUR DREAM VACATION"];
-const subtitles = ["FROM $69", "FROM $69", "FROM $69"];
+const captions = ["EXPERIENCE LUXURY", "STAY IN COMFORT", "Residencial Service"];
+
 
 export default function HeroSlider() {
   const [current, setCurrent] = useState(0);

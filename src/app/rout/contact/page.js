@@ -44,12 +44,12 @@ export default function ContactPage() {
 
             <div>
               <h4 className="text-base sm:text-lg font-semibold text-gray-900">Address</h4>
-              <p className="text-sm sm:text-base text-gray-950">Ocean tower, 9th floor, Agrabad access road, beparilara, circle</p>
+              <p className="text-sm sm:text-base text-gray-950">Ocean Tower, 6th Floor, Agrabad Access Road, Beparilara, Circle</p>
               <p className="text-sm sm:text-base text-gray-950">Chattogram - Bangladesh</p>
             </div>
 
             <div>
-              <h4 className="text-base sm:text-lg font-semibold text-gray-900">Bookings</h4>
+              <h4 className="text-base sm:text-lg font-semibold text-gray-900">Booking/Call</h4>
               <p className="text-sm sm:text-base text-gray-800">+41 934 121 1334</p>
             </div>
 

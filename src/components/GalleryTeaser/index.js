@@ -18,13 +18,7 @@ const rooms = [
     desc: "Perfect for couples or business travelers.",
     path: "/rout/rooms/deluxe",
   },
-  {
-    title: "Superior Room",
-    img: "/img/family.jpg",
-    price: "৳3000/night",
-    desc: "Spacious room perfect for families.",
-    path: "/rout/rooms/superior",
-  },
+ 
   {
     title: "Executive Room",
     img: "/img/single.jpg",
@@ -32,13 +26,7 @@ const rooms = [
     desc: "Affordable option for solo travelers.",
     path: "/rout/rooms/superior",
   },
-  {
-    title: "Premium Room",
-    img: "/img/premium1.jpg",
-    price: "৳3000/night",
-    desc: "Top-tier comfort & exclusive amenities.",
-    path: "/rout/rooms/premium",
-  },
+ 
 ];
 
 export default function RoomSlider() {
@@ -93,46 +81,47 @@ export default function RoomSlider() {
 
         {/* Swiper OR Skeleton */}
         {swiperReady ? (
-          <Swiper
-            modules={[Navigation, Autoplay, Pagination]}
-            navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
-            }}
-            onSwiper={(swiper) => {
-              if (
-                prevRef.current &&
-                nextRef.current &&
-                swiper.params?.navigation
-              ) {
-                swiper.params.navigation.prevEl = prevRef.current;
-                swiper.params.navigation.nextEl = nextRef.current;
-                swiper.navigation.destroy();
-                swiper.navigation.init();
-                swiper.navigation.update();
-              }
-            }}
-            pagination={{
-              el: ".custom-pagination",
-              clickable: true,
-            }}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: true,
-              pauseOnMouseEnter: true,
-            }}
-            loop={true}
-            slidesPerView={1}
-            spaceBetween={20}
-            breakpoints={{
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            }}
-            className="pb-5"
-          >
+         <Swiper
+  modules={[Navigation, Autoplay, Pagination]}
+  navigation={{
+    prevEl: prevRef.current,
+    nextEl: nextRef.current,
+  }}
+  onSwiper={(swiper) => {
+    if (
+      prevRef.current &&
+      nextRef.current &&
+      swiper.params?.navigation
+    ) {
+      swiper.params.navigation.prevEl = prevRef.current;
+      swiper.params.navigation.nextEl = nextRef.current;
+      swiper.navigation.destroy();
+      swiper.navigation.init();
+      swiper.navigation.update();
+    }
+  }}
+  pagination={{
+    el: ".custom-pagination",
+    clickable: true,
+  }}
+  autoplay={{
+    delay: 2500,
+    disableOnInteraction: true,
+    pauseOnMouseEnter: true,
+  }}
+  loop={true}
+  slidesPerView={1}
+  spaceBetween={20}
+  breakpoints={{
+    768: { slidesPerView: 1 },
+    1024: { slidesPerView: 2 }, // 🟢 আগে ছিল 3, এখন 2
+  }}
+  className="pb-5"
+>
+
             {rooms.map((room, i) => (
               <SwiperSlide key={i}>
-                <div className="bg-white mb-1 rounded shadow p-0 flex flex-col w-full max-w-[400px] h-[500px] mx-auto transition overflow-hidden">
+                <div className="bg-white mb-1 rounded shadow p-0 flex flex-col w-full max-w-[700px] h-[500px] mx-auto transition overflow-hidden">
                   {/* Image */}
                   <div className="relative w-full h-[390px]">
                     <Image
@@ -144,23 +133,22 @@ export default function RoomSlider() {
                   </div>
 
                   {/* Content */}
-                  <div className="px-6 pt-4 mt-0 flex flex-col flex-grow">
-                    <div className="flex justify-between items-center">
-                      <h3 className="text-xl font-semibold">{room.title}</h3>
-                      <span className="text-gray-400 bg-gray-200 h-8 w-28 pt-1 ps-2 rounded-lg font-semibold">
-                        {room.price}
-                      </span>
-                    </div>
-                    <p className="text-gray-600 text-sm mt-2">{room.desc}</p>
-                    <div className="mt-auto pt-6 flex justify-between">
-                      <Link
-                        href={room.path}
-                        className="pb-4 text-sky-500 underline tracking-widest transition"
-                      >
-                        Details Room
-                      </Link>
-                    </div>
-                  </div>
+                <div className="px-6 pt-4 mt-0 flex flex-col flex-grow">
+  <div className="flex justify-between items-center">
+    <h3 className="text-xl font-semibold">{room.title}</h3>
+    <Link
+      href={room.path}
+      className="bg-sky-100 text-sky-600 text-sm px-4 py-1 rounded-lg font-semibold hover:bg-sky-200 transition"
+    >
+      Details Room
+    </Link>
+  </div>
+
+  <p className="text-gray-600 text-sm mt-2">{room.desc}</p>
+
+
+</div>
+
                 </div>
               </SwiperSlide>
             ))}

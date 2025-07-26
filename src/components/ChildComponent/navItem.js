@@ -19,16 +19,7 @@ const navItems = [
     
 
   },
-    {
-    name: "SUPERIOR ROOM",href: "/rout/rooms/superior"
-    
-
-  },
-    {
-    name: "PREMIUM ROOM",href: "/rout/rooms/premium"
-    
-
-  },
+   
   ]
 
    

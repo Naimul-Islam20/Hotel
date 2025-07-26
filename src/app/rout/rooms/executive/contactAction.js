@@ -44,7 +44,7 @@ const ContactLinks = () => {
       {/* Website */}
       <div className="flex flex-col items-center">
         <a
-          href="https://hotelblue.com"
+          href="https://oceanresidencectg.com"
           target="_blank"
           rel="noreferrer"
           className="text-blue-600 text-3xl"

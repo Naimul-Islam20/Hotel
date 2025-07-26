@@ -70,7 +70,7 @@ export default function RoomCard({ room }) {
       {/* Title & Price */}
       <div className="flex justify-between items-center px-4 pt-2 md:pt-4">
         <h3 className="text-3xl ">{room.title}</h3>
-         <span className="text-gray-500 bg-gray-200 h-8 w-25 pt-1 ps-3 rounded-lg font-semibold">
+         <span className="text-gray-700 bg-gray-200 h-8 w-30 pt-1 ps-3 rounded-lg font-semibold">
                       {room.price}
                     </span>
       </div>
@@ -92,7 +92,7 @@ export default function RoomCard({ room }) {
       <div className=" px-2 md:px-4 pb-2 md:pb-5 space-y-3 md:space-y-5">
         <p className="text-sm text-gray-500">{room.desc}</p>
         <p className="text-sm text-gray-500">
-          Our rooms are designed to provide maximum comfort with all essential amenities to make your stay relaxing and memorable. Whether you're here for business or leisure, we got you covered.
+         {room.about}
         </p>
         <div className="flex justify-between items-center pt-2">
          <Link

@@ -41,8 +41,8 @@ export default function FitnessPage() {
           <div>
             <h3 className="font-semibold mb-2">Opening Hours</h3>
             <ul className="list-disc list-inside text-gray-700 space-y-1">
-              <li>Fitness Center: 7:00 am - 9:00 pm</li>
-              <li>Yoga Studio: 10:00 am - 9:00 pm</li>
+              <li>Gym Center: 7:00 am - 9:00 pm</li>
+              
             </ul>
           </div>
 

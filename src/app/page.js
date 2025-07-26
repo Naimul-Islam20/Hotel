@@ -9,7 +9,7 @@ import RoomSection from "@/components/GalleryTeaser";
 // import ImgDan from "@/components/RoomsPreview";
 import HotelTag from '@/components/ourHotel'
 import Ex from "@/components/ImgSlide"
-import HeroImagePage from "@/components/fImage";
+
 import ContactInfo from "@/components/contactInfo";
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
       <Ex/>
       <Features/>
       <ContactInfo/>
-      <HeroImagePage/>
+    
       {/* <ImgDan/> */}
       </div>
     </main>
