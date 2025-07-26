@@ -11,11 +11,11 @@ const Topbar = () => {
           
           <div className="flex items-center gap-1">
             <FaPhoneAlt className="text-gray-600" />
-            <span>+880 123 456 789</span>
+            <span> +8801336188906</span>
           </div>
           <div className="flex items-center gap-1">
             <GoLocation className="text-black" />
-            <span>123/A Agrabad, Chitagong</span>
+            <span>Ocean Tower, Chittagong</span>
           </div>
         </div>
 

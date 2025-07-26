@@ -39,10 +39,10 @@ Thanks to everyone’s support, this journey has been successful.
           {/* Chairman Info */}
           <div className="mt-8 text-start">
             <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-800">
-              — Mr. Naimul Islam
+              — CEO
             </h3>
             <p className="text-sm sm:text-base text-gray-600">
-              Chairman, Ocean Residence
+              Ocean Residence
             </p>
           </div>
         </div>
