@@ -23,4 +23,4 @@ export default function FullPageLoader({ children }) {
   }
 
   return <>{children}</>;
-}
+} 
