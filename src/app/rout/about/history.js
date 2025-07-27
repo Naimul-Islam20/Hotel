@@ -30,16 +30,16 @@ export default function TajIntro() {
 
           {/* Paragraph */}
           <p className="text-gray-700 text-justify text-xs sm:text-sm md:text-base leading-relaxed">
-            Ocean Residence was our long-held dream.
+            “Ocean Residence was our long-held dream.
 We wanted to raise the standards of hospitality in Chittagong.
 Today, that dream has come true.
-Thanks to everyone’s support, this journey has been successful.
+Thanks to everyone’s support, this journey has been successful.”
           </p>
 
           {/* Chairman Info */}
           <div className="mt-8 text-start">
             <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-800">
-              — CEO
+              CEO
             </h3>
             <p className="text-sm sm:text-base text-gray-600">
               Ocean Residence
