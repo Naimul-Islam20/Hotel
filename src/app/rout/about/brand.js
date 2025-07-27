@@ -51,7 +51,7 @@ const LuxuryExperience = () => {
 
   {/* Main Heading */}
   <h3 className="text-xl text-sky-500 sm:text-2xl font-bold ">
-    Ocean Residential
+    Ocean Residence
   </h3>
 
   {/* Sub Text */}

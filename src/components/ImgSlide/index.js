@@ -92,8 +92,8 @@ export default function ExclusiveSlider() {
                 </div>
 
                 {/* Center Content Section */}
-                <div className="w-[660%] md:w-1/2 h-auto md:h-full flex flex-col">
-                  <div className="relative h-[205px] md:h-[70%] w-full">
+                <div className="w-[660%] md:w-1/2 h-[332px] md:h-full flex flex-col">
+                  <div className="relative h-[205px] md:h-[66%] w-full">
                     <Image
                       src={slide.center}
                       alt="Center"

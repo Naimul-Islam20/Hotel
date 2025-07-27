@@ -54,7 +54,7 @@ const RoomDetailsPage = () => {
 
             <div className="max-w-7xl mx-auto  py-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Room Overview</h2>
-            <p className="text-gray-600 text-justify leading-relaxed text-justify">
+            <p className="text-gray-600 text-justify leading-relaxed ">
               Discover the perfect balance of luxury and practicality in our Executive Room — designed to meet the needs of discerning travelers. The room features a refined interior with premium furnishings, a spacious king-size bed, and a comfortable work area ideal for both business and leisure.
 
 
@@ -69,7 +69,7 @@ For entertainment, enjoy a selection of local and international channels on the 
 
         
        
-  <div className="space-y-4 w-full p-2 bg-gray-100 h-fit sticky top-18">
+  <div className="space-y-4 w-full border border-gray-300 p-2 bg-gray-100 h-fit sticky top-24">
   <h2 className="text-xl font-semibold mb-2">Contact Info</h2>
 
   {/* Location */}
@@ -95,9 +95,12 @@ For entertainment, enjoy a selection of local and international channels on the 
       </span>
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
-    <div className="px-4 py-3 text-sm text-gray-600">
-      oceanresidence10@gmail.com
-    </div>
+   <div className="px-4 py-3 text-sm text-gray-600">
+  <a href="mailto:oceanresidence10@gmail.com" className="text-blue-600 underline">
+    oceanresidence10@gmail.com
+  </a>
+</div>
+
   </details>
 
   {/* Phone */}
@@ -110,8 +113,10 @@ For entertainment, enjoy a selection of local and international channels on the 
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      +8801336188906
-    </div>
+  <a href="tel:+8801336188906" className="text-blue-600 underline">
+    +8801336188906
+  </a>
+</div>
   </details>
 
   {/* Website */}
@@ -154,9 +159,6 @@ For entertainment, enjoy a selection of local and international channels on the 
       <li>Friendly service, secure environment, unforgettable memories.</li>
       <li>Ocean Residence — where hospitality feels like home.</li>
     </ul>
-  </div>
-  <div className="text-center text-sm text-gray-600 pt-4 border-t border-gray-300">
-    At Ocean Residence, we’re always here for you — committed to providing a peaceful, secure, and memorable stay every time.
   </div>
 </div>
       </div>

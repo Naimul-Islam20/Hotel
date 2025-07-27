@@ -87,8 +87,20 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
           <ul className="space-y-2 text-sm">
-            <li><span className="font-medium">Phone : </span> +8801336188906</li>
-            <li><span className="font-medium">Email : </span> oceanresidence10@gmail.com</li>
+           <li>
+  <span className="font-medium">Phone : </span>
+  <a href="tel:+8801336188906" className="text-sky-500 underline">
+    +8801336188906
+  </a>
+</li>
+
+           <li>
+  <span className="font-medium">Email : </span> 
+  <a href="mailto:oceanresidence10@gmail.com" className="text-sky-500 underline">
+    oceanresidence10@gmail.com
+  </a>
+</li>
+
             <li></li>
             <li><span className="font-medium">Hours : </span> 24/7 Service Available</li>
           </ul>
@@ -100,17 +112,18 @@ export default function Footer() {
       <div className="mt-12 border-t border-gray-300 py-4 text-xs text-gray-400 px-4 text-center">
   <div className="max-w-7xl mx-auto">
     <p>
-      © 2025{" "}
-      <a
-        href="https://muktodharaltd.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-sky-400 hover:underline"
-      >
-        Muktodhara Technology Limited
-      </a>
-      . All rights reserved.
-    </p>
+  © {new Date().getFullYear()}{" "}
+  <a
+    href="https://muktodharaltd.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-sky-500 hover:underline"
+  >
+    Muktodhara Technology Limited
+  </a>
+  . All rights reserved.
+</p>
+
   </div>
 </div>
 

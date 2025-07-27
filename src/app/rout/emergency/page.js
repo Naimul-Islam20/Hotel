@@ -41,9 +41,9 @@ const EmergencyFacilityPage = () => {
             In case of any emergency, we have medical facilities available within the hotel building. The following services are provided:
           </p>
 
-          <ul className="list-disc list-inside text-gray-800 space-y-2">
+          <ul className="list-disc list-inside list-indent  text-gray-800 space-y-2">
             {facilities.map((item, index) => (
-              <li key={index} className="text-lg">{item}</li>
+              <li key={index} className=" text-lg">{item}</li>
             ))}
           </ul>
 

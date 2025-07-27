@@ -50,12 +50,22 @@ export default function ContactPage() {
 
             <div>
               <h4 className="text-base sm:text-lg font-semibold text-gray-900">Booking / Call Now</h4>
-              <p className="text-sm sm:text-base text-gray-800">+8801336188906</p>
+              <p className="text-sm sm:text-base text-gray-800">
+  <a href="tel:+8801336188906" className="text-blue-600 underline">
+    +8801336188906
+  </a>
+</p>
+
             </div>
 
             <div>
               <h4 className="text-base sm:text-lg font-semibold text-gray-900">Questions</h4>
-              <p className="text-sm sm:text-base text-gray-800">oceanresidence10@gmail.com</p>
+             <p className="text-sm sm:text-base text-gray-800">
+  <a href="mailto:oceanresidence10@gmail.com" className="text-blue-600 underline">
+    oceanresidence10@gmail.com
+  </a>
+</p>
+
             </div>
 
             {/* ✅ Social Icons */}

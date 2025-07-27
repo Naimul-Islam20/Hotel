@@ -57,9 +57,11 @@ export default function ContactMapSection() {
               </span>
               <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
             </summary>
-            <div className="px-4 py-3 text-sm text-gray-600">
-              oceanresidence10@gmail.com
-            </div>
+              <div className="px-4 py-3 text-sm text-gray-600">
+  <a href="mailto:oceanresidence10@gmail.com" className="text-blue-600 underline">
+    oceanresidence10@gmail.com
+  </a>
+</div>
           </details>
 
           {/* Phone */}
@@ -71,9 +73,11 @@ export default function ContactMapSection() {
               </span>
               <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
             </summary>
-            <div className="px-4 py-3 text-sm text-gray-600">
-              +8801336188906
-            </div>
+           <div className="px-4 py-3 text-sm text-gray-600">
+  <a href="tel:+8801336188906" className="text-blue-600 underline">
+    +8801336188906
+  </a>
+</div>
           </details>
 
           {/* Website */}

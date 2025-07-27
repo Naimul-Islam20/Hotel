@@ -50,12 +50,12 @@ const DeluxeRoomDetails = () => {
               </div>
           <RoomInfo/>
           <RoomServices/>
-          <AdditionalServices/>
+          {/* <AdditionalServices/> */}
           <Calendar/>
 
             <div className="max-w-7xl mx-auto  py-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Room Overview</h2>
-            <p className="text-gray-600 text-justify leading-relaxed text-justify">
+            <p className="text-gray-600 text-justify leading-relaxed ">
                Our Deluxe Room is a refined space that combines simplicity with charm, offering extra space and thoughtful design. Ideal for travelers who appreciate comfort without compromising on style, it features elegant furnishings, a soft double or king-size bed, and large windows that invite daylight and scenic views.
 
 While the room itself offers a peaceful indoor retreat, guests can enjoy a breathtaking port view from the hotel’s top-floor terrace, perfect for relaxing and soaking in the natural beauty.
@@ -67,7 +67,7 @@ The room comes with modern amenities such as a Smart TV, high-speed Wi-Fi, and a
 
         </div>
 
-<div className="space-y-4 w-full p-2 bg-gray-100 h-fit sticky top-18">
+<div className="space-y-4 w-full p-2 border border-gray-300 bg-gray-100 h-fit sticky top-24">
   <h2 className="text-xl font-semibold mb-2">Contact Info</h2>
 
   {/* Location */}
@@ -93,9 +93,12 @@ The room comes with modern amenities such as a Smart TV, high-speed Wi-Fi, and a
       </span>
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
-    <div className="px-4 py-3 text-sm text-gray-600">
-      oceanresidence10@gmail.com
-    </div>
+  <div className="px-4 py-3 text-sm text-gray-600">
+  <a href="mailto:oceanresidence10@gmail.com" className="text-blue-600 underline">
+    oceanresidence10@gmail.com
+  </a>
+</div>
+
   </details>
 
   {/* Phone */}
@@ -108,8 +111,10 @@ The room comes with modern amenities such as a Smart TV, high-speed Wi-Fi, and a
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      +8801336188906
-    </div>
+  <a href="tel:+8801336188906" className="text-blue-600 underline">
+    +8801336188906
+  </a>
+</div>
   </details>
 
   {/* Website */}
@@ -153,11 +158,7 @@ The room comes with modern amenities such as a Smart TV, high-speed Wi-Fi, and a
       <li>Ocean Residence — where hospitality feels like home.</li>
     </ul>
   </div>
-  <div className="text-center text-sm text-gray-600 pt-4 border-t border-gray-300">
-    At Ocean Residence, we’re always here for you — committed to providing a peaceful, secure, and memorable stay every time.
-  </div>
-</div>
-
+ </div>
       </div>
   
     </div>

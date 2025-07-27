@@ -46,7 +46,8 @@ export default function HeroSlider() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: index * 0.05 }}
-        className="inline-block me-[8px] text-[125%]"
+        className="inline-block me-[2px] md:me-[8px] text-[125%]" 
+    
       >
         {char === " " ? "\u00A0" : char}
       </motion.span>
@@ -90,20 +91,21 @@ export default function HeroSlider() {
         </AnimatePresence>
       </div>
 
-      {/* Navigation Arrows */}
-      <button
-        onClick={handlePrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full z-30"
-      >
-        <FaChevronLeft className="text-white w-6 h-6" />
-      </button>
+     {/* Navigation Arrows */}
+<button
+  onClick={handlePrev}
+  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full z-30 hidden md:block"
+>
+  <FaChevronLeft className="text-white w-6 h-6" />
+</button>
 
-      <button
-        onClick={handleNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full z-30"
-      >
-        <FaChevronRight className="text-white w-6 h-6" />
-      </button>
+<button
+  onClick={handleNext}
+  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full z-30 hidden md:block"
+>
+  <FaChevronRight className="text-white w-6 h-6" />
+</button>
+
     </div>
   );
 }
