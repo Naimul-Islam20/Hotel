@@ -151,7 +151,7 @@ For entertainment, enjoy a selection of local and international channels on the 
   </div>
 
   {/* Footer Messages */}
-  <div className="text-sm text-gray-600 pt-4 border-t border-gray-300 space-y-4">
+  <div className="text-sm px-3 text-gray-600 pt-4 border-t border-gray-300 space-y-4">
     {/* English */}
     <ul className="list-indent space-y-1">
       <li>Experience comfort, elegance, and care — only at Ocean Residence.</li>

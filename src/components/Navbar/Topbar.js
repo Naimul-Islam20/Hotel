@@ -11,7 +11,10 @@ const Topbar = () => {
           
           <div className="flex items-center gap-1">
             <FaPhoneAlt className="text-gray-600" />
-            <span> +8801336188906</span>
+            <a href="tel:+8801336188906" className=" underline">
+  +8801336188906
+</a>
+
           </div>
           <div className="flex items-center gap-1">
             <GoLocation className="text-black" />

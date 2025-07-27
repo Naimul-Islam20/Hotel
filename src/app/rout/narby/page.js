@@ -7,7 +7,7 @@ const nearbyData = [
     title: "Foy’s Lake Concord Amusement World",
     distance: "7.0 KM",
     description:
-      "Foy’s Lake Concord is one of the most popular amusement parks in Chittagong, featuring thrill rides, a water park with wave pool and lazy river, and lakeside resorts for families and children.",
+      "Foy’s Lake Concord Amusement World is one of Chittagong’s top entertainment destinations. It features a range of thrill rides, a fully-equipped water park with a wave pool and lazy river, and scenic lakeside resorts. Ideal for families and children looking for a fun and adventurous day out amidst nature.",
     contact: "Information available at entrance or official site",
     img: "/local/foys2.jpg",
   },
@@ -15,7 +15,7 @@ const nearbyData = [
     title: "Chattogram Shishu Park",
     distance: "5.0 KM",
     description:
-      "Chattogram Shishu Park is a public children’s amusement park near M A Aziz Stadium. It includes rides, toy train, playgrounds, and hosts cultural programs on holidays. Shishu Park is a public children’s amusement park near M A Aziz Stadium. It includes rides, toy train, playgrounds, and hosts cultural programs on holidays Shishu Park is a public ",
+      "Located near the M A Aziz Stadium, Chattogram Shishu Park is a public amusement park specially designed for children. It includes various fun rides, a toy train, playgrounds, and regularly hosts cultural programs on holidays. It’s a nostalgic and enjoyable place for both kids and their parents.",
     contact: "Usually local number, info available on-site",
     img: "/local/sisu.jpg",
   },
@@ -23,7 +23,7 @@ const nearbyData = [
     title: "Chittagong Zoo",
     distance: "7.0 KM",
     description:
-      "Located beside Foy’s Lake, the zoo hosts 66 species and over 500 animals including the rare white Bengal tiger. It’s a popular spot for kids and educational tours.",
+      "Situated next to Foy’s Lake, the Chittagong Zoo is home to more than 500 animals from 66 different species. Highlights include rare species such as the white Bengal tiger. The zoo is a favorite for educational school trips and a delightful destination for families with children.",
     contact: "Contact available at gate or website",
     img: "/local/zoo2.jpg",
   },
@@ -31,7 +31,7 @@ const nearbyData = [
     title: "Jamboree Park",
     distance: "4.0 KM",
     description:
-      "Located in Agrabad, this 8.5-acre urban park features walking tracks, water features, and open space. Perfect for an evening walk with family and children.",
+      "Located in Agrabad, Jamboree Park is a beautifully designed 8.5-acre urban park featuring walking and jogging tracks, fountains, and open recreational spaces. It's a peaceful and clean environment, making it ideal for evening walks, exercise, or simply spending quality time with loved ones.",
     contact: "Managed by CDA; no direct phone number available",
     img: "/local/jambura.jpg",
   },
@@ -39,7 +39,7 @@ const nearbyData = [
     title: "Chittagong Club Golf Course",
     distance: "6.0 KM",
     description:
-      "Chittagong Club offers a premium golf course with additional facilities like swimming pool, tennis courts, and fine dining. Membership required.",
+      "The golf course at Chittagong Club is an exclusive facility for club members. In addition to golfing, the club offers luxurious amenities including a swimming pool, tennis courts, and fine dining options. It’s a prestigious destination for leisure and social interaction among the elite.",
     contact: "+880 31-716632 (General Club Info)",
     img: "/local/club.jpg",
   },
@@ -47,11 +47,12 @@ const nearbyData = [
     title: "Spa at Foy’s Lake Resort",
     distance: "7.0 KM",
     description:
-      "This resort inside Foy’s Lake offers spa and wellness services alongside scenic lake views—ideal for a relaxing time after fun activities.",
+      "Located within the Foy’s Lake Resort premises, the spa offers various wellness and relaxation treatments. Visitors can enjoy soothing massages while overlooking the tranquil lake. It’s the perfect retreat after a day of fun activities or simply to unwind in a calm, scenic atmosphere.",
     contact: "Available upon booking the resort",
     img: "/local/resort.jpg",
   },
 ];
+
 
 export default function NearbyThingsToDo() {
   const breakpointColumnsObj = {
