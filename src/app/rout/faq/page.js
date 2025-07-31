@@ -83,8 +83,8 @@ export default function FAQPage() {
     <p className="text-sm text-gray-200">
       <Link href="/" className="hover:underline text-blue-200">
         Home
-      </Link>{" "}
-      &gt; <span className="text-white">FAQ</span>
+      </Link>{" > "}
+       <span className="text-white">FAQ</span>
     </p>
   </div>
 </div>

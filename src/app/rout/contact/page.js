@@ -7,6 +7,7 @@ import {
   FaMapMarkerAlt,
   FaFacebookF,
   FaInstagram,
+  FaWhatsapp ,
   FaLinkedinIn,
   FaYoutube,
 } from "react-icons/fa";
@@ -29,8 +30,8 @@ export default function ContactPage() {
           <h1 className="text-3xl md:text-5xl  pb-5">Contact Us</h1>
           <Link href="/" className="hover:underline text-sm text-gray-700 ">
             Home
-          </Link>{" "}
-          &gt; Contact Us
+          </Link>{" > "}
+           Contact Us
         </div>
       </section>
 
@@ -44,7 +45,7 @@ export default function ContactPage() {
 
             <div>
               <h4 className="text-base sm:text-lg font-semibold text-gray-900">Address</h4>
-              <p className="text-sm sm:text-base text-gray-950">Ocean Tower, 6th Floor, Agrabad Access Road, Beparilara, Circle</p>
+              <p className="text-sm sm:text-base text-gray-950">Ocean Tower, 6th Floor, Agrabad Access Road, Beparipara, Circle</p>
               <p className="text-sm sm:text-base text-gray-950">Chattogram - Bangladesh</p>
             </div>
 
@@ -58,25 +59,36 @@ export default function ContactPage() {
 
             </div>
 
-            <div>
-              <h4 className="text-base sm:text-lg font-semibold text-gray-900">Questions</h4>
-             <p className="text-sm sm:text-base text-gray-800">
-  <a href="mailto:oceanresidence10@gmail.com" className="text-blue-600 underline">
-    oceanresidence10@gmail.com
-  </a>
-</p>
+           <div>
+  <h4 className="text-base sm:text-lg font-semibold text-gray-900">Questions</h4>
 
-            </div>
+  {/* WhatsApp Icon + Number */}
+  {/* <div className="flex items-center mt-1 mb-1">
+    <FaWhatsapp className="text-green-500 text-lg sm:text-xl me-2" />
+    <a
+      href="https://wa.me/8801771234567"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sm sm:text-base text-gray-800 underline"
+    >
+      +880 1771 234567
+    </a>
+  </div> */}
+
+  {/* Email */}
+  <p className="text-sm sm:text-base text-gray-800">
+    <a href="mailto:oceanresidence10@gmail.com" className="text-blue-600 underline">
+      oceanresidence10@gmail.com
+    </a>
+  </p>
+</div>
 
             {/* ✅ Social Icons */}
             <div className="flex gap-4 pt-4">
               <a href="https://www.facebook.com/profile.php?id=61576255126669" className="text-blue-500">
                 <FaFacebookF size={20} />
               </a>
-              <a href="#" className="text-pink-500">
-                <FaInstagram size={20} />
-              </a>
-              
+             
             </div>
           </div>
 

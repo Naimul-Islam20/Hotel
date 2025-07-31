@@ -32,8 +32,8 @@ export default function LocalAttractions() {
           <p className="text-sm text-gray-200">
             <Link href="/" className="hover:underline ">
               Home
-            </Link>{" "}
-            &gt; <span className="text-white">Attraction</span>
+            </Link>{" > "}
+            <span className="text-white">Attraction</span>
           </p>
         </div>
       </div>

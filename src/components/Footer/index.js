@@ -46,7 +46,7 @@ export default function Footer() {
 
             </Link>
          
-          <p className="text-sm pt-2"><span className=" font-medium">Address : </span> Ocean Tower, 6th Floor, Agrabad Access Road, Beparilara, Circle Chittagong, Bangladesh.</p>
+          <p className="text-sm pt-2"><span className=" font-medium">Address : </span> Ocean Tower, 6th Floor, Agrabad Access Road, Beparipara, Circle Chittagong, Bangladesh.</p>
           <div className="flex gap-3 mt-6">
             Follow us : 
             <Link href="https://www.facebook.com/profile.php?id=61576255126669" className="p-2 bg-white rounded-full shadow hover:bg-blue-100 transition">
@@ -72,7 +72,7 @@ export default function Footer() {
               <Link href="/rout/about" className="hover:text-sky-400">About Us</Link>
             </li>
             <li>
-              <Link href="/rout/gallery" className="hover:text-sky-400">Gallery</Link>
+              <Link href="/rout/gallary" className="hover:text-sky-400">Gallery</Link>
             </li>
             <li>
               <Link href="/rout/faq" className="hover:text-sky-400">Faq</Link>

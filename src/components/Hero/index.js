@@ -4,10 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const images = ["/img/bad1.jpg", "/img/bad2.jpg", "/img/bad3.jpg"];
-const captions = ["EXPERIENCE LUXURY", "STAY IN COMFORT", "Residencial Service"];
-
+const captions = ["EXPERIENCE LUXURY ", "STAY IN COMFORT", "Residencial Service"];
 
 export default function HeroSlider() {
   const [current, setCurrent] = useState(0);
@@ -39,30 +39,34 @@ export default function HeroSlider() {
     resetAutoSlide();
   };
 
-  const splitText = (text) => {
-    return text.split("").map((char, index) => (
-      <motion.span
-        key={index}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: index * 0.05 }}
-        className="inline-block me-[2px] md:me-[8px] text-[125%]" 
-    
-      >
-        {char === " " ? "\u00A0" : char}
-      </motion.span>
-    ));
-  };
+const splitText = (text) => {
+  return text.split("").map((char, index) => (
+    <motion.span
+      key={index}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * 0.05 }}
+      className="inline-block me-[2px] md:me-[8px] text-[125%] sm:whitespace-nowrap"
+    >
+      {char === " " ? "\u00A0" : char}
+    </motion.span>
+  ));
+};
+
 
   return (
     <div className="relative w-full h-[60vh] md:h-[85vh] overflow-hidden will-change-transform">
       {/* Background Image */}
-      <img
-        src={images[current]}
-        alt="Hero Slide"
-        className="w-full h-full object-cover brightness-50 absolute inset-0 pointer-events-none"
-        draggable={false}
-      />
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src={images[current]}
+          alt="Hero Slide"
+          fill
+          className="object-cover brightness-50 pointer-events-none"
+          draggable={false}
+          priority
+        />
+      </div>
 
       {/* Caption with Animation */}
       <div className="absolute top-1/2 left-4 right-4 md:left-[2in] md:right-[1in] transform -translate-y-1/2 z-20 px-4 flex flex-col items-start">
@@ -91,21 +95,20 @@ export default function HeroSlider() {
         </AnimatePresence>
       </div>
 
-     {/* Navigation Arrows */}
-<button
-  onClick={handlePrev}
-  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full z-30 hidden md:block"
->
-  <FaChevronLeft className="text-white w-6 h-6" />
-</button>
+      {/* Navigation Arrows */}
+      <button
+        onClick={handlePrev}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full z-30 hidden md:block"
+      >
+        <FaChevronLeft className="text-white w-6 h-6" />
+      </button>
 
-<button
-  onClick={handleNext}
-  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full z-30 hidden md:block"
->
-  <FaChevronRight className="text-white w-6 h-6" />
-</button>
-
+      <button
+        onClick={handleNext}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-opacity-50 hover:bg-opacity-70 p-2 rounded-full z-30 hidden md:block"
+      >
+        <FaChevronRight className="text-white w-6 h-6" />
+      </button>
     </div>
   );
 }

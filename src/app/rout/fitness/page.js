@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -16,10 +17,11 @@ export default function FitnessPage() {
     <main className="w-full pb-20">
       {/* Hero Section */}
       <section className="relative w-full bg-gray-900 rounded overflow-hidden mb-16 h-[180px] md:h-[260px] flex justify-center items-center px-10">
-        <img
+        <Image
           src="/img/f1.jpg"
           alt="Fitness Hero"
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
+          fill
+          className="object-cover opacity-60"
           draggable={false}
         />
         <h1 className="relative text-white text-3xl md:text-5xl font-extrabold text-center">
@@ -33,28 +35,27 @@ export default function FitnessPage() {
         <div className="md:w-1/2 space-y-6 text-gray-800">
           <h2 className="text-3xl font-bold">Gym & Movement</h2>
           <p className="leading-relaxed text-gray-700">
-           Build strength, improve mobility, and move with confidence. Our training programs are designed to support a healthier, stronger you—every step of the way.
+            Build strength, improve mobility, and move with confidence. Our training programs are designed to support a healthier, stronger you—every step of the way.
           </p>
 
           <div>
             <h3 className="font-semibold mb-2">Opening Hours</h3>
             <ul className="list-disc list-inside text-gray-700 space-y-1">
               <li>Gym Center: 7:00 am - 9:00 pm</li>
-              
             </ul>
           </div>
 
-            <Link
-                      href="/rout/contact"
-                      className="text-lg  text-white p-3 bg-sky-500 rounded hover:bg-sky-600 transition"
-                    >
-                      Contact Us
-                    </Link>
+          <Link
+            href="/rout/contact"
+            className="text-lg text-white p-3 bg-sky-500 rounded hover:bg-sky-600 transition"
+          >
+            Contact Us
+          </Link>
         </div>
 
         {/* Right Column (Slider with PhotoView) */}
         <div className="md:w-1/2 w-full flex justify-center items-center">
-          <div className="w-full max-w-md h-[400px] rounded overflow-hidden shadow-lg">
+          <div className="w-full max-w-md h-[400px] rounded overflow-hidden shadow-lg relative">
             <PhotoProvider>
               <Swiper
                 className="w-full h-full"
@@ -66,12 +67,15 @@ export default function FitnessPage() {
                 {images.map((img, i) => (
                   <SwiperSlide key={i}>
                     <PhotoView src={img}>
-                      <img
-                        src={img}
-                        alt={`Fitness Image ${i + 1}`}
-                        className="w-full h-full object-cover cursor-zoom-in"
-                        draggable={false}
-                      />
+                      <div className="relative w-full h-[400px] cursor-zoom-in">
+                        <Image
+                          src={img}
+                          alt={`Fitness Image ${i + 1}`}
+                          fill
+                          className="object-cover"
+                          draggable={false}
+                        />
+                      </div>
                     </PhotoView>
                   </SwiperSlide>
                 ))}

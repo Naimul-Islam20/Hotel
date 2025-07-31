@@ -63,8 +63,8 @@ const MobileMenu = ({ isOpen, onClose }) => {
                     aria-expanded={activeMenu === item.name}
                     aria-controls={`${item.name}-submenu`}
                   >
-                    <span className="text-sm text-gray-800">{item.name}</span>
-                    <span className="text-lg text-black">
+                    <span className="text-sm text-black">{item.name}</span>
+                    <span className="text-sm text-black">
                       {activeMenu === item.name ? (
                         <GoChevronUp />
                       ) : (
@@ -84,7 +84,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                         <li key={index}>
                           <Link
                             href={subItem.href}
-                            className="block text-gray-600 ps-2 text-sm py-2 border-b border-gray-400 hover:bg-gray-200 hover:text-sky-500"
+                            className="block text-black ps-2 text-sm py-2 border-b border-gray-400 hover:bg-gray-200 hover:text-sky-500"
                             onClick={onClose}
                           >
                             {subItem.name}

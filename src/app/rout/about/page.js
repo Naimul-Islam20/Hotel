@@ -22,15 +22,15 @@ export default function AboutPage() {
                <h1 className="text-3xl md:text-5xl  pb-5">About Us</h1>
                <Link href="/" className="hover:underline text-sm text-gray-700 ">
                  Home
-               </Link>{" "}
-               &gt; About Us
+               </Link>{" > "}
+               About Us
              </div>
            </section>
 <Brand/>
 
       {/* 🔽 History Section */}
       <History />
-      <Tree/>
+      {/* <Tree/> */}
       <Video/>
 
       

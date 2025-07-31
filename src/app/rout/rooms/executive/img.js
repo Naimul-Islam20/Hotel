@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Thumbs, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -38,11 +39,15 @@ const ImageSliderWithModal = () => {
           {images.map((img, index) => (
             <SwiperSlide key={index}>
               <PhotoView src={img}>
-                <img
-                  src={img}
-                  alt={`Slide ${index}`}
-                  className="w-full h-70 md:h-120 object-cover"
-                />
+                <div className="relative w-full h-[280px] md:h-[480px]">
+                  <Image
+                    src={img}
+                    alt={`Slide ${index}`}
+                    fill
+                    className="object-cover"
+                    draggable={false}
+                  />
+                </div>
               </PhotoView>
             </SwiperSlide>
           ))}
@@ -59,11 +64,15 @@ const ImageSliderWithModal = () => {
         >
           {images.map((img, index) => (
             <SwiperSlide key={index}>
-              <img
-                src={img}
-                alt={`Thumb ${index}`}
-                className={` h-14 md:h-20 w-full object-cover border-2 ${activeIndex === index ? 'border-blue-500' : 'border-transparent'}`}
-              />
+              <div className="relative w-full h-14 md:h-20">
+                <Image
+                  src={img}
+                  alt={`Thumb ${index}`}
+                  fill
+                  className={`object-cover border-2 ${activeIndex === index ? 'border-blue-500' : 'border-transparent'}`}
+                  draggable={false}
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>

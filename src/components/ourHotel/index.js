@@ -22,7 +22,7 @@ const LuxuryExperience = () => {
   </p>
   <p className="text-xs text-justify sm:text-sm md:text-base text-gray-500 leading-relaxed mb-4">
     With personalized services, modern amenities, and a warm, welcoming atmosphere, 
-    Ocean Residence ensures that every guest feels right at home. Whether you're here 
+    Ocean Residence ensures that every guest feels right at home. Whether you are here 
     for business or leisure, our dedicated team is committed to making your visit seamless and memorable.
   </p>
 </div>

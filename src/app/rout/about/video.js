@@ -1,5 +1,6 @@
 'use client';
 import { useState } from "react";
+import Image from "next/image";
 
 export default function PaathyaSection() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -33,13 +34,15 @@ export default function PaathyaSection() {
             />
           ) : (
             <div className="relative w-full h-full cursor-pointer bg-black rounded overflow-hidden">
-              <img
+              <Image
                 src="/img/view4.jpg"
                 alt="Video thumbnail"
-                className="absolute inset-0 w-full h-full object-cover rounded"
+                fill
+                className="object-cover rounded"
+                priority
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-black  bg-opacity-50  text-4xl select-none">
+                <div className="text-black bg-opacity-50 text-4xl select-none">
                   ▶
                 </div>
               </div>

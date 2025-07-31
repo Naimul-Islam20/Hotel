@@ -44,7 +44,7 @@ export default function ContactMapSection() {
               <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
             </summary>
             <div className="px-4 py-3 text-sm text-gray-600">
-              Ocean Tower, 6th Floor, Agrabad Access Road, Beparilara, Circle Chittagong, Bangladesh.
+              Ocean Tower, 6th Floor, Agrabad Access Road, Beparipara, Circle Chittagong, Bangladesh.
             </div>
           </details>
 

@@ -25,7 +25,7 @@ const navItems = [
    
   },
     {
-    name: "GALLARY",href: "/rout/gallary"
+    name: "GALLERY",href: "/rout/gallary"
     
 
   },

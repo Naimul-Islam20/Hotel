@@ -26,8 +26,8 @@ const EmergencyFacilityPage = () => {
           <h1 className="text-3xl md:text-5xl pb-5">Emergency Care</h1>
           <Link href="/" className="hover:underline text-sm text-gray-700">
             Home
-          </Link>{" "}
-          &gt; Medical Help
+          </Link>{" > "}
+          Medical Help
         </div>
       </section>
 

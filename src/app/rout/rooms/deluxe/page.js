@@ -31,8 +31,8 @@ const DeluxeRoomDetails = () => {
                 <h1 className="text-3xl md:text-5xl  pb-5">Deluxe Room</h1>
                 <Link href="/" className="hover:underline text-sm text-gray-700 ">
                   Home
-                </Link>{" "}
-                &gt; Deluxe Room
+                </Link>{" > "}
+                 Deluxe Room
               </div>
             </section>
 
@@ -80,7 +80,7 @@ The room comes with modern amenities such as a Smart TV, high-speed Wi-Fi, and a
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      Ocean Tower, 6th Floor, Agrabad Access Road, Beparilara, Circle Chittagong, Bangladesh.
+      Ocean Tower, 6th Floor, Agrabad Access Road, Beparipara, Circle Chittagong, Bangladesh.
     </div>
   </details>
 

@@ -6,23 +6,13 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 import { FaCaretLeft, FaCaretRight, FaWifi, FaTv, FaFan, FaUtensils, FaBath, FaSnowflake, FaDoorOpen } from "react-icons/fa";
 
 export default function RoomCard({ room }) {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-
-  // Extra static features (can be merged with room.features if dynamic)
-  // const extraFeatures = [
-  //   { icon: <FaWifi />, text: "Free Wi-Fi" },
-  //   { icon: <FaTv />, text: "Smart TV" },
-  //   { icon: <FaSnowflake />, text: "AC Room" },
-  //   { icon: <FaBath />, text: "Attached Bath" },
-  //   { icon: <FaUtensils />, text: "Dining Facility" },
-  //   { icon: <FaFan />, text: "Ceiling Fan" },
-  //   { icon: <FaDoorOpen />, text: "Private Entrance" },
-  // ];
 
   return (
     <div className="bg-white rounded mx-1 md:mx-5 shadow transition overflow-hidden border border-gray-200">
@@ -43,10 +33,12 @@ export default function RoomCard({ room }) {
         >
           {room.img.map((src, idx) => (
             <SwiperSlide key={idx}>
-              <img
+              <Image
                 src={src}
                 alt={room.title}
-                className="w-full h-full object-cover"
+                fill
+                style={{ objectFit: "cover" }}
+                priority={idx === 0} // প্রথম ছবি priority দিলে ভালো লোড হয়
               />
             </SwiperSlide>
           ))}
@@ -97,7 +89,7 @@ export default function RoomCard({ room }) {
         <div className="flex justify-between items-center pt-2">
          <Link
               href={room.path}
-              className=" text-sky-500 underline tracking-widest transition"
+              className=" text-sky-500  underline tracking-widest transition"
             >
               Details Room
             </Link>

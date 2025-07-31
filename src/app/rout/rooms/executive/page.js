@@ -30,8 +30,8 @@ const RoomDetailsPage = () => {
                <h1 className="text-3xl md:text-5xl  pb-5">Executive Room</h1>
                <Link href="/" className="hover:underline text-sm text-gray-700 ">
                  Home
-               </Link>{" "}
-               &gt; Executive Room
+               </Link>{" > "}
+                Executive Room
              </div>
            </section>
 
@@ -82,7 +82,7 @@ For entertainment, enjoy a selection of local and international channels on the 
       <FaCaretDown className="text-lg transform group-open:rotate-180 transition" />
     </summary>
     <div className="px-4 py-3 text-sm text-gray-600">
-      Ocean Tower, 6th Floor, Agrabad Access Road, Beparilara, Circle Chittagong, Bangladesh.
+      Ocean Tower, 6th Floor, Agrabad Access Road, Beparipara, Circle Chittagong, Bangladesh.
     </div>
   </details>
 
