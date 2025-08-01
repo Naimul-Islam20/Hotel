@@ -21,7 +21,7 @@ const RoomServices = () => {
   return (
     <div className="max-w-7xl mx-auto py-8 ">
       <h2 className="text-2xl font-bold text-gray-800 mb-4">Room Services</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {services.map(({ icon, label }, idx) => (
           <div
             key={idx}
