@@ -107,7 +107,7 @@ export default function ExclusiveSlider() {
     Discover the charm of Chattogram—Ocean Hotel places you moments away from scenic hills, peaceful parks, lively markets, and seaside escapes.
   </p>
   <Link
-    href="/rout/local"
+    href="/routes/local"
     className="text-sky-500 underline tracking-widest transition"
   >
    Explore More

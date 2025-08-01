@@ -147,7 +147,7 @@ const Navbar = () => {
 
             {/* 🟦 View Rate Button */}
             <Link
-              href="/rout/rooms/roomsPage"
+              href="/routes/rooms/roomsPage"
               className="hover:bg-sky-600 bg-sky-500 text-white rounded px-3 py-2 hidden md:flex items-center gap-2"
             >
               VIEW RATE

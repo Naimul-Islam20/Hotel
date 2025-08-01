@@ -94,7 +94,7 @@ export default function RoomCard({ room }) {
               Details Room
             </Link>
           <Link
-            href="/rout/contact"
+            href="/routes/contact"
             className="text-sm  text-white px-4 py-1.5 bg-sky-500 rounded hover:bg-sky-600 transition"
           >
             Contact Us

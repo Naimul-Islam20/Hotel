@@ -10,12 +10,12 @@ const navItems = [
     
     
       {
-    name: "EXECUTIVE ROOM",href: "/rout/rooms/executive "
+    name: "EXECUTIVE ROOM",href: "/routes/rooms/executive "
     
 
   },
       {
-    name: "DELUXE ROOM",href: "/rout/rooms/deluxe"
+    name: "DELUXE ROOM",href: "/routes/rooms/deluxe"
     
 
   },
@@ -25,7 +25,7 @@ const navItems = [
    
   },
     {
-    name: "GALLERY",href: "/rout/gallary"
+    name: "GALLERY",href: "/routes/gallery"
     
 
   },
@@ -34,34 +34,34 @@ const navItems = [
 
  
     {
-    name: "About us",href: "/rout/about"
+    name: "About us",href: "/routes/about"
     
 
   },
     {
-    name: "Contact",href: "/rout/contact"
+    name: "Contact",href: "/routes/contact"
     
 
   },
   {
-    name: "LOCAL ATTRACTION",href: "/rout/local"
+    name: "LOCAL ATTRACTION",href: "/routes/local"
     
 
   },
 
   {
-    name: "Fitness",href: "/rout/fitness"
+    name: "Fitness",href: "/routes/fitness"
     
 
   },
  
  {
-    name: "FAQ",href: "/rout/faq"
+    name: "FAQ",href: "/routes/faq"
     
 
   },
   {
-    name: "MEDICAL-HELP",href: "/rout/emergency"
+    name: "MEDICAL-HELP",href: "/routes/emergency"
     
 
   },

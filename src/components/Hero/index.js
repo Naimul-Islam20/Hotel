@@ -85,7 +85,7 @@ const splitText = (text) => {
             </h2>
 
             <Link
-              href="/rout/contact"
+              href="/routes/contact"
               className="mt-4 inline-block px-6 py-2 text-white bg-sky-500 text-sm sm:text-base md:text-lg lg:text-xl
               hover:bg-sky-600 hover:-translate-y-1 rounded transition-all duration-500 ease-in-out transform"
             >

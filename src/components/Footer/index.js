@@ -66,19 +66,19 @@ export default function Footer() {
           <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/rout/rooms/roomsPage" className="hover:text-sky-400">Room Types</Link>
+              <Link href="/routes/rooms/roomsPage" className="hover:text-sky-400">Room Types</Link>
             </li>
             <li>
-              <Link href="/rout/about" className="hover:text-sky-400">About Us</Link>
+              <Link href="/routes/about" className="hover:text-sky-400">About Us</Link>
             </li>
             <li>
-              <Link href="/rout/gallary" className="hover:text-sky-400">Gallery</Link>
+              <Link href="/routes/gallery" className="hover:text-sky-400">Gallery</Link>
             </li>
             <li>
-              <Link href="/rout/faq" className="hover:text-sky-400">Faq</Link>
+              <Link href="/routes/faq" className="hover:text-sky-400">Faq</Link>
             </li>
             <li>
-              <Link href="/rout/contact" className="hover:text-sky-400">Contact</Link>
+              <Link href="/routes/contact" className="hover:text-sky-400">Contact</Link>
             </li>
           </ul>
         </div>

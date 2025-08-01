@@ -16,7 +16,7 @@ const rooms = [
     img: "/img/deluxe.jpg",
     price: "৳3000/night",
     desc: "Perfect for couples or business travelers.",
-    path: "/rout/rooms/deluxe",
+    path: "/routes/rooms/deluxe",
   },
  
   {
@@ -24,7 +24,7 @@ const rooms = [
     img: "/img/single.jpg",
     price: "৳3000/night",
     desc: "Affordable option for solo travelers.",
-    path: "/rout/rooms/executive",
+    path: "/routes/rooms/executive",
   },
  
 ];
@@ -49,7 +49,7 @@ export default function RoomSlider() {
           </h2>
           <div className="flex flex-col justify-end items-end flex-1">
             <Link
-              href="/rout/rooms/roomsPage"
+              href="/routes/rooms/roomsPage"
               className="text-sky-600 font-semibold text-sm sm:text-base md:text-lg hover:underline transition"
             >
               View all rooms →

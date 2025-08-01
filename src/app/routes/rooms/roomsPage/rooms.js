@@ -21,7 +21,7 @@ export const rooms = [
       "/img/premium3.jpg",
       "/img/premium4.jpg",
     ],
-    path: "/rout/rooms/deluxe",
+    path: "/routes/rooms/deluxe",
     price: "৳3500/night",
     features: [
       { icon: <FaSpa />, text: "Spa Access" },
@@ -39,7 +39,7 @@ export const rooms = [
       "/img/family.jpg",
       "/img/deluxe5.jpg",
     ],
-    path: "/rout/rooms/executive",
+    path: "/routes/rooms/executive",
     price: "৳3000/night",
     features: [
       { icon: <FaBed />, text: "1 King Bed" },

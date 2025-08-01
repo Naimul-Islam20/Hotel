@@ -46,7 +46,7 @@ export default function FitnessPage() {
           </div>
 
           <Link
-            href="/rout/contact"
+            href="/routes/contact"
             className="text-lg text-white p-3 bg-sky-500 rounded hover:bg-sky-600 transition"
           >
             Contact Us
