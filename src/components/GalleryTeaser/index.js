@@ -24,7 +24,7 @@ const rooms = [
     img: "/img/single.jpg",
     price: "৳3000/night",
     desc: "Affordable option for solo travelers.",
-    path: "/rout/rooms/superior",
+    path: "/rout/rooms/executive",
   },
  
 ];
@@ -40,7 +40,7 @@ export default function RoomSlider() {
   }, []);
 
   return (
-    <div className="w-full bg-sky-50 md:px-0 px-4">
+    <div className="w-full bg-sky-100 md:px-0 px-4">
       <section className="pt-18 pb-14 max-w-7xl mx-auto relative">
         <h2 className="text-3xl md:text-5xl mb-3">Our Best Rooms</h2>
         <div className="flex justify-between mb-7 gap-4">
@@ -120,37 +120,41 @@ export default function RoomSlider() {
 >
 
             {rooms.map((room, i) => (
-              <SwiperSlide key={i}>
-                <div className="bg-white mb-1 rounded shadow p-0 flex flex-col w-full max-w-[700px] h-[500px] mx-auto transition overflow-hidden">
-                  {/* Image */}
-                  <div className="relative w-full h-[390px]">
-                    <Image
-                      src={room.img}
-                      alt={room.title}
-                      fill
-                      className="object-cover transition-transform "
-                    />
-                  </div>
+             <SwiperSlide key={i}>
+  <Link href={room.path}>
+    <div className="bg-white mb-1 rounded shadow p-0 flex flex-col w-full max-w-[700px] h-[500px] mx-auto transition overflow-hidden cursor-pointer">
+      {/* Image */}
+      <div className="relative w-full h-[390px]">
+        <Image
+          src={room.img}
+          alt={room.title}
+          fill
+          className="object-cover transition-transform"
+        />
+      </div>
 
-                  {/* Content */}
-                <div className="px-6 pt-4 mt-0 flex flex-col flex-grow">
-  <div className="flex justify-between items-center">
-    <h3 className="text-xl font-semibold">{room.title}</h3>
-    <Link
-      href={room.path}
-      className="bg-sky-100 text-sky-600 text-sm px-4 py-1 rounded-lg font-semibold hover:bg-sky-200 transition"
-    >
-      Details Room
-    </Link>
-  </div>
+      {/* Content */}
+      <div className="px-6 pt-4 mt-0 flex flex-col flex-grow">
+        <div className="flex justify-between items-center">
+          <h3 className="text-xl font-semibold">{room.title}</h3>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              e.preventDefault();
+              window.location.href = room.path;
+            }}
+            className="bg-sky-100 text-sky-600 text-sm px-4 py-1 rounded-lg font-semibold hover:bg-sky-200 transition"
+          >
+            Details Room
+          </button>
+        </div>
 
-  <p className="text-gray-600 text-sm mt-2">{room.desc}</p>
+        <p className="text-gray-600 text-sm mt-2">{room.desc}</p>
+      </div>
+    </div>
+  </Link>
+</SwiperSlide>
 
-
-</div>
-
-                </div>
-              </SwiperSlide>
             ))}
           </Swiper>
         ) : (

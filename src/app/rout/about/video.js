@@ -6,7 +6,7 @@ export default function PaathyaSection() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   return (
-    <div className="w-full px-4 bg-white">
+    <div className="w-full px-4 bg-sky-100">
       <div className="flex items-center justify-center flex-wrap gap-2 sm:gap-4 text-center pb-4 pt-14">
         <div className="border-t border-gray-700 w-12 sm:w-16"></div>
         <span className="text-base sm:text-lg md:text-2xl lg:text-3xl text-black uppercase tracking-widest font-semibold">

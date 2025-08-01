@@ -139,10 +139,10 @@ The room comes with modern amenities such as a Smart TV, high-speed Wi-Fi, and a
   </details>
 
   {/* Contact Us Button */}
-  <div className="bg-sky-500 rounded text-center">
+  <div className="bg-sky-500 rounded hover:bg-sky-600 text-center">
     <Link
       href="/rout/contact"
-      className="block w-full text-white tracking-widest px-4 py-2 font-medium transition duration-200 hover:bg-sky-600"
+      className="block w-full text-white tracking-widest px-4 py-2 font-medium transition duration-200 "
     >
       Contact Us
     </Link>

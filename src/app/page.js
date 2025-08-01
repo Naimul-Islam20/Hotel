@@ -22,8 +22,9 @@ export default function Home() {
        
        {/* <ScrollingNames/>
       <HotelMessageSlider/> */}
-      <Ex/>
+     
       <Features/>
+       <Ex/>
       <ContactInfo/>
     
       {/* <ImgDan/> */}
